@@ -1,0 +1,3 @@
+<h1 id="source">Source</h1>
+<p><span>You can find the source code for the MicroBlocks VM, MicroBlocks standalone IDE and Websockets to serial connector in our <a href="https://bitbucket.org/john_maloney/smallvm">BitBucket repository</a>.</span></p>
+<p><span>The Snap<em>!</em> version of the MicroBlocks IDE can be found in this other <a href="https://bitbucket.org/bromagosa/snap-ublocks/">BitBucket repository</a></span>.</p>

@@ -1,0 +1,44 @@
+<h1 id="techspecs">Technical Details</h1>
+<h2>The MicroBlocks Virtual Machine</h2>
+<p><span>MicroBlocks code is executed by a simple interpreter or <em>virtual machine</em> (VM) running on the microcontroller board. The instructions for this virtual machine are 32-bits consisting of an 8-bit operation (opcode) and a 24-bit operand:</p></span>
+
+<pre>
+&lt;opcode (8-bits)&gt;&lt;operand (24 bits)&gt;
+</pre>
+
+<p><span>The opcode tells the virtual machine what to do. The operand is used to in different ways by different opcodes. For example, it can be used to encode constant values or jump offsets. Some opcodes don't use the operand at all, but both the interpreter and the compiler are simplified by using the same instruction format for all opcodes.</p></span>
+
+<p><span>The interpreter is a stack machine. To execute a given opcode, its arguments (i.e. the values of any parameters) are first pushed onto the stack, then the code for the opcode is run. That code pops any arguments off the stack and, optionally, pushes a return value onto the stack.</p></span>
+
+<p><span>For example, the instructions for <em>"set user LED &lt;true&gt;"</em> are:</p></span>
+
+<pre>
+pushImmediate true		// push the boolean value 'true'
+setLEDOp			// pop 'true' off the stack and set the state of the user LED to it
+</pre>
+
+<p><span>The instructions for <em>"set user LED (tilt-x &lt; 10)"</em>  are:</p></span>
+
+<pre>
+mbTiltX				// pushes the value of the tilt X sensor
+pushImmediate 10		// pushes the number 10
+greaterThan			// remove the two arguments and pushes true if tilt-x is less than 10
+setLEDOp			// pop a boolean value and and set the state of the user LED to it
+</pre>
+
+<h3>Tasks</h3>
+
+<p><span>MicroBlocks appears to run many scripts at the same time, but that is actually an illusion. The virtual machine actually does a few instructions of one script, then a few instructions of the next script, and so on. It really only executes one script at a time, but it switches between those scripts (or "tasks") so quickly that they appear to be running simultaneously.</p></span>
+
+<p><span>Unlike many programming languages, MicroBlocks can only switch to the next task at certain well-defined points in the code. Namely, tasks switch occur at the end loops or at an instruction that explicitly waits, such as "wait 10 milliseconds". This avoids many of concurrency issues (or "race conditions") one encounters in other languages. It also means advanced users can implement their own higher-level concurrency mechanisms (e.g. locks, semaphores, or monitors) in MicroBlocks if necessary.</p></span>
+
+<p><span>In addition to running user scripts, the MicroBlocks virtual machine handles a few system tasks between task switches. For example, it checks for incoming commands from the programming environment (when it is tethered). It may also do system tasks for specific platforms. For example, on the BBC micro:bit it must periodically update the 5x5 LED matrix.</p></span>
+
+<h2>The Standalone IDE</h2>
+<p><span></span></p>
+<!--
+<h2>The MicroBlocks connector</h2>
+<p><span></span></p>
+<h2>The Snap<em>!</em> IDE</h2>
+<p><span></span></p>
+--!>

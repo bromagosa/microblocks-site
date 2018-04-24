@@ -1,0 +1,20 @@
+<h1 id="devices">Supported Devices</h1>
+<h2>Technical Requirements</h2>
+<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb or RAM and takes over around 30Kb of flash memory.</span></p>
+<h2>MicroBlocks Capable Boards</h2>
+<p><span>The following boards are officially supported by the MicroBlocks system:</span></p>
+<ul class="list">
+    <li><a href="http://microbit.org">Micro:Bit</a></li>
+    <li><a href="https://www.calliope.cc">Calliope</a></li>
+    <li><a href="https://learn.adafruit.com/adafruit-circuit-playground-express">Circuit Playground Express</a></li>
+    <li><a href="https://store.arduino.cc/arduino-due">Arduino Due</a></li>
+    <li><a href="https://store.arduino.cc/arduino-mkrzero">Arduino MKR Zero</a></li>
+    <li><a href="https://store.arduino.cc/genuino-zero">Arduino Zero</a></li>
+</ul>
+<p><span>The following boards are supported by the MicroBlocks system but present some limitations or problems:</span></p>
+<ul class="list">
+    <li><a href="http://www.nodemcu.com/index_en.html">NodeMCU</a> <span class="issue">no persistence yet</span></li>
+    <li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero/">Raspberry Pi Zero W</a> <span class="issue">no persistence yet</span></li>
+    <li><a href="https://store.arduino.cc/arduino-primo">Arduino Primo</a> <span class="issue">retired by Arduino</span></li>
+    <li><a href="https://store.arduino.cc/arduino-m0">Arduino M0</a> <span class="issue">retired by Arduino</span></li>
+</ul>

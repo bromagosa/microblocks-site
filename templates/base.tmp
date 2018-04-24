@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MicroBlocks: Small, Fast, Human Friendly</title>
+        <meta name="description" content="MicroBlocks is a dynamic, blocks-based language that runs right inside microcontrollers">
+        <meta name="author" content="Bernat Romagosa">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="flowers"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"/></a>
+            <nav class="menu">
+                <a href="#intro">Introduction</a>
+                <a href="#examples">Examples</a>
+                <a href="#download">Download</a>
+                <a href="#usage">Usage</a>
+                <a href="#source">Source</a>
+                <a href="#devices">Supported Devices</a>
+                <a href="#techspecs">Technical Details</a>
+                <a href="#credits">Credits</a>
+                <a href="#collaboration">Collaboration</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <img id="flying-bugs" src="flying-bugs.png"/>
+        <div id="wrapper">
+            @content
+        </div>
+        <footer>
+            <a href="#"><i class="bunny"></i></a>
+            <small>&copy; 2018 by <a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a>, <a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a> and <a href="http://romagosa.work" target="_blank">Bernat Romagosa</a>. MicroBlocks is free software, released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License v2.0</a>.</small>
+            <img class="grass" src="grass.png"/>
+        </footer>
+        <script>
+            var div = document.querySelector('#flowers'),
+                index = 0,
+                flowers = [];
+            for (var i = 0; i < 100; i++) {
+                var flower = document.createElement('img');
+                flower.src = 'flower.png';
+                flower.className = 'flower';
+                flower.rotation = Math.random() * 90;
+                flower.scale = Math.random();
+                flower.style.transform = 'rotate(' + flower.rotation + 'deg) scale(' + flower.scale + ')';
+                flower.style.left = Math.random() * document.body.scrollWidth;
+                flower.style.top = Math.random() * document.body.scrollHeight * 1.2;
+                div.append(flower);
+                flowers.push(flower)
+            }
+            document.onscroll = function () {
+                requestAnimationFrame(function () {
+                    flowers.forEach(function (flower) {
+                        flower.style.transform = 'rotate(' + flower.rotation * document.body.scrollTop * 0.05 + 'deg) scale(' + flower.scale + ')';
+                    });
+                    div.style.top = document.body.scrollTop * -1.2 + 'px';
+                    index += 10;
+                });
+            };
+        </script>
+    </body>
+<html>

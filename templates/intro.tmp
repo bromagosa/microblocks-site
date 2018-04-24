@@ -1,0 +1,13 @@
+<h1 id="intro">Introduction</h1>
+<p><span>
+    MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a> that can run right inside microcontroller boards such as the <a href="https://microbit.org" target="_blank">micro:bit</a>, the <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> and many <a href="https://arduino.cc" target="_blank">Arduino</a> boards.
+</span></p>
+<p><span>
+    The MicroBlocks system allows for dynamic, parallel and interactive programming, just like in <a href="https://scratch.mit.edu" target="_blank">Scratch</a>, but with the twist of having your projects run autonomously inside the board without being tethered to a computer, thus offering the flexibility and liveness of tethered blocks programming, but without giving up the real-world applications of low level microcontroller programming.
+</span></p>
+<p><span>
+    In other words, MicroBlocks lets you program your boards exactly like you would in <a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>, <a href="http://s4a.cat" target="_blank">S4A</a> or the <a href="https://khanning.github.io/scratch-arduino-extension/" target="_blank">Arduino extension</a> for <a href="https://scratch.mit.edu" target="_blank">Scratch</a>, and when you are happy with your program you can just unplug the board from your computer and everything will keep running as if by magic!
+</span></p>
+<p><span>
+    With MicroBlocks, you can build your own "real world" digital instruments, interactive jewelry, electronic games and measuring devices, all by using blocks.
+</span></p>
