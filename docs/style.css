@@ -142,10 +142,8 @@ ul.flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     align-content: flex-start;
-    padding: 2em;
     box-sizing: border-box;
 }
 
