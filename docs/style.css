@@ -59,6 +59,12 @@ header {
     z-index: 1;
 }
 
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 header .logo img {
     padding-top: 2em;
 }
