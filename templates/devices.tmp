@@ -1,6 +1,6 @@
 <h1 id="devices">Supported Devices</h1>
 <h2>Technical Requirements</h2>
-<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb or RAM and takes over around 30Kb of flash memory.</span></p>
+<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb of RAM and 40Kb of flash memory. For most supported boards, the virtual machine is built using the Arduino IDE and libraries, but it has been ported to vanilla Linux. In the past, it was also built using the mbed libraries, although that option is no longer maintained.</span></p>
 <h2>MicroBlocks Capable Boards</h2>
 <p><span>The following boards are officially supported by the MicroBlocks system:</span></p>
 <ul class="list">
@@ -18,3 +18,4 @@
     <li><a href="https://store.arduino.cc/arduino-primo">Arduino Primo</a> <span class="issue">retired by Arduino</span></li>
     <li><a href="https://store.arduino.cc/arduino-m0">Arduino M0</a> <span class="issue">retired by Arduino</span></li>
 </ul>
+<p><span>For the latest list of supported boards their status, see <a href="https://bitbucket.org/john_maloney/smallvm/wiki/Devices">Device List</a> on our WIki.
