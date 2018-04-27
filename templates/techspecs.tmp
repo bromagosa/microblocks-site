@@ -1,5 +1,6 @@
 <h1 id="techspecs">Technical Details</h1>
 <h2>The MicroBlocks Virtual Machine</h2>
+<h3>Instructions</h3>
 <p><span>MicroBlocks code is executed by a simple interpreter or <em>virtual machine</em> (VM) running on the microcontroller board. The instructions for this virtual machine are 32-bits consisting of an 8-bit operation (opcode) and a 24-bit operand:</p></span>
 
 <pre>
@@ -34,9 +35,15 @@ setLEDOp			// pop a boolean value and and set the state of the user LED to it
 
 <p><span>Between running user scripts, the MicroBlocks virtual machine handles a few system chores. For example, it checks for incoming commands from the programming environment when the board is tethered. On some devices, it may also perform additional system tasks. For example, on the BBC micro:bit the virtual machine periodically updates the 5x5 LED display.</p></span>
 
+<h3>Protocol</h3>
+
+<p><span>The MicroBlocks VM communicates with IDEs and other types of software (such as the Mozilla Web of Things gateway) by means of a home brewed serial protocol.</span></p>
+
+<p><span>You can find specifications for this protocol <a href="https://bitbucket.org/john_maloney/smallvm/src/master/SERIAL_PROTOCOL.md">here</a>.</span></p>
+
 <h2>The MicroBlocks Programming Environment (IDE)</h2>
 
-<p><span>There are currently two blocks-based programming environments for MicroBlocks, a stand-alone system based on <a href="https://gpblocks.org" target="_blank">GP</a> and one integrated into <a href="https://snap.berkeley.edu" target="_blank">Snap!</a> that allows the MicroBlocks programs and Snap! programs to interact with each other when the board is tethered.
+<p><span>There are currently two blocks-based programming environments for MicroBlocks, a stand-alone system based on <a href="https://gpblocks.org" target="_blank">GP</a> and one integrated into <a href="https://snap.berkeley.edu" target="_blank">Snap<em>!</em></a> that allows the MicroBlocks programs and Snap<em>!</em> programs to interact with each other when the board is tethered.
 In the future, there could be other MicroBlocks programming environments, perhaps some using textual code representations rather than blocks.
 </span></p>
 
