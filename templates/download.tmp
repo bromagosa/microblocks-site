@@ -1,4 +1,5 @@
 <h1 id="download">Download</h1>
-<p><span><a href="http://gpblocks.org/mb/MicroBlocks.zip" target="_blank">Click here</a> to download the preliminary standalone microBlocks IDE. This package includes binaries for MacOSX, GNU/Linux and MS Windows.</span></p>
-<p><span>Please take in account that microBlocks is still pre-alpha software, so stay alert for bugs and come back often to check for new versions.</span></p>
+<p><span><a href="http://gpblocks.org/mb/MicroBlocks.zip" target="_blank">Download</a> the preliminary standalone microBlocks IDE. This package includes binaries for MacOSX, GNU/Linux and MS Windows. (Older versions are <a href="http://gpblocks.org/mb" target="_blank">here</a>.)</span></p>
+
+<p><span>MicroBlocks is still pre-alpha software, so stay alert for bugs and come back often to check for new versions.</span></p>
 <p><span>There is a Snap<em>!</em> IDE also in the works, but it is not yet public. Stay tuned.</span></p>

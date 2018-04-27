@@ -41,13 +41,13 @@
         <div id="wrapper">
 <h1 id="intro">Introduction</h1>
 <p><span>
-    MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a> that can run right inside microcontroller boards such as the <a href="https://microbit.org" target="_blank">micro:bit</a>, the <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> and many <a href="https://arduino.cc" target="_blank">Arduino</a> boards.
+    MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a> that runs right inside microcontroller boards such as the <a href="https://microbit.org" target="_blank">micro:bit</a>, the <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> and many <a href="https://arduino.cc" target="_blank">Arduino</a> boards.
 </span></p>
 <p><span>
-    The MicroBlocks system allows for dynamic, parallel and interactive programming, just like in <a href="https://scratch.mit.edu" target="_blank">Scratch</a>, but with the twist of having your projects run autonomously inside the board without being tethered to a computer, thus offering the flexibility and liveness of tethered blocks programming, but without giving up the real-world applications of low level microcontroller programming.
+    The MicroBlocks system allows for dynamic, parallel and interactive programming, just like in Scratch, but with the twist of letting your projects run autonomously inside the board without being tethered to a computer. Thus, MicroBlocks provides the immediacy and liveness of tethered blocks programming, while supporting real-world applications that require precision timing, autonomous operation, or physically embedding the processor into projects. For example, one might write a program to record acceleration data, then embed the microcontroller and a small battery in a model rocket to explore G-forces at launch time.
 </span></p>
 <p><span>
-    In other words, MicroBlocks lets you program your boards exactly like you would in <a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>, <a href="http://s4a.cat" target="_blank">S4A</a> or the <a href="https://khanning.github.io/scratch-arduino-extension/" target="_blank">Arduino extension</a> for <a href="https://scratch.mit.edu" target="_blank">Scratch</a>, and when you are happy with your program you can just unplug the board from your computer and everything will keep running as if by magic!
+    In other words, MicroBlocks lets you program your boards exactly like you would in <a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>, <a href="http://s4a.cat" target="_blank">S4A</a> or the <a href="https://khanning.github.io/scratch-arduino-extension/" target="_blank">Arduino extension</a> for Scratch, and when you are happy with your program you can just unplug the board from your computer and everything will keep running as if by magic!
 </span></p>
 <p><span>
     With MicroBlocks, you can build your own "real world" digital instruments, interactive jewelry, electronic games and measuring devices, all by using blocks.
@@ -100,8 +100,9 @@ for (var i = 0; i < videos.length; i++) {
 }
 </script>
 <h1 id="download">Download</h1>
-<p><span><a href="http://gpblocks.org/mb/MicroBlocks.zip" target="_blank">Click here</a> to download the preliminary standalone microBlocks IDE. This package includes binaries for MacOSX, GNU/Linux and MS Windows.</span></p>
-<p><span>Please take in account that microBlocks is still pre-alpha software, so stay alert for bugs and come back often to check for new versions.</span></p>
+<p><span><a href="http://gpblocks.org/mb/MicroBlocks.zip" target="_blank">Download</a> the preliminary standalone microBlocks IDE. This package includes binaries for MacOSX, GNU/Linux and MS Windows. (Older versions are <a href="http://gpblocks.org/mb" target="_blank">here</a>.)</span></p>
+
+<p><span>MicroBlocks is still pre-alpha software, so stay alert for bugs and come back often to check for new versions.</span></p>
 <p><span>There is a Snap<em>!</em> IDE also in the works, but it is not yet public. Stay tuned.</span></p>
 <h1 id="usage">Usage</h1>
 <h2>Installation</h2>
@@ -112,7 +113,7 @@ for (var i = 0; i < videos.length; i++) {
 <p><span>The Snap<em>!</em> version of the MicroBlocks IDE can be found in this other <a href="https://bitbucket.org/bromagosa/snap-ublocks/">BitBucket repository</a></span>.</p>
 <h1 id="devices">Supported Devices</h1>
 <h2>Technical Requirements</h2>
-<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb or RAM and takes over around 30Kb of flash memory.</span></p>
+<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb of RAM and 40Kb of flash memory. For most supported boards, the virtual machine is built using the Arduino IDE and libraries, but it has been ported to vanilla Linux. In the past, it was also built using the mbed libraries, although that option is no longer maintained.</span></p>
 <h2>MicroBlocks Capable Boards</h2>
 <p><span>The following boards are officially supported by the MicroBlocks system:</span></p>
 <ul class="list">
@@ -130,12 +131,13 @@ for (var i = 0; i < videos.length; i++) {
     <li><a href="https://store.arduino.cc/arduino-primo">Arduino Primo</a> <span class="issue">retired by Arduino</span></li>
     <li><a href="https://store.arduino.cc/arduino-m0">Arduino M0</a> <span class="issue">retired by Arduino</span></li>
 </ul>
+<p><span>For the latest list of supported boards their status, see <a href="https://bitbucket.org/john_maloney/smallvm/wiki/Devices">Device List</a> on our WIki.
 <h1 id="techspecs">Technical Details</h1>
 <h2>The MicroBlocks Virtual Machine</h2>
 <p><span>MicroBlocks code is executed by a simple interpreter or <em>virtual machine</em> (VM) running on the microcontroller board. The instructions for this virtual machine are 32-bits consisting of an 8-bit operation (opcode) and a 24-bit operand:</p></span>
 
 <pre>
-&lt;opcode (8-bits)&gt;&lt;operand (24 bits)&gt;
+&lt;operand (24 bits)&gt;&lt;opcode (8-bits)&gt;
 </pre>
 
 <p><span>The opcode tells the virtual machine what to do. The operand is used to in different ways by different opcodes. For example, it can be used to encode constant values or jump offsets. Some opcodes don't use the operand at all, but both the interpreter and the compiler are simplified by using the same instruction format for all opcodes.</p></span>
@@ -160,14 +162,22 @@ setLEDOp			// pop a boolean value and and set the state of the user LED to it
 
 <h3>Tasks</h3>
 
-<p><span>MicroBlocks appears to run many scripts at the same time, but that is actually an illusion. The virtual machine actually does a few instructions of one script, then a few instructions of the next script, and so on. It really only executes one script at a time, but it switches between those scripts (or "tasks") so quickly that they appear to be running simultaneously.</p></span>
+<p><span>MicroBlocks appears to run many scripts at the same time, but that is an illusion. The virtual machine actually runs a few instructions of one script, then a few instructions of the next script, and so on. It only executes one script at a time, but switches between those scripts (or "tasks") so quickly that they appear to be running simultaneously.</p></span>
 
-<p><span>Unlike many programming languages, MicroBlocks can only switch to the next task at certain well-defined points in the code. Namely, tasks switch occur at the end loops or at an instruction that explicitly waits, such as "wait 10 milliseconds". This avoids many of concurrency issues (or "race conditions") one encounters in other languages. It also means advanced users can implement their own higher-level concurrency mechanisms (e.g. locks, semaphores, or monitors) in MicroBlocks if necessary.</p></span>
+<p><span>Unlike many programming languages, MicroBlocks can only switch to the next task at certain well-defined points in the code: at the end of a loop or at an instruction that explicitly waits, such as "wait 10 milliseconds". This avoids many of the concurrency issues (or <em>race conditions</em>) that one encounters in other languages. It also means advanced users can implement their own higher-level concurrency mechanisms (e.g. locks, semaphores, or monitors) in MicroBlocks because a test followed by some action such as setting a flag cannot be interrupted by another MicroBlocks task partway through. (Such uninterruptible sequences are sometimes called <em>critical sections</em>. In MicroBlocks, every command sequence that does not contain a loop or a block that explicitly waits is an implicit critical section.)</p></span>
 
-<p><span>In addition to running user scripts, the MicroBlocks virtual machine handles a few system tasks between task switches. For example, it checks for incoming commands from the programming environment (when it is tethered). It may also do system tasks for specific platforms. For example, on the BBC micro:bit it must periodically update the 5x5 LED matrix.</p></span>
+<p><span>Between running user scripts, the MicroBlocks virtual machine handles a few system chores. For example, it checks for incoming commands from the programming environment when the board is tethered. On some devices, it may also perform additional system tasks. For example, on the BBC micro:bit the virtual machine periodically updates the 5x5 LED display.</p></span>
 
-<h2>The Standalone IDE</h2>
-<p><span></span></p>
+<h2>The MicroBlocks Programming Environment (IDE)</h2>
+
+<p><span>There are currently two blocks-based programming environments for MicroBlocks, a stand-alone system based on <a href="https://gpblocks.org" target="_blank">GP</a> and one integrated into <a href="https://snap.berkeley.edu" target="_blank">Snap!</a> that allows the MicroBlocks programs and Snap! programs to interact with each other when the board is tethered.
+In the future, there could be other MicroBlocks programming environments, perhaps some using textual code representations rather than blocks.
+</span></p>
+
+<p><span>
+The programming environment includes a <em>compiler</em> that translates user scripts into a sequence of MicroBlocks opcodes and a code manager that downloads scripts to the board, starts and stops scripts, and keeps track of the running status of every script so it can display graphical feedback (e.g. a glowing border around scripts that are running). Both environments can display the instructions generated by the compiler, allowing users to see how their scripts get turned into low level <em>machine code</em> for the virtual machine.
+</span></p>
+
 <!--
 <h2>The MicroBlocks connector</h2>
 <p><span></span></p>
