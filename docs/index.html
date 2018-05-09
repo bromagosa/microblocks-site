@@ -18,12 +18,40 @@
 
             gtag('config', 'UA-118134778-1');
         </script>
+        <script>
+            function showDropdown(menuElement) {
+                window.a = menuElement;
+                menuElement.showing = !menuElement.showing;
+                if (menuElement.showing) {
+                    menuElement.children.namedItem('content').style.display = 'block';
+                } else {
+                    menuElement.children.namedItem('content').style.display = 'none';
+                }
+            }
+        </script>
     </head>
     <body>
         <img class="ribbon" src="pre-alpha-ribbon.png"/>
         <div id="flowers"></div>
+        <div class="dropdown">
+            <div class="hamburger" onclick="showDropdown(this);">
+                <i></i><i></i><i></i>
+                <div name="content" class="dropdown-content">
+                    <a href="#intro">Introduction</a>
+                    <a href="#examples">Examples</a>
+                    <a href="#download">Download</a>
+                    <a href="#usage">Usage</a>
+                    <a href="#source">Source</a>
+                    <a href="#devices">Supported Devices</a>
+                    <a href="#techspecs">Technical Details</a>
+                    <a href="#credits">Credits</a>
+                    <a href="#collaboration">Collaboration</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
         <header>
-            <a href="#" class="logo"><img src="logo.png"/></a>
+            <!--
             <nav class="menu">
                 <a href="#intro">Introduction</a>
                 <a href="#examples">Examples</a>
@@ -36,8 +64,11 @@
                 <a href="#collaboration">Collaboration</a>
                 <a href="#contact">Contact</a>
             </nav>
+            -->
+            <a href="#" class="logo"><img src="logo.png"/></a>
+            <img id="flying-bugs" src="flying-bugs.png"/>
+            <!-- hamburger menu -->
         </header>
-        <img id="flying-bugs" src="flying-bugs.png"/>
         <div id="wrapper">
 <h1 id="intro">Introduction</h1>
 <p><span>

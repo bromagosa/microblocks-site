@@ -55,8 +55,11 @@ pre {
 }
 
 header {
+    position: relative;
     padding: 1em;
     z-index: 1;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .ribbon {
@@ -70,9 +73,7 @@ header .logo img {
 }
 
 nav.menu {
-    position: fixed;
-    top: 1em;
-    right: 1em;
+    text-align: center;
     z-index: 2;
     padding: 0.1em 0.5em 0.5em;
     background: #fafafa;
@@ -94,6 +95,83 @@ img#flying-bugs {
     top: 4em;
 }
 
+.hamburger {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+.hamburger i {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #4a4a4a;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.hamburger .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.hamburger .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.hamburger .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.hamburger .dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.hamburger .dropdown-content .show {
+    display:block;
+}
+
+@media only screen and (max-width: 600px) {
+    .dropdown {
+        z-index: 1000;
+    }
+
+    .hamburger {
+        z-index: 1000;
+        right: 5px;
+        position: fixed;
+    }
+
+    .hamburger i {
+        width: 80px;
+        margin: 12px;
+        height: 10px;
+    }
+
+    .hamburger .dropdown-content {
+        position:fixed;
+        top: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
 div#flowers {
     position: fixed;
     z-index: -1;
@@ -107,6 +185,8 @@ div#wrapper {
     padding: 1em;
     box-sizing: border-box;
     overflow: hidden;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 div#wrapper a {
