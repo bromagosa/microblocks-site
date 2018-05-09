@@ -96,6 +96,7 @@ img#flying-bugs {
 }
 
 .hamburger {
+    z-index: 1000;
     position: fixed;
     top: 5px;
     right: 5px;
@@ -145,7 +146,7 @@ img#flying-bugs {
     display:block;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
     .dropdown {
         z-index: 1000;
     }
@@ -167,6 +168,10 @@ img#flying-bugs {
         top: 0;
         text-align: center;
         width: 100%;
+        font-size: 3em;
+    }
+    .hamburger .dropdown-content a {
+        border-top: 1px solid #4a4a4a;
     }
 }
 
