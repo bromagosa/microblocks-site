@@ -6,6 +6,7 @@
 <ul class="list">
     <li><a href="http://microbit.org">Micro:Bit</a></li>
     <li><a href="https://www.calliope.cc">Calliope</a></li>
+    <li><a href="http://www.nodemcu.com/index_en.html">NodeMCU</a></li>
     <li><a href="https://learn.adafruit.com/adafruit-circuit-playground-express">Circuit Playground Express</a></li>
     <li><a href="https://store.arduino.cc/arduino-due">Arduino Due</a></li>
     <li><a href="https://store.arduino.cc/arduino-mkrzero">Arduino MKR Zero</a></li>
@@ -13,7 +14,6 @@
 </ul>
 <p><span>The following boards are supported by the MicroBlocks system but present some limitations or problems:</span></p>
 <ul class="list">
-    <li><a href="http://www.nodemcu.com/index_en.html">NodeMCU</a> <span class="issue">no persistence yet</span></li>
     <li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero/">Raspberry Pi Zero W</a> <span class="issue">no persistence yet</span></li>
     <li><a href="https://store.arduino.cc/arduino-primo">Arduino Primo</a> <span class="issue">retired by Arduino</span></li>
     <li><a href="https://store.arduino.cc/arduino-m0">Arduino M0</a> <span class="issue">retired by Arduino</span></li>
