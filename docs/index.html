@@ -154,6 +154,13 @@ for (var i = 0; i < videos.length; i++) {
 <pre>sudo usermod -G dialout -a [YOUR_USER_NAME]</pre>
 <p><span>then log out and back in to make the change take effect.</span></p>
 <p><span>Once this is done, you can start MicroBlocks simply by double-clicking on the Linux executable. Note that it still can be useful to run MicroBlocks from the terminal when debugging, since the “print” block logs messages to the terminal window.</span></p>
+<h3>Fedora 28</h3>
+<p><span>The libjpeg8 package is missing from the Fedora 28 repositories, so you will need to install it manually. You can download it from <a href="http://rpm.pbone.net/index.php3/stat/3/srodzaj/2/search/libjpeg8-8d-3.1.src.rpm">here</a>.</span></p>
+<p><span>Open a terminal and rebuild the RPM package for Fedora 28:</span></p>
+<pre>rpmbuild --rebuild libjpeg8-8d-3.1.src.rpm</pre>
+<p><span>You can now install the rebuilt package, found under ~/rpmbuild/RPMS/x86_64:</span></p>
+<pre>sudo rpm -ivh ~/rpmbuild/RPMS/x86_64/libjpeg8-8d-3.1.x86_64.rpm</pre>
+<p><span>After this package has been installed, follow the generic GNU/Linux instructions.</span></p>
 <h2>VM Installation</h2>
 <p><span>If you have a BBC micro:bit, Calliope mini, or an AdaFruit board such as the Circuit Playground Express that supports loading binary files by drag-and-drop, you can just drop the appropriate .hex or .uf2 file onto the virtual disk for your board to install it.</span></p>
 <p><span>If you have an ARM-based Arduino or any other board with Arduino IDE support, or if you just want to build the virtual machine yourself, read on.</span></p>
