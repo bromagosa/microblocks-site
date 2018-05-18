@@ -366,13 +366,13 @@ em {
     }
 
     .hamburger {
+        background: #ecf9f9;
         z-index: 1000;
         right: 5px;
         position: fixed;
     }
 
     .hamburger i {
-        background: #ecf9f9;
         width: 80px;
         margin: 12px;
         height: 10px;
@@ -383,7 +383,7 @@ em {
         top: 0;
         text-align: center;
         width: 100%;
-        font-size: 5em;
+        font-size: 3.5em;
     }
 
     .hamburger .dropdown-content a {
