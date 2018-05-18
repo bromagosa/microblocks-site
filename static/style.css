@@ -51,7 +51,9 @@ pre {
     font-family: monospace;
     margin: 2em 3em;
     padding: 1em;
-    background: ghostwhite;
+    background: ivory;
+    display: table;
+    white-space: pre-wrap;
 }
 
 header {
@@ -146,37 +148,6 @@ img#flying-bugs {
     display:block;
 }
 
-@media only screen and (max-width: 1024px) {
-    .dropdown {
-        z-index: 1000;
-    }
-
-    .hamburger {
-        z-index: 1000;
-        right: 5px;
-        position: fixed;
-    }
-
-    .hamburger i {
-        width: 80px;
-        margin: 12px;
-        height: 10px;
-    }
-
-    .hamburger .dropdown-content {
-        position:fixed;
-        top: 0;
-        text-align: center;
-        width: 100%;
-        font-size: 3em;
-    }
-    .hamburger .dropdown-content a {
-        border-top: 1px solid #4a4a4a;
-    }
-}
-
-
-
 div#flowers {
     position: fixed;
     z-index: -1;
@@ -267,35 +238,40 @@ ul.list li {
 }
 
 footer {
+    height: 30px;
     position: relative;
     margin-top: 2em;
     background: url(field.svg);
-    background-size: 100% 45px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    padding-bottom: 0.5em;
-    padding-right: 2em;
-    padding-left: 1em;
+    background-size: cover;
     color: #fafafa;
 }
 
 footer .grass {
     position: absolute;
-    right: 0;
+    right: 15px;
     bottom: 2px;
     z-index: -1;
 }
 
 footer i.bunny {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
     background: url("bunny-animation.png") left center;
     width: 64px;
     height: 79px;
-    display: inline-block;
     animation: bunny 0.8s steps(9) infinite;
 }
 
 @keyframes bunny {
     100% { background-position: -576px; }
+}
+
+footer small {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
 }
 
 span.issue {
@@ -368,4 +344,64 @@ em {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-family: laksaman;
+        color: #1a1a1a;
+        background: #ecf9f9;
+    }
+
+    img.flower {
+        width: 80px;
+    }
+
+    img#flying-bugs {
+        display: none;
+    }
+
+    .dropdown {
+        z-index: 1000;
+    }
+
+    .hamburger {
+        z-index: 1000;
+        right: 5px;
+        position: fixed;
+    }
+
+    .hamburger i {
+        background: #ecf9f9;
+        width: 80px;
+        margin: 12px;
+        height: 10px;
+    }
+
+    .hamburger .dropdown-content {
+        position:fixed;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 5em;
+    }
+
+    .hamburger .dropdown-content a {
+        border-top: 1px solid #4a4a4a;
+    }
+
+    footer {
+        height: 52px;
+    }
+
+    footer small {
+        width: auto;
+        left: 70px;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    footer .grass {
+        bottom: 25px;
+    }
 }
