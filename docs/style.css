@@ -1,10 +1,10 @@
 @font-face {
-    font-family: laksaman;
-    src: url(Laksaman.ttf);
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
 }
 
 body {
-    font-family: laksaman;
+    font-family: roboto;
     color: #1a1a1a;
     background: linear-gradient(#fafafa, #d8ffff);
     background-attachment: fixed;
@@ -60,7 +60,7 @@ header {
     position: relative;
     padding: 1em;
     z-index: 1;
-    max-width: 1280px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -72,23 +72,6 @@ header {
 
 header .logo img {
     padding-top: 2em;
-}
-
-nav.menu {
-    text-align: center;
-    z-index: 2;
-    padding: 0.1em 0.5em 0.5em;
-    background: #fafafa;
-}
-
-nav.menu a:not(:last-child)::after{
-    font-weight: normal;
-    margin-left: 0.3em;
-    content: '::';
-}
-
-nav.menu a:hover {
-    font-weight: bold;
 }
 
 img#flying-bugs {
@@ -105,7 +88,7 @@ img#flying-bugs {
 }
 
 .hamburger i {
-    display: block;
+    display: none;
     width: 35px;
     height: 5px;
     background-color: #4a4a4a;
@@ -113,20 +96,17 @@ img#flying-bugs {
     border-radius: 3px;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .hamburger .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .hamburger .dropdown-content {
-    display: none;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 0 0 0 15px;
     position: absolute;
     right: 0;
-    background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -161,7 +141,7 @@ div#wrapper {
     padding: 1em;
     box-sizing: border-box;
     overflow: hidden;
-    max-width: 1280px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -346,9 +326,14 @@ em {
     left: 0;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1340px) {
+    #wrapper {
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
     body {
-        font-family: laksaman;
         color: #1a1a1a;
         background: #ecf9f9;
     }
@@ -373,12 +358,17 @@ em {
     }
 
     .hamburger i {
+        display: block;
         width: 80px;
         margin: 12px;
         height: 10px;
     }
 
     .hamburger .dropdown-content {
+        border-radius: 0;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        display: none;
         position:fixed;
         top: 0;
         text-align: center;
