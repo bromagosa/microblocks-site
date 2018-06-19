@@ -27,7 +27,7 @@ sudo usermod -G dialout -a YOUR_USER_NAME
 <p><span>Log out and back in to make this change take effect. Now you can start MicroBlocks simply by double-clicking on it's icon.</span></p>
 
 <h2>Plug in your board</h2>
-<p><span>&lt;pictures of plugging cable into board and USB port&gt;</span></p>
+<p><span><img src="connect-board.png" width="500" alt="connect-board.png"></span></p>
 
 <h2>Install MicroBlocks on your board (first time only)</h2>
 <p><span>Start MicroBlocks, then right-click on the connection indicator circle (red in this screenshot) and select <i>install MicroBlocks on board</i>:</span></p>
