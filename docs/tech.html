@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MicroBlocks: Small, Fast, Human Friendly</title>
+        <meta name="description" content="MicroBlocks is a dynamic, blocks-based language that runs right inside microcontrollers">
+        <meta name="author" content="Bernat Romagosa">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118134778-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118134778-1');
+        </script>
+        <script>
+            function showDropdown(menuElement) {
+                if (window.matchMedia('(max-width: 1180px)').matches) {
+                    menuElement.showing = !menuElement.showing;
+                } else {
+                    menuElement.showing = true; 
+                }
+
+                if (menuElement.showing) {
+                    menuElement.children.namedItem('content').style.display = 'block';
+                } else {
+                    menuElement.children.namedItem('content').style.display = 'none';
+                }
+            }
+        </script>
+    </head>
+    <body
+        onresize="document.querySelector('.dropdown-content').style.display = window.matchMedia('(max-width: 1180px)').matches ? 'none' : 'block';"
+    >
+        <img class="ribbon" src="pre-alpha-ribbon.png"/>
+        <div id="flowers"></div>
+        <div class="dropdown">
+            <div class="hamburger" onclick="showDropdown(this);">
+                <i></i><i></i><i></i>
+                <div name="content" class="dropdown-content">
+                    <a class="header" href="index.html">Home</a>
+                    <a href="index.html#intro">Introduction</a>
+                    <a href="index.html#examples">Examples</a>
+                    <a class="header" href="download.html">Get MicroBlocks</a>
+                    <a href="download.html#download">Download Links</a>
+                    <a href="download.html#setup">Setup</a>
+                    <a class="header" href="tech.html">Technical Details</a>
+                    <a href="tech.html#source">Source</a>
+                    <a href="tech.html#devices">Supported Devices</a>
+                    <a href="tech.html#techspecs">How it Works</a>
+                    <a class="header" href="info.html">About</a>
+                    <a href="info.html#team">Team</a>
+                    <a href="info.html#credits">Credits</a>
+                    <a href="info.html#collaboration">Collaboration</a>
+                    <a href="info.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"/></a>
+            <img id="flying-bugs" src="flying-bugs.png"/>
+            <!-- hamburger menu -->
+        </header>
+        <div id="wrapper">
+<h1 id="source">Source</h1>
+<p><span>You can find the source code for the MicroBlocks VM, MicroBlocks standalone IDE and Websockets to serial connector in our <a href="https://bitbucket.org/john_maloney/smallvm">BitBucket repository</a>.</span></p>
+<p><span>The Snap<em>!</em> version of the MicroBlocks IDE can be found in this other <a href="https://bitbucket.org/bromagosa/snap-ublocks/">BitBucket repository</a></span>.</p>
+<h1 id="devices">Supported Devices</h1>
+<h2>Technical Requirements</h2>
+<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb of RAM and 40Kb of flash memory. For most supported boards, the virtual machine is built using the Arduino IDE and libraries, but it has been ported to vanilla Linux. In the past, it was also built using the mbed libraries, although that option is no longer maintained.</span></p>
+<h2>MicroBlocks Capable Boards</h2>
+<p><span>The following boards are officially supported by the MicroBlocks system:</span></p>
+<ul class="list">
+    <li><a href="http://microbit.org">Micro:Bit</a></li>
+    <li><a href="https://www.calliope.cc">Calliope</a></li>
+    <li><a href="http://www.nodemcu.com/index_en.html">NodeMCU</a></li>
+    <li><a href="https://learn.adafruit.com/adafruit-circuit-playground-express">Circuit Playground Express</a></li>
+    <li><a href="https://store.arduino.cc/arduino-due">Arduino Due</a></li>
+    <li><a href="https://store.arduino.cc/arduino-mkrzero">Arduino MKR Zero</a></li>
+    <li><a href="https://store.arduino.cc/genuino-zero">Arduino Zero</a></li>
+</ul>
+<p><span>The following boards are supported by the MicroBlocks system but present some limitations or problems:</span></p>
+<ul class="list">
+    <li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero/">Raspberry Pi Zero W</a> <span class="issue">no persistence yet</span></li>
+    <li><a href="https://store.arduino.cc/arduino-primo">Arduino Primo</a> <span class="issue">retired by Arduino</span></li>
+    <li><a href="https://store.arduino.cc/arduino-m0">Arduino M0</a> <span class="issue">retired by Arduino</span></li>
+</ul>
+<p><span>For the latest list of supported boards and their status, see <a href="https://bitbucket.org/john_maloney/smallvm/wiki/Devices">Device List</a> on our WIki.
+<h1 id="techspecs">How it Works</h1>
+<h2>The MicroBlocks Virtual Machine</h2>
+<h3>Instructions</h3>
+<p><span>MicroBlocks code is executed by a simple interpreter or <em>virtual machine</em> (VM) running on the microcontroller board. The instructions for this virtual machine are 32-bits consisting of an 8-bit operation (opcode) and a 24-bit operand:</p></span>
+
+<pre>
+&lt;operand (24 bits)&gt;&lt;opcode (8-bits)&gt;
+</pre>
+
+<p><span>The opcode tells the virtual machine what to do. The operand is used to in different ways by different opcodes. For example, it can be used to encode constant values or jump offsets. Some opcodes don't use the operand at all, but both the interpreter and the compiler are simplified by using the same instruction format for all opcodes.</p></span>
+
+<p><span>The interpreter is a stack machine. To execute a given opcode, its arguments (i.e. the values of any parameters) are first pushed onto the stack, then the code for the opcode is run. That code pops any arguments off the stack and, optionally, pushes a return value onto the stack.</p></span>
+
+<p><span>For example, the instructions for <em>"set user LED &lt;true&gt;"</em> are:</p></span>
+
+<pre>
+pushImmediate true		// push the boolean value 'true'
+setLEDOp			// pop 'true' off the stack and set the state of the user LED to it
+</pre>
+
+<p><span>The instructions for <em>"set user LED (tilt-x &lt; 10)"</em>  are:</p></span>
+
+<pre>
+mbTiltX				// pushes the value of the tilt X sensor
+pushImmediate 10		// pushes the number 10
+greaterThan			// remove the two arguments and pushes true if tilt-x is less than 10
+setLEDOp			// pop a boolean value and and set the state of the user LED to it
+</pre>
+
+<h3>Tasks</h3>
+
+<p><span>MicroBlocks appears to run many scripts at the same time, but that is an illusion. The virtual machine actually runs a few instructions of one script, then a few instructions of the next script, and so on. It only executes one script at a time, but switches between those scripts (or "tasks") so quickly that they appear to be running simultaneously.</p></span>
+
+<p><span>Unlike many programming languages, MicroBlocks can only switch to the next task at certain well-defined points in the code: at the end of a loop or at an instruction that explicitly waits, such as "wait 10 milliseconds". This avoids many of the concurrency issues (or <em>race conditions</em>) that one encounters in other languages. It also means advanced users can implement their own higher-level concurrency mechanisms (e.g. locks, semaphores, or monitors) in MicroBlocks because a test followed by some action such as setting a flag cannot be interrupted by another MicroBlocks task partway through. (Such uninterruptible sequences are sometimes called <em>critical sections</em>. In MicroBlocks, every command sequence that does not contain a loop or a block that explicitly waits is an implicit critical section.)</p></span>
+
+<p><span>Between running user scripts, the MicroBlocks virtual machine handles a few system chores. For example, it checks for incoming commands from the programming environment when the board is tethered. On some devices, it may also perform additional system tasks. For example, on the BBC micro:bit the virtual machine periodically updates the 5x5 LED display.</p></span>
+
+<h3>Protocol</h3>
+
+<p><span>The MicroBlocks VM communicates with IDEs and other types of software (such as the Mozilla Web of Things gateway) by means of a home brewed serial protocol.</span></p>
+
+<p><span>You can find specifications for this protocol <a href="https://bitbucket.org/john_maloney/smallvm/src/master/SERIAL_PROTOCOL.md">here</a>.</span></p>
+
+<h2>The MicroBlocks Programming Environment (IDE)</h2>
+
+<p><span>There are currently two blocks-based programming environments for MicroBlocks, a stand-alone system based on <a href="https://gpblocks.org" target="_blank">GP</a> and one integrated into <a href="https://snap.berkeley.edu" target="_blank">Snap<em>!</em></a> that allows the MicroBlocks programs and Snap<em>!</em> programs to interact with each other when the board is tethered.
+In the future, there could be other MicroBlocks programming environments, perhaps some using textual code representations rather than blocks.
+</span></p>
+
+<p><span>
+The programming environment includes a <em>compiler</em> that translates user scripts into a sequence of MicroBlocks opcodes and a code manager that downloads scripts to the board, starts and stops scripts, and keeps track of the running status of every script so it can display graphical feedback (e.g. a glowing border around scripts that are running). Both environments can display the instructions generated by the compiler, allowing users to see how their scripts get turned into low level <em>machine code</em> for the virtual machine.
+</span></p>
+
+<!--
+<h2>The MicroBlocks connector</h2>
+<p><span></span></p>
+<h2>The Snap<em>!</em> IDE</h2>
+<p><span></span></p>
+--!>
+        </div>
+        <footer>
+            <a href="index.html"><i class="bunny"></i></a>
+            <small>&copy; 2018 by <a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a>, <a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a> and <a href="http://romagosa.work" target="_blank">Bernat Romagosa</a>. MicroBlocks is free software, released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License v2.0</a>.</small>
+            <img class="grass" src="grass.png"/>
+        </footer>
+        <script>
+            var div = document.querySelector('#flowers'),
+                index = 0,
+                flowers = [];
+            for (var i = 0; i < 100; i++) {
+                var flower = document.createElement('img');
+                flower.src = 'flower.png';
+                flower.className = 'flower';
+                flower.rotation = Math.random() * 90;
+                flower.scale = Math.random();
+                flower.style.transform = 'rotate(' + flower.rotation + 'deg) scale(' + flower.scale + ')';
+                flower.style.left = Math.random() * document.body.scrollWidth;
+                flower.style.top = Math.random() * document.body.scrollHeight * 1.2;
+                div.append(flower);
+                flowers.push(flower)
+            }
+            document.onscroll = function () {
+                requestAnimationFrame(function () {
+                    flowers.forEach(function (flower) {
+                        flower.style.transform = 'rotate(' + flower.rotation * document.body.scrollTop * 0.05 + 'deg) scale(' + flower.scale + ')';
+                    });
+                    div.style.top = document.body.scrollTop * -1.2 + 'px';
+                    index += 10;
+                });
+            };
+        </script>
+    </body>
+<html>

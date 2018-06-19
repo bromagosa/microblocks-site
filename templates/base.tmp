@@ -43,16 +43,21 @@
             <div class="hamburger" onclick="showDropdown(this);">
                 <i></i><i></i><i></i>
                 <div name="content" class="dropdown-content">
-                    <a href="#intro">Introduction</a>
-                    <a href="#examples">Examples</a>
-                    <a href="#download">Download</a>
-                    <a href="#usage">Usage</a>
-                    <a href="#source">Source</a>
-                    <a href="#devices">Supported Devices</a>
-                    <a href="#techspecs">Technical Details</a>
-                    <a href="#credits">Credits</a>
-                    <a href="#collaboration">Collaboration</a>
-                    <a href="#contact">Contact</a>
+                    <a class="header" href="index.html">Home</a>
+                    <a href="index.html#intro">Introduction</a>
+                    <a href="index.html#examples">Examples</a>
+                    <a class="header" href="download.html">Get MicroBlocks</a>
+                    <a href="download.html#download">Download Links</a>
+                    <a href="download.html#setup">Setup</a>
+                    <a class="header" href="tech.html">Technical Details</a>
+                    <a href="tech.html#source">Source</a>
+                    <a href="tech.html#devices">Supported Devices</a>
+                    <a href="tech.html#techspecs">How it Works</a>
+                    <a class="header" href="info.html">About</a>
+                    <a href="info.html#team">Team</a>
+                    <a href="info.html#credits">Credits</a>
+                    <a href="info.html#collaboration">Collaboration</a>
+                    <a href="info.html#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -65,7 +70,7 @@
             @content
         </div>
         <footer>
-            <a href="#"><i class="bunny"></i></a>
+            <a href="index.html"><i class="bunny"></i></a>
             <small>&copy; 2018 by <a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a>, <a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a> and <a href="http://romagosa.work" target="_blank">Bernat Romagosa</a>. MicroBlocks is free software, released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License v2.0</a>.</small>
             <img class="grass" src="grass.png"/>
         </footer>

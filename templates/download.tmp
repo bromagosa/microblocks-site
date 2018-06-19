@@ -1,5 +1,9 @@
-<h1 id="download">Download</h1>
-<p><span><a href="http://gpblocks.org/mb/MicroBlocks.zip" target="_blank">Download</a> the preliminary standalone microBlocks IDE. This package includes binaries for MacOSX, GNU/Linux and MS Windows. (Older versions are <a href="http://gpblocks.org/mb" target="_blank">here</a>.)</span></p>
-
-<p><span>MicroBlocks is still pre-alpha software, so stay alert for bugs and come back often to check for new versions.</span></p>
-<p><span>There is a Snap<em>!</em> IDE also in the works, but it is not yet public. Stay tuned.</span></p>
+<h1 id="download">Download Links</h1>
+<p>Download MicroBlocks for your platform:</p>
+<ul class="list">
+    <li><a href="http://gpblocks.org/mb/packages/microBlocks%2520setup.exe">Windows</a></li>
+    <li><a href="http://gpblocks.org/mb/packages/MicroBlocks.dmg">MacOS</a></li>
+    <li><a href="http://gpblocks.org/mb/packages/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
+    <li><a href="http://gpblocks.org/mb/packages/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
+    <li><a href="http://gpblocks.org/mb/packages/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
+</ul>
