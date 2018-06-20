@@ -1,10 +1,10 @@
 @font-face {
-    font-family: laksaman;
-    src: url(Laksaman.ttf);
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
 }
 
 body {
-    font-family: laksaman;
+    font-family: roboto;
     color: #1a1a1a;
     background: linear-gradient(#fafafa, #d8ffff);
     background-attachment: fixed;
@@ -33,6 +33,7 @@ h2 {
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 1em;
+    margin-top: 1.5em;
 }
 
 h3 {
@@ -51,41 +52,89 @@ pre {
     font-family: monospace;
     margin: 2em 3em;
     padding: 1em;
-    background: ghostwhite;
+    background: ivory;
+    display: table;
+    white-space: pre-wrap;
 }
 
 header {
+    position: relative;
     padding: 1em;
     z-index: 1;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 header .logo img {
     padding-top: 2em;
 }
 
-nav.menu {
-    position: fixed;
-    top: 1em;
-    right: 1em;
-    z-index: 2;
-    padding: 0.1em 0.5em 0.5em;
-    background: #fafafa;
-}
-
-nav.menu a:not(:last-child)::after{
-    font-weight: normal;
-    margin-left: 0.3em;
-    content: '::';
-}
-
-nav.menu a:hover {
-    font-weight: bold;
-}
-
 img#flying-bugs {
     position: absolute;
     right: 5em;
     top: 4em;
+}
+
+.hamburger {
+    z-index: 1000;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+.hamburger i {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #4a4a4a;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+.hamburger .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger .dropdown-content {
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 0 0 0 15px;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.hamburger .dropdown-content a {
+    font-size: 0.8em;
+    color: black;
+    padding: 12px 16px;
+    margin-left: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.hamburger .dropdown-content a:hover {
+    background-color: #ddd
+}
+
+.hamburger .dropdown-content a.header {
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.hamburger .dropdown-content .show {
+    display:block;
 }
 
 div#flowers {
@@ -101,6 +150,8 @@ div#wrapper {
     padding: 1em;
     box-sizing: border-box;
     overflow: hidden;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 div#wrapper a {
@@ -142,10 +193,8 @@ ul.flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     align-content: flex-start;
-    padding: 2em;
     box-sizing: border-box;
 }
 
@@ -178,35 +227,40 @@ ul.list li {
 }
 
 footer {
+    height: 30px;
     position: relative;
     margin-top: 2em;
     background: url(field.svg);
-    background-size: 100% 45px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    padding-bottom: 0.5em;
-    padding-right: 2em;
-    padding-left: 1em;
+    background-size: cover;
     color: #fafafa;
 }
 
 footer .grass {
     position: absolute;
-    right: 0;
+    right: 15px;
     bottom: 2px;
     z-index: -1;
 }
 
 footer i.bunny {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
     background: url("bunny-animation.png") left center;
     width: 64px;
     height: 79px;
-    display: inline-block;
     animation: bunny 0.8s steps(9) infinite;
 }
 
 @keyframes bunny {
     100% { background-position: -576px; }
+}
+
+footer small {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
 }
 
 span.issue {
@@ -219,6 +273,10 @@ span.issue {
 
 em {
     font-style: italic;
+}
+
+strong {
+    font-weight: bold;
 }
 
 .youtube {
@@ -279,4 +337,78 @@ em {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+@media only screen and (max-width: 1340px) {
+    #wrapper {
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    body {
+        color: #1a1a1a;
+        background: #ecf9f9;
+    }
+
+    img.flower {
+        width: 80px;
+    }
+
+    img#flying-bugs {
+        display: none;
+    }
+
+    .dropdown {
+        z-index: 1000;
+    }
+
+    .hamburger {
+        background: #ecf9f9;
+        z-index: 1000;
+        right: 5px;
+        position: fixed;
+    }
+
+    .hamburger i {
+        display: block;
+        width: 80px;
+        margin: 12px;
+        height: 10px;
+    }
+
+    .hamburger .dropdown-content {
+        border-radius: 0;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        display: none;
+        position:fixed;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 3.5em;
+    }
+
+    .hamburger .dropdown-content a {
+        display: none;
+    }
+    .hamburger .dropdown-content a.header {
+        display: block;
+        border-top: 1px solid #4a4a4a;
+    }
+
+    footer {
+        height: 52px;
+    }
+
+    footer small {
+        width: auto;
+        left: 70px;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    footer .grass {
+        bottom: 25px;
+    }
 }

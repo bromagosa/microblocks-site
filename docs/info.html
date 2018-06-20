@@ -67,70 +67,39 @@
             <!-- hamburger menu -->
         </header>
         <div id="wrapper">
-<h1 id="intro">Introduction</h1>
-<p><span>
-    MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a> that runs right inside microcontroller boards such as the <a href="https://microbit.org" target="_blank">micro:bit</a>, the <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> and many <a href="https://arduino.cc" target="_blank">Arduino</a> boards.
-</span></p>
-<p><span>
-    The MicroBlocks system allows for dynamic, parallel and interactive programming, just like in Scratch, but with the twist of letting your projects run autonomously inside the board without being tethered to a computer. Thus, MicroBlocks provides the immediacy and liveness of tethered blocks programming, while supporting real-world applications that require precision timing, autonomous operation, or physically embedding the processor into projects. For example, one might write a program to record acceleration data, then embed the microcontroller and a small battery in a model rocket to explore G-forces at launch time.
-</span></p>
-<p><span>
-    In other words, MicroBlocks lets you program your boards exactly like you would in <a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>, <a href="http://s4a.cat" target="_blank">S4A</a> or the <a href="https://khanning.github.io/scratch-arduino-extension/" target="_blank">Arduino extension</a> for Scratch, and when you are happy with your program you can just unplug the board from your computer and everything will keep running as if by magic!
-</span></p>
-<p><span>
-    With MicroBlocks, you can build your own "real world" digital instruments, interactive jewelry, electronic games and measuring devices, all by using blocks.
-</span></p>
-<h1 id="examples">Examples</h1>
-<p><span></span></p>
-<ul class="flex videos">
+<h1 id="team">Team</h1>
+<ul>
     <li>
-        <div class="youtube" data-embed="CqfFjn_kMc4"><div class="play-button"></div></div>
-        <h6>An electronic die</h6>
+        <h3><a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a></h3>
+        <p><span>John Maloney creates live, highly-engaging programming systems for beginners and “casual programmers.” John was the lead developer for Scratch over its first eleven years. Before that, he worked in Dr. Alan Kay’s research group, first at Apple Computer, then at Walt Disney Imagineering, where he helped create the Squeak portable Smalltalk system and Etoys, a programming system for children that was one of the inspirations for Scratch. After leaving the Scratch team in 2013, John lead the creation of GP Blocks, a blocks language aimed at older students and adults. MicroBlocks, his most recent project (in collaboration with Jens Mönig and Bernat Romagosa), is a Scratch-like blocks programming environment for microcontroller boards such as the BBC micro:bit. John got his Ph.D. in Computer Science from the University of Washington. In his free time, John plays the dulcian, the Renaissance ancestor of the modern bassoon.</span></p>
     </li>
     <li>
-        <div class="youtube" data-embed="gPKXRC7CYu8"><div class="play-button"></div></div>
-        <h6>A square wave synthesizer</h6>
+        <h3><a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a></h3>
+        <p><span>Jens Mönig is a researcher at SAP and makes interactive programming environments. He is fanatical about visual coding blocks. Jens is the architect and lead programmer, together with Brian Harvey, of UC Berkeley’s “Snap<em>!</em> Build Your Own Blocks” programming language, used in the introductory “Beauty and Joy of Computing” curriculum. Previously Jens has worked under Alan Kay on the GP programming language together with John Maloney and Yoshiki Ohshima, helped develop Scratch for the MIT Media Lab and written enterprise software at MioSoft. Jens is a fully qualified lawyer in Germany and has been an attorney, corporate counsel and lecturer for many years before rediscovering his love for programming through Scratch and Squeak. For leisure Jens likes guitar picking and strumming his mandolin.</span></p>
     </li>
     <li>
-        <div class="youtube" data-embed="pTSedu0EbjY"><div class="play-button"></div></div>
-        <h6>A rock and roll party</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="fstO8b7i4pw"><div class="play-button"></div></div>
-        <h6>An animation with speed control</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="9mPrWXqf5nE"><div class="play-button"></div></div>
-        <h6>A bubble level</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="GiGiRHgWnKM"><div class="play-button"></div></div>
-        <h6>A rock-paper-scissors game</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="xDQgpxCZkn4"><div class="play-button"></div></div>
-        <h6>A digital music box</h6>
+        <h3><a href="http://romagosa.work" target="_blank">Bernat Romagosa</a></h3>
+        <p><span>Bernat Romagosa is a software engineer. He is the author of Snap4Arduino, the main developer of Beetle Blocks and a contributor to the Snap<em>!</em> programming language. He was part of the Edutec group at the Citilab for 6 years, where he worked on developing an online programming school, a social knowledge management system, different educational applications, and a bunch of Snap<em>!</em> modifications. After that, he worked for Arduino.org for a year and a half, further developing and maintaining Snap4Arduino. As a freelancer he now works, among others, for the BJC project, where he contributes to the Snap<em>!</em> programming language. He holds a Bachelor’s degree in Computer Science and a Master’s degree in Free Software. He is an avid GNU/Linux user and a member of the Free Software Foundation.
+        </span></p>
     </li>
 </ul>
-<script>
-var videos = document.querySelectorAll('.youtube');
-for (var i = 0; i < videos.length; i++) { 
-    var thumb = 'https://img.youtube.com/vi/'+ videos[i].dataset.embed +'/sddefault.jpg',
-        image = new Image();
-
-    image.src = thumb;
-    image.addEventListener('load', function() { videos[i].appendChild(image); }(i));
-
-    videos[i].addEventListener('click', function() {
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('frameborder', '0');
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.setAttribute('src', 'https://www.youtube.com/embed/'+ this.dataset.embed +'?rel=0&showinfo=0&autoplay=1');
-        this.innerHTML = '';
-        this.appendChild(iframe);
-    });
-}
-</script>
+<h1 id="credits">Credits</h1>
+<p><span>The MicroBlocks bunny logo was designed by <a href="http://hrum-design.ru" target="_blank">Constantine Rotkevich</a>.</span></p>
+<h1 id="collaboration">Collaboration</h1>
+<p><span>MicroBlocks is currently collaborating with the following organizations, projects and companies:</span></p>
+<ul class="flex">
+    <li><a href="http://gpblocks.org" target="_blank"><img class="logo" src="GPLogo260.png"/></a></li>
+    <li><a href="https://snap.berkeley.edu" target="_blank"><img class="logo" src="snap-logo.png"/></a></li>
+    <li><a href="https://www.birdbraintechnologies.com" target="_blank"><img class="logo" src="birdbrain-logo.png"/></a></li>
+    <li><a href="https://www.mozilla.org" target="_blank"><img class="logo" src="mozilla-logo.png"/></a></li>
+    <li><a href="http://faberresidency.cat" target="_blank"><img class="logo" src="faber.png"/></a></li>
+    <li><a href="http://innovadidactic.com" target="_blank"><img class="logo" src="innova.png"/></a></li>
+</ul>
+<p><span></span></p>
+<p><span>We are actively looking for long term or short term funding. If you would like to make a donation or sponsor this project, please get in touch with us at <a href="mailto:interest@microblocks.fun">interest@microblocks.fun</a>.</span></p>
+<h1 id="contact">Contact</h1>
+<span><p>For bug reports or feature requests, please use our <a href="https://bitbucket.org/john_maloney/smallvm/issues">issue tracker at BitBucket</a>.</p></span>
+<span><p>For anything else, you can reach us at <a href="mailto:interest@microblocks.fun">interest@microblocks.fun</a>.</p></span>
         </div>
         <footer>
             <a href="index.html"><i class="bunny"></i></a>
