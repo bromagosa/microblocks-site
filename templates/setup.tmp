@@ -1,73 +1,45 @@
-<h1 id="download">Setup</h1>
+<h1 id="setup">Setup</h1>
 
-<h2>1. Download MicroBlocks</h2>
+<h2>Install serial drivers (Windows only)</h2>
+<p><span>When you plug in your board, Windows 10 should find and install the correct drivers. On earlier versions of Windows, you may need to manually install the drivers using one of the links below.</span></p>
+<p><span><b>Note:</b> Be sure to plug in your board board before installing the drivers.</span></p>
+<p><span><a href="http://https://docs.mbed.com/docs/mbed-os-handbook/en/latest/getting_started/what_need/%23windows-serial-driver">Serial drivers for BBC micro:bit and Calliope mini (mbed)</a></span></p>
+<p><span><a href="http://https//learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (AdaFruit boards)</a></span></p>
 
-<p>Download MicroBlocks for your platform:</p>
-<p><a href="http://gpblocks.org/mb/packages/microBlocks%2520setup.exe">Windows</a></p>
-<p><a href="http://gpblocks.org/mb/packages/MicroBlocks.dmg">MacOS</a></p>
-<p><a href="http://gpblocks.org/mb/packages/ublocks-amd64.deb">Linux, 64-bit</a></p>
-<p><a href="http://gpblocks.org/mb/packages/ublocks-i386.deb">Linux, 32-bit</a></p>
-<p><a href="http://gpblocks.org/mb/packages/ublocks-armhf.deb">Raspberry Pi</a></p>
-
-<h2>2. Install serial drivers (Windows only)</h2>
-
-<p>When you plug in your board, Windows 10 should find and install the correct drivers. On earlier versions of Windows, you may need to manually install the drivers using one of the links below.</p>
-<p><b>Note:</b> Be sure to plug in your board board before installing the drivers.</p>
-<p><a href="http://https://docs.mbed.com/docs/mbed-os-handbook/en/latest/getting_started/what_need/%23windows-serial-driver">Serial drivers for BBC micro:bit and Calliope mini (mbed)</a></p>
-<p><a href="http://https//learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (AdaFruit boards)</a></p>
-
-<h2>3. Add yourself to the serial port group (Linux only)</h2>
-
-<p>On many Linux systems, users don’t have access to the USB serial port by default,
-so MicroBlocks will get an error when it tries to open the serial port to connect to the board.
-A quick solution to that is to launch MicroBlocks from the command line using “sudo”:
-
+<h2>Add yourself to the serial port group (Linux only)</h2>
+<p><span>On many Linux systems, users don’t have access to the USB serial port by default, so MicroBlocks will get an error when it tries to open the serial port to connect to the board.  A quick solution to that is to launch MicroBlocks from the command line using “sudo”:</span></p>
 <pre>
 sudo ublocks-linux64bit
 </pre>
-
-<p> A more convenient long term solution is to add yourself to the group that owns the serial port.
-First, with the micro:bit attached, print the serial port entry with the command:</p>
-
+<p><span>A more convenient long term solution is to add yourself to the group that owns the serial port.
+First, with the micro:bit attached, print the serial port entry with the command:</span></p>
 <pre>
 ls -l /dev/ttyACM0
 </pre>
-
-<p>You'll see a line such as:<p>
-
+<p><span>You'll see a line such as:</span></p>
 <pre>
 crw-rw---- 1 root dialout 166, 0 Jan 25 07:23 /dev/ttyACM0
 </pre>
-
-<p>The serial port’s group is the word after “root”, in this case “dialout”.
-Add yourself to that group:</p>
-
+<p><span>The serial port’s group is the word after “root”, in this case “dialout”. Add yourself to that group:</span></p>
 <pre>
 sudo usermod -G dialout -a YOUR_USER_NAME
 </pre>
+<p><span>Log out and back in to make this change take effect. Now you can start MicroBlocks simply by double-clicking on it's icon.</span></p>
 
-<p>Log out and back in to make this change take effect.
-Now you can start MicroBlocks simply by double-clicking on it's icon.
-<p>
+<h2>Plug in your board</h2>
+<p><span><img src="connect-board.png" width="500" alt="connect-board.png"></span></p>
 
-<h2>4. Plug in your board</h2>
+<h2>Install MicroBlocks on your board (first time only)</h2>
+<p><span>Start MicroBlocks, then right-click on the connection indicator circle (red in this screenshot) and select <i>install MicroBlocks on board</i>:</span></p>
+<p><span><img src="InstallMenu.png" width="500" alt="InstallMenu.png"></span></p>
+<p><span>Select your board from the menu (there will only one entry in the menu unless you have several boards plugged in):</span></p>
+<p><span><img src="BoardSelectionMenu.png" width="120" alt="BoardSelectionMenu.png"></span></p>
 
-<p>&lt;pictures of plugging cable into board and USB port&gt;</p>
-
-<h2>5. Install MicroBlocks on your board (first time only)</h2>
-
-<p>Start MicroBlocks, then right-click on the connection indicator circle (red in this screenshot) and select <i>install MicroBlocks on board</i>:</p>
-<p><img src="InstallMenu.png" width="500" alt="InstallMenu.png"></p>
-<p>Select your board from the menu (there will only one entry in the menu unless you have several boards plugged in):</p>
-<p><img src="BoardSelectionMenu.png" width="120" alt="BoardSelectionMenu.png"></p>
-
-<h2>6. Connect to your board</h2>
-
-<p>To connect to your board, click the <i>Connect</i> button and select the serial port.</p>
-<p><img src="ConnectMenu.png" width="150" alt="ConnectMenu.png"></p>
-<p>When the board is connected the connection indicator will turn green:</p>
-<p><img src="Connected.png" width="150" alt="Connected.png"></p>
-<p>As a quick test, click on the block:</p>
-<p><img src="SetUserLEDBlock.png" width="200" alt="SetUserLEDBlock.png"></p>
-<p>The user LED on your board should light up, showing that the board is connected.
-You're ready to code!<p>
+<h2>Connect to your board</h2>
+<p><span>To connect to your board, click the <i>Connect</i> button and select the serial port.</span></p>
+<p><span><img src="ConnectMenu.png" width="150" alt="ConnectMenu.png"></span></p>
+<p><span>When the board is connected the connection indicator will turn green:</span></p>
+<p><span><img src="Connected.png" width="150" alt="Connected.png"></span></p>
+<p><span>As a quick test, click on the block:</span></p>
+<p><span><img src="SetUserLEDBlock.png" width="200" alt="SetUserLEDBlock.png"></span></p>
+<p><span>The user LED on your board should light up, showing that the board is connected. You're ready to code!</span></p>
