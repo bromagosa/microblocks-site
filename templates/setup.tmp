@@ -30,10 +30,12 @@ sudo usermod -G dialout -a YOUR_USER_NAME
 <p><span><img src="connect-board.png" width="500" alt="connect-board.png"></span></p>
 
 <h2>Install MicroBlocks on your board (first time only)</h2>
+<p><span><strong>Note:</strong> If you have a Circuit Playground Express you need to click the small "boot" button in the middle of the board twice quickly to prepare the board. The 10 NeoPixels around the edge of the board will turn green when the board is ready.</span></p>
 <p><span>Start MicroBlocks, then right-click on the connection indicator circle (red in this screenshot) and select <i>install MicroBlocks on board</i>:</span></p>
 <p><span><img src="InstallMenu.png" width="500" alt="InstallMenu.png"></span></p>
 <p><span>Select your board from the menu (there will only one entry in the menu unless you have several boards plugged in):</span></p>
 <p><span><img src="BoardSelectionMenu.png" width="120" alt="BoardSelectionMenu.png"></span></p>
+<p><span>It takes five to ten seconds to install MicroBlocks. When that's done, the board unmounts its USB drive, causing a notification to appear on some platforms. That's normal; you can just close the notification window.</span></p>
 
 <h2>Connect to your board</h2>
 <p><span>To connect to your board, click the <i>Connect</i> button and select the serial port.</span></p>
