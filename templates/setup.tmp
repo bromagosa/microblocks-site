@@ -6,8 +6,18 @@
 <p><span><a href="http://https://docs.mbed.com/docs/mbed-os-handbook/en/latest/getting_started/what_need/%23windows-serial-driver">Serial drivers for BBC micro:bit and Calliope mini (mbed)</a></span></p>
 <p><span><a href="http://https//learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (AdaFruit boards)</a></span></p>
 
+<h2>Open with menu the first time (Macintosh only)</h2>
+
+<p><span>On Mac OS X, you have to use the open menu the first time you run MicroBlocks.</span></p>
+<p><span>Right-click on MicroBlocks.app and select "Open" from the menu:</span></p>
+<p><span><img src="OpenMenu.png" width="500" alt="OpenMenu.png"></span></p>
+<p><span>Then click the "Open" button in the confirmation dialog:<p><span>
+<p><span><img src="OpenConfirmDialog.png" width="500" alt="OpenConfirmDialog.png"></span></p>
+<p><span><b>Note:</b> You will need administrator access to do this.</span></p>
+<p><span><b>Note:</b> Most browsers are set to automatically unzip downloaded files. If your browser is not, you'll see a file like "MicroBlocks.zip" in your downloads folder. Just double-click on that file to unzip it, then follow the instructions above to open the unzipped application.</span></p>
+
 <h2>Add yourself to the serial port group (Linux only)</h2>
-<p><span>On many Linux systems, users don’t have access to the USB serial port by default, so MicroBlocks will get an error when it tries to open the serial port to connect to the board.  A quick solution to that is to launch MicroBlocks from the command line using “sudo”:</span></p>
+<p><span>On most Linux systems, users don’t have access to the USB serial port by default, so MicroBlocks will get an error when it tries to open the serial port to connect to the board.  One solution to that is to launch MicroBlocks from the command line using “sudo”:</span></p>
 <pre>
 sudo ublocks-linux64bit
 </pre>
@@ -31,7 +41,7 @@ sudo usermod -G dialout -a YOUR_USER_NAME
 
 <h2>Install MicroBlocks on your board (first time only)</h2>
 <p><span><strong>Note:</strong> If you have a Circuit Playground Express you need to click the small "boot" button in the middle of the board twice quickly to prepare the board. The 10 NeoPixels around the edge of the board will turn green when the board is ready.</span></p>
-<p><span>Start MicroBlocks, then right-click on the connection indicator circle (red in this screenshot) and select <i>install MicroBlocks on board</i>:</span></p>
+<p><span>Start MicroBlocks, then click the "About" button and select <i>install MicroBlocks on board</i>:</span></p>
 <p><span><img src="InstallMenu.png" width="500" alt="InstallMenu.png"></span></p>
 <p><span>Select your board from the menu (there will only one entry in the menu unless you have several boards plugged in):</span></p>
 <p><span><img src="BoardSelectionMenu.png" width="120" alt="BoardSelectionMenu.png"></span></p>
