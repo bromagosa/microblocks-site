@@ -2,20 +2,20 @@
 <p><span>Download MicroBlocks for your platform:</span></p>
 <h3>Installers</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/microBlocks.setup.exe">Windows</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/MicroBlocks.dmg">MacOS</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/microBlocks.setup.exe">Windows</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/MicroBlocks.zip">MacOS</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
 </ul>
 <h3>Standalone executables</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/ublocks-win.exe">Windows</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/ublocks-linux64bit">Linux, 64-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/ublocks-linux32bit">Linux, 32-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.17/ublocks-raspberryPi">Raspberry Pi</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/ublocks-win.exe">Windows</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/ublocks-linux64bit">Linux, 64-bit</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/ublocks-linux32bit">Linux, 32-bit</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.18/ublocks-raspberryPi">Raspberry Pi</a></li>
 </ul>
 
-<p><small>Current version: <strong>0.1.17</strong>, released on <strong>June 26, 2018</strong>.
+<p><small>Current version: <strong>0.1.18</strong>, released on <strong>July 10, 2018</strong>.
 Other versions are <a href="https://github.com/bromagosa/microblocks-site/releases">here</a>.</small></p>
 
