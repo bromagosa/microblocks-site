@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MicroBlocks: Small, Fast, Human Friendly</title>
+        <meta name="description" content="MicroBlocks is a dynamic, blocks-based language that runs right inside microcontrollers">
+        <meta name="author" content="Bernat Romagosa">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118134778-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118134778-1');
+        </script>
+        <script>
+            function showDropdown(menuElement) {
+                if (window.matchMedia('(max-width: 1180px)').matches) {
+                    menuElement.showing = !menuElement.showing;
+                } else {
+                    menuElement.showing = true; 
+                }
+
+                if (menuElement.showing) {
+                    menuElement.children.namedItem('content').style.display = 'block';
+                } else {
+                    menuElement.children.namedItem('content').style.display = 'none';
+                }
+            }
+        </script>
+    </head>
+    <body
+        onresize="document.querySelector('.dropdown-content').style.display = window.matchMedia('(max-width: 1180px)').matches ? 'none' : 'block';"
+    >
+        <img class="ribbon" src="alpha-ribbon.png"/>
+        <div id="flowers"></div>
+        <div class="dropdown">
+            <div class="hamburger" onclick="showDropdown(this);">
+                <i></i><i></i><i></i>
+                <div name="content" class="dropdown-content">
+                    <a class="header" href="index.html">Home</a>
+                    <a href="index.html#intro">Introduction</a>
+                    <a href="index.html#examples">Examples</a>
+                    <a class="header" href="download.html">Get MicroBlocks</a>
+                    <a href="download.html#download">Download Links</a>
+                    <a href="download.html#setup">Setup</a>
+                    <a class="header" href="tech.html">Technical Details</a>
+                    <a href="tech.html#source">Source</a>
+                    <a href="tech.html#devices">Supported Devices</a>
+                    <a href="tech.html#techspecs">How it Works</a>
+                    <a class="header" href="info.html">About</a>
+                    <a href="info.html#team">Team</a>
+                    <a href="info.html#credits">Credits</a>
+                    <a href="info.html#collaboration">Collaboration</a>
+                    <a href="info.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"/></a>
+            <img id="flying-bugs" src="flying-bugs.png"/>
+            <!-- hamburger menu -->
+        </header>
+        <div id="wrapper">
+<h1 id="nodeMCU">NodeMCU (Advanced!)</h1>
+
+<h2>The NodeMCU</h2>
+
+<p><span>The NodeMCU is an inexpensive board that includes a WiFi module, 9 useable digital I/O pins,
+and 1 analog input pin. NodeMCU boards are available on Amazon for as little as $8.
+The NodeMUC doesn't have many built in capabilties (just a user LED), and installing and using
+MicroBlocks on it is more complex than other boards such as the BBC micro:bit, so the NodeMCU
+is not recommended for beginners yet. (We're working on that!)</span></p>
+
+<p><span>These notes are for advanced
+users who want to get a head start on working with the MicroBlocks on the NodeMCU and
+are comfortable with the extra technical challenges involved.</span></p>
+
+<h2>NodeMCU Pins</h2>
+
+<p><span>There are a number of variations of the Node MCU and similar boards based on ESP8266.
+For my NodeMCU (a 12-E module), the MicroBlocks pin numbering does not match the numbers
+silk-screened onto the board. I assume different boards have different pin layouts, so
+you'll probably need to Google for a pinoout that matches your board.</span></p>
+
+<p><span>For example, here's a pinout for a 12-E board from
+<a href="https://myelectronicslab.com/node-mcu-pinout-esp8266-12e-gpio-pins">here</a>:</span></p>
+
+<p><span><img src="nodeMCU12E.png" width="520" alt="nodeMCU12E.png"></span></p>
+
+<p><span>MicroBlocks uses the "GPIO" pin numbers in this diagram. For example, toggling digital pin 16
+in MicroBlocks changes the state of the top-right pin in the picture (GPIO16). That also toggles
+the red user LED. The sense of the user LED is inverted from what you'd expect: setting pin 16
+to "false" turns the LED on.</span></p>
+
+<p><span>Avoid using pins 1 and 3; those are used to communicate with the MicroBlocks IDE.
+Some of the other GPIO pins are also used internally and should be avoided.
+On the 12-E module, the following GPIO pins area available for use:</span></p>
+
+<pre>
+Available GPIO pins: 0, 2 (blue LED), 4, 5, 12, 13, 14, 15, 16 (red LED)
+</pre>
+
+<p><span>The Node MCU has one analog input pin, marked "ADC0" on the pinout (top-left in the picture).
+That pin is input-only; it can't be used as an output.</span></p>
+
+<p><span><b>Note:</b> It currently takes 5 to 15 seconds for the board to respond to MicroBlocks
+when you first start up.</span></p>
+
+<h2>Node MCU Setup</h2>
+
+<h3>1. Install esptool.py</h3>
+
+<p><span>To install MicroBlocks on a NodeMCU, you'll use a Python program called esptool.
+Different platforms use different commands to install Python programs. For Mac OS
+you can do the following:</span></p>
+
+<pre>
+sudo pip install esptool
+</pre>
+
+<h3>2. Download the MicroBlocks virtual machine for the NodeMCU</h3>
+
+<p><span>To download the latest version, go to
+<a href="https://bitbucket.org/john_maloney/smallvm/src/master/precompiled/vm.ino.nodemcu.bin">this page</a>
+on the MicroBlocks repository and click the "View raw" link.
+In most browsers, that will actually download, not view, the file.
+The file vm.ino.nodemcu.bin will appear in your Downloads folder.</span></p>
+
+<h3>3. Install MicroBlocks on your NodeMCU</h3>
+
+<p><span>Plug in your NodeMCU board and run:</span></p>
+
+<pre>
+esptool.py write_flash 0 vm.ino.nodemcu.bin
+</pre>
+
+<p><span>You'll see a bunch of stuff print in the terminal as the install happens.
+It should find the correct serial port automatically. The entire process takes 25-30 seconds.</span></p>
+
+<h3>4. Connect</h3>
+
+<p><span>Start MicroBlocks, click the "Connect" button, and select the serial port.
+The indicator should turn green. It currently takes 5 to 15 seconds for the board to
+respond to MicroBlocks when you first power up or boot the NodeMCU.</span></p>
+
+<p><span>To verify that everything is working, try the following:</span></p>
+
+<p><span><img src="SetUserLEDBlock.png" width="150" alt="SetUserLEDBlock.png"></span></p>
+
+<p><span>The user LED on your board should light up, showing that the board is connected.
+You're ready to code!</span></p>
+        </div>
+        <footer>
+            <a href="index.html"><i class="bunny"></i></a>
+            <small>&copy; 2018 by <a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a>, <a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a> and <a href="http://romagosa.work" target="_blank">Bernat Romagosa</a>. MicroBlocks is free software, released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License v2.0</a>.</small>
+            <img class="grass" src="grass.png"/>
+        </footer>
+        <script>
+            var div = document.querySelector('#flowers'),
+                index = 0,
+                flowers = [];
+            for (var i = 0; i < 100; i++) {
+                var flower = document.createElement('img');
+                flower.src = 'flower.png';
+                flower.className = 'flower';
+                flower.rotation = Math.random() * 90;
+                flower.scale = Math.random();
+                flower.style.transform = 'rotate(' + flower.rotation + 'deg) scale(' + flower.scale + ')';
+                flower.style.left = Math.random() * document.body.scrollWidth;
+                flower.style.top = Math.random() * document.body.scrollHeight * 1.2;
+                div.append(flower);
+                flowers.push(flower)
+            }
+            document.onscroll = function () {
+                requestAnimationFrame(function () {
+                    flowers.forEach(function (flower) {
+                        flower.style.transform = 'rotate(' + flower.rotation * document.body.scrollTop * 0.05 + 'deg) scale(' + flower.scale + ')';
+                    });
+                    div.style.top = document.body.scrollTop * -1.2 + 'px';
+                    index += 10;
+                });
+            };
+        </script>
+    </body>
+<html>
