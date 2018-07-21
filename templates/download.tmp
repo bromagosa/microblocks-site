@@ -15,6 +15,10 @@
     <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.19/ublocks-linux32bit">Linux, 32-bit</a></li>
     <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.19/ublocks-raspberryPi">Raspberry Pi</a></li>
 </ul>
+<h3>Chromebook App</h3>
+<ul class="list">
+  <li><a href=https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0">Chromebook App</a></li>
+</ul>
 
 <p><small>Current version: <strong>0.1.19</strong>, released on <strong>July 11, 2018</strong>.
 Other versions are <a href="https://github.com/bromagosa/microblocks-site/releases">here</a>.</small></p>

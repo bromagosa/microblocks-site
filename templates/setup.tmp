@@ -46,6 +46,7 @@ sudo usermod -G dialout -a YOUR_USER_NAME
 <p><span><img src="InstallMenu.png" width="500" alt="InstallMenu.png"></span></p>
 <p><span>Select your board from the menu (there will only one entry in the menu unless you have several boards plugged in):</span></p>
 <p><span><img src="BoardSelectionMenu.png" width="150" alt="BoardSelectionMenu.png"></span></p>
+<p><span><b>Note:</b> This process is slightly different on Chromebooks; follow the on-screen instructions.</span></p>
 <p><span>It takes five to ten seconds to install MicroBlocks. When that's done, the board unmounts its USB drive, causing a notification to appear on some platforms. That's normal; you can just close the notification window.</span></p>
 
 <h2>Connect to your board</h2>
