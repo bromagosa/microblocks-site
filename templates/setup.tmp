@@ -3,8 +3,8 @@
 <h2>Install serial drivers (Windows only)</h2>
 <p><span>When you plug in your board, Windows 10 should find and install the correct drivers. On earlier versions of Windows, you may need to manually install the drivers using one of the links below.</span></p>
 <p><span><b>Note:</b> Be sure to plug in your board board before installing the drivers.</span></p>
-<p><span><a href="http://https://docs.mbed.com/docs/mbed-os-handbook/en/latest/getting_started/what_need/%23windows-serial-driver">Serial drivers for BBC micro:bit and Calliope mini (mbed)</a></span></p>
-<p><span><a href="http://https//learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (AdaFruit boards)</a></span></p>
+<p><span><a href="https://os.mbed.com/docs/v5.9/tutorials/windows-serial-driver.html">Serial drivers for BBC micro:bit and Calliope mini (mbed)</a></span></p>
+<p><span><a href="https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (AdaFruit boards)</a></span></p>
 
 <h2>Open with menu the first time (Macintosh only)</h2>
 
