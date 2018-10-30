@@ -137,6 +137,16 @@ img#flying-bugs {
     display:block;
 }
 
+.donate {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.donate.mobile {
+    display: none;
+}   
+
 div#flowers {
     position: fixed;
     z-index: -1;
@@ -339,12 +349,14 @@ strong {
     left: 0;
 }
 
+/* Media query for small screens and tablets */
 @media only screen and (max-width: 1340px) {
     #wrapper {
         margin: 0 !important;
     }
 }
 
+/* Media query for tiny screens and phones */
 @media only screen and (max-width: 1180px) {
     body {
         color: #1a1a1a;
@@ -395,6 +407,14 @@ strong {
     .hamburger .dropdown-content a.header {
         display: block;
         border-top: 1px solid #4a4a4a;
+    }
+
+    .donate.mobile {
+        display: block;
+    }
+
+    .donate.desktop {
+        display: none;
     }
 
     footer {

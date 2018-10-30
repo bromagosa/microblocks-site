@@ -37,8 +37,10 @@
     <body
         onresize="document.querySelector('.dropdown-content').style.display = window.matchMedia('(max-width: 1180px)').matches ? 'none' : 'block';"
     >
+
         <img class="ribbon" src="alpha-ribbon.png"/>
         <div id="flowers"></div>
+
         <div class="dropdown">
             <div class="hamburger" onclick="showDropdown(this);">
                 <i></i><i></i><i></i>
@@ -57,7 +59,15 @@
                     <a href="info.html#team">Team</a>
                     <a href="info.html#credits">Credits</a>
                     <a href="info.html#collaboration">Collaboration</a>
+                    <a href="info.html#sponsorship">Sponsorship</a>
                     <a href="info.html#contact">Contact</a>
+                    <div class="donate desktop">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="CHZLTCKCSFGTS">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate to MicroBlocks via PayPal">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,6 +161,13 @@ The programming environment includes a <em>compiler</em> that translates user sc
 <h2>The Snap<em>!</em> IDE</h2>
 <p><span></span></p>
 --!>
+            <div class="donate mobile">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="CHZLTCKCSFGTS">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate to MicroBlocks via PayPal">
+                </form>
+            </div>
         </div>
         <footer>
             <a href="index.html"><i class="bunny"></i></a>

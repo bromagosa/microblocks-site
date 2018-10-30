@@ -1,0 +1,7 @@
+<h1 id="sponsorship">Sponsorship</h1>
+<p><span>This is a not-for-profit project that lives out of the donations of individuals and organizations, and every little bit helps.</span></p>
+<p><span>MicroBlocks is a proud member of the <a href="https://sfconservancy.org" target="_blank">Software Freedom Conservancy</a> and, thus, can receive grants, sponsorships and tax-deductible donations from individuals and organizations.</span></p>
+<ul class="flex"><li><a href="http://sfconservancy.org" target="_blank"><img class="logo" src="sfc.png"/></a></li></ul>
+<p><span>If you enjoy this project and can spare some change, we invite you to contribute to it, and if you or your organization can help fund us, please go get in contact with our partners at the <a href="https://sfconservancy.org" target="_blank">Software Freedom Conservancy</a>.</span></p>
+<p><span>You can make a donation to this project <a onclick="document.querySelector('.donate.desktop form').submit()">here</a> via PayPal or credit card. If you would like to donate via wire transfer or sponsor this project in some other way, please get in touch with the <a href="https://sfconservancy.org" target="_blank">Software Freedom Conservancy</a> at <a href="mailto:supporters@tix.sfconservancy.org">supporters@tix.sfconservancy.org</a>.</span></p>
+<p><span>Thank you!</span></p>
