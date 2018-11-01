@@ -73,7 +73,7 @@
         </div>
         <header>
             <a href="#" class="logo"><img src="logo.png"/></a>
-            <img id="flying-bugs" src="flying-bugs.png"/>
+            <i id="flying-bugs"></i>
             <!-- hamburger menu -->
         </header>
         <div id="wrapper">
@@ -189,6 +189,7 @@ You're ready to code!</span></p>
                 flower.rotation = Math.random() * 90;
                 flower.scale = Math.random();
                 flower.style.transform = 'rotate(' + flower.rotation + 'deg) scale(' + flower.scale + ')';
+                flower.style.filter = 'hue-rotate(' + Math.random() * 360 + 'deg)'; 
                 flower.style.left = Math.random() * document.body.scrollWidth;
                 flower.style.top = Math.random() * document.body.scrollHeight * 1.2;
                 div.append(flower);

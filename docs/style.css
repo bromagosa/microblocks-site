@@ -75,10 +75,18 @@ header .logo img {
     padding-top: 2em;
 }
 
-img#flying-bugs {
+i#flying-bugs {
     position: absolute;
+    background: url("flying-bugs.png") left center;
+    height: 106px;
+    width: 335px;
     right: 5em;
     top: 4em;
+    animation: bugs 0.8s steps(6) infinite;
+}
+
+@keyframes bugs {
+    100% { background-position: -2017px; }
 }
 
 .hamburger {
@@ -266,6 +274,38 @@ footer i.bunny {
     100% { background-position: -576px; }
 }
 
+i.animation {
+    float: left;
+    display: inline-block;
+    width: 71px;
+    height: 88px;
+    animation: animate 0.8s steps(9) infinite;
+}
+
+i.animation.john {
+    background: url("john-animation.png") left center;
+}
+
+i.animation.jens {
+    background: url("jens-animation.png") left center;
+}
+
+i.animation.bernat {
+    background: url("bernat-animation.png") left center;
+}
+
+i.animation.kathy {
+    background: url("kathy-animation.png") left center;
+}
+
+i.animation.tom {
+    background: url("tom-animation.png") left center;
+}
+
+@keyframes animate {
+    100% { background-position: -640px; }
+}
+
 footer small {
     text-align: center;
     width: 100%;
@@ -367,7 +407,8 @@ strong {
         width: 80px;
     }
 
-    img#flying-bugs {
+    i#flying-bugs {
+        position: relative;
         display: none;
     }
 
