@@ -330,6 +330,7 @@ strong {
 }
 
 .youtube {
+    border-radius: 6px;
     background-color: #000;
     margin-bottom: 30px;
     position: relative;
