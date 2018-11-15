@@ -1,23 +1,23 @@
-<h1 id="nodeMCU">NodeMCU (Advanced!)</h1>
+<h1 id="nodeMCU">NodeMCU Setup (Advanced!)</h1>
+
+<p><span>These notes are for advanced users who want to work with MicroBlocks on
+the NodeMCU and are comfortable with the extra technical challenges involved.</span></p>
 
 <h2>The NodeMCU</h2>
 
-<p><span>The NodeMCU is an inexpensive board that includes a WiFi module, 9 useable digital I/O pins,
-and 1 analog input pin. NodeMCU boards are available on Amazon for as little as $8.
-The NodeMUC doesn't have many built in capabilties (just a user LED), and installing and using
+<p><span>The NodeMCU is an inexpensive board based on the Espressif ESP8266
+module that includes a WiFi radio, 32-bit processor, 8 useable digital
+I/O pins, and 1 analog input pin. NodeMCU boards are available on Amazon for as little as $6.
+The NodeMUC doesn't have many built in capabilities (just a user LED), and installing and using
 MicroBlocks on it is more complex than other boards such as the BBC micro:bit, so the NodeMCU
 is not recommended for beginners yet. (We're working on that!)</span></p>
-
-<p><span>These notes are for advanced
-users who want to get a head start on working with the MicroBlocks on the NodeMCU and
-are comfortable with the extra technical challenges involved.</span></p>
 
 <h2>NodeMCU Pins</h2>
 
 <p><span>There are a number of variations of the Node MCU and similar boards based on ESP8266.
-For my NodeMCU (a 12-E module), the MicroBlocks pin numbering does not match the numbers
-silk-screened onto the board. I assume different boards have different pin layouts, so
-you'll probably need to Google for a pinoout that matches your board.</span></p>
+On my NodeMCU (a 12-E module), the MicroBlocks pin numbering does not match the numbers
+silk-screened onto the board. Different boards may have different pin layouts, so
+you'll need to Google for a pinout that matches your board.</span></p>
 
 <p><span>For example, here's a pinout for a 12-E board from
 <a href="https://myelectronicslab.com/node-mcu-pinout-esp8266-12e-gpio-pins">here</a>:</span></p>
@@ -26,28 +26,26 @@ you'll probably need to Google for a pinoout that matches your board.</span></p>
 
 <p><span>MicroBlocks uses the "GPIO" pin numbers in this diagram. For example, toggling digital pin 16
 in MicroBlocks changes the state of the top-right pin in the picture (GPIO16). That also toggles
-the red user LED. The sense of the user LED is inverted from what you'd expect: setting pin 16
-to "false" turns the LED on.</span></p>
+the red user LED. The sense of the LED's on the NodeMCU is inverted:
+setting pin 16 to "false" turns the red LED on.</span></p>
 
-<p><span>Avoid using pins 1 and 3; those are used to communicate with the MicroBlocks IDE.
-Some of the other GPIO pins are also used internally and should be avoided.
-On the 12-E module, the following GPIO pins area available for use:</span></p>
+<p><span>Some of the NodeMCU GPIO pins are used internally and cannot be
+used with MicroBlocks. Attempting to read or write to those pins does nothing.
+Only the following digital GPIO pins are available for use with MicroBlocks:</span></p>
 
 <pre>
-Available GPIO pins: 0, 2 (blue LED), 4, 5, 12, 13, 14, 15, 16 (red LED)
+Digital GPIO pins: 2 (blue LED), 4, 5, 12, 13, 14, 15, 16 (red LED)
 </pre>
 
-<p><span>The Node MCU has one analog input pin, marked "ADC0" on the pinout (top-left in the picture).
+<p><span>The Node MCU has a single analog input pin, marked "ADC0"
+on the pinout (top-left in the picture).
 That pin is input-only; it can't be used as an output.</span></p>
-
-<p><span><b>Note:</b> It currently takes 5 to 15 seconds for the board to respond to MicroBlocks
-when you first start up.</span></p>
 
 <h2>Node MCU Setup</h2>
 
 <h3>1. Install esptool.py</h3>
 
-<p><span>To install MicroBlocks on a NodeMCU, you'll use a Python program called esptool.
+<p><span>To install MicroBlocks on a NodeMCU, you'll use a Python program called <em>esptool.py</em>.
 Different platforms use different commands to install Python programs. For Mac OS
 you can do the following:</span></p>
 
@@ -61,7 +59,7 @@ sudo pip install esptool
 <a href="https://bitbucket.org/john_maloney/smallvm/src/master/precompiled/vm.ino.nodemcu.bin">this page</a>
 on the MicroBlocks repository and click the "View raw" link.
 In most browsers, that will actually download, not view, the file.
-The file vm.ino.nodemcu.bin will appear in your Downloads folder.</span></p>
+The file <em>vm.ino.nodemcu.bin</em> will be downloaded.</span></p>
 
 <h3>3. Install MicroBlocks on your NodeMCU</h3>
 
@@ -71,14 +69,14 @@ The file vm.ino.nodemcu.bin will appear in your Downloads folder.</span></p>
 esptool.py write_flash 0 vm.ino.nodemcu.bin
 </pre>
 
-<p><span>You'll see a bunch of stuff print in the terminal as the install happens.
-It should find the correct serial port automatically. The entire process takes 25-30 seconds.</span></p>
+<p><span>It should find the correct serial port automatically.
+You'll see a bunch of stuff print in the terminal as the install happens.
+The entire process takes 25-30 seconds.</span></p>
 
 <h3>4. Connect</h3>
 
 <p><span>Start MicroBlocks, click the "Connect" button, and select the serial port.
-The indicator should turn green. It currently takes 5 to 15 seconds for the board to
-respond to MicroBlocks when you first power up or boot the NodeMCU.</span></p>
+The indicator should turn green.</span></p>
 
 <p><span>To verify that everything is working, try the following:</span></p>
 

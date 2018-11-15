@@ -1,14 +1,17 @@
 <h1 id="devices">Supported Devices</h1>
 <h2>Technical Requirements</h2>
-<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb of RAM and 40Kb of flash memory. For most supported boards, the virtual machine is built using the Arduino IDE and libraries, but it has been ported to vanilla Linux. In the past, it was also built using the mbed libraries, although that option is no longer maintained.</span></p>
+<p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers. It requires at least 8Kb of RAM and 50Kb of Flash memory. For most supported boards, the virtual machine is built using the Arduino IDE and libraries, but it has been ported to vanilla Linux. In the past, it was also built using the mbed libraries, although that option is no longer maintained.</span></p>
 <h2>MicroBlocks Capable Boards</h2>
 <p><span>The following boards are officially supported by the MicroBlocks system:</span></p>
 <ul class="list">
-    <li><a href="http://microbit.org">Micro:Bit</a></li>
+    <li><a href="http://microbit.org">BBC micro:bit</a></li>
     <li><a href="https://www.calliope.cc">Calliope</a></li>
-    <li><a href="http://www.nodemcu.com/index_en.html">NodeMCU</a></li>
     <li><a href="https://learn.adafruit.com/adafruit-circuit-playground-express">Adafruit Circuit Playground Express</a></li>
     <li><a href="https://learn.adafruit.com/introducing-itsy-bitsy-m0">Adafruit ItsyBitsy M0</a></li>
+    <li><a href="https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino">Adafruit Trinket M0</a></li>
+    <li><a href="https://www.adafruit.com/product/3501">Adafruit Gemma M0</a></li>
+    <li><a href="http://www.nodemcu.com/index_en.html">NodeMCU</a></li>
+    <li><a href="http://esp32.net">ESP32</a></li>
     <li><a href="https://store.arduino.cc/arduino-due">Arduino Due</a></li>
     <li><a href="https://store.arduino.cc/arduino-mkrzero">Arduino MKR Zero</a></li>
     <li><a href="https://store.arduino.cc/genuino-zero">Arduino Zero</a></li>

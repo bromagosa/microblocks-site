@@ -110,6 +110,14 @@
 </ul>
 <h1 id="setup">Setup</h1>
 
+<p><span>If you have a BBC micro:bit, Calliope mini, or AdaFruit Circuit Playground Express setup is easy!
+You can follow the setup instructions below or watch this movie:</span></p>
+
+<video width="500" controls>
+  <source src="MicroBlocksSetup.mp4" type="video/mp4">
+Movie showing the MicroBlocks setup procedure
+</video>
+
 <h2>Install serial drivers (Windows only)</h2>
 <p><span>When you plug in your board, Windows 10 should find and install the correct drivers. On earlier versions of Windows, you may need to manually install the drivers using one of the links below.</span></p>
 <p><span><b>Note:</b> Be sure to plug in your board board before installing the drivers.</span></p>
@@ -167,6 +175,30 @@ sudo usermod -G dialout -a YOUR_USER_NAME
 <p><span>As a quick test, click on the block:</span></p>
 <p><span><img src="SetUserLEDBlock.png" width="150" alt="SetUserLEDBlock.png"></span></p>
 <p><span>The user LED on your board should light up, showing that the board is connected. You're ready to code!</span></p>
+
+<h2>Advanced Setup for Other Boards</h2>
+
+<p><span>If you have an Adafruit ItsyBitsy, you can install MicroBlocks by drag-and-drop.
+First, download the precompiled binary,
+<a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.25/vm.itsybitsy.uf2">vm.itsybitsy.uf2</a>.
+Plug your ItsyBitsy into a USB port and double-click the tiny reset button
+on the board. The LED should turn green, and the ItsyBitsy should appear
+on your computer as a Flash drive. Drag and drop vm.itsybitsy.uf2 onto that drive.
+The VM will install, the Flash drive will eject itself, and you're good to go!</span></p>
+
+<p><span>MicroBlocks also runs on some microcontroller boards that are a bit
+more challenging to use. These boards may have additional features, such
+as WiFi or Bluetooth support, but they generally require the user to connect additional 
+electronic components to do interesting things. Since these boards do not support
+drag-and-drop installation of MicroBlocks, you must use the appropriate (and free!)
+installation software for that board, such esptool.py for NodeMCU and ESP32 boards
+or the Arduinio IDE for 32-bit Arduinos.</span></p>
+
+<ul class="list">
+    <li><a href="nodeMCUSetup.html">NodeMCU</a></li>
+    <li><a href="esp32Setup.html">ESP32</a></li>
+    <li><em>Coming soon: Installing MicroBlocks with the Arduino IDE</em></li>
+</ul>
             <div class="donate mobile">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">

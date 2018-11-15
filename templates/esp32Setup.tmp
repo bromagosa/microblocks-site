@@ -1,0 +1,57 @@
+<h1 id="ESP32">ESP32 Setup (Advanced!)</h1>
+
+<p><span>These notes are for advanced users who want to work with MicroBlocks on
+ESP32 boards and are comfortable with the extra technical challenges involved.</span></p>
+
+<h2>The ESP32</h2>
+
+<p><span>The <a href="http://esp32.net">ESP32</a> is a module from Espressif Systems that combines a 32-bit dual-core processor with WiFi and Bluetooth functionality. Boards based on this module are available for around $11 on Amazon. OddWires makes a nice ESP32 board along with a family of add-on boards called the <a href="https://www.oddwires.com/io/">IoT-Bus Io</a>.</span></p>
+
+<p><span>Installing and using MicroBlocks on ESP32 boards is more complex than other boards such as the BBC micro:bit, so the ESP32 is not yet recommended for beginners.</span></p>
+
+<h2>ESP32 Setup</h2>
+
+<h3>1. Install esptool.py</h3>
+
+<p><span>To install MicroBlocks on an ESP32 board, you'll use a Python program called
+<em>esptool.py</em>.
+Different platforms use different commands to install Python programs. For Mac OS
+you can do the following:</span></p>
+
+<pre>
+sudo pip install esptool
+</pre>
+
+<h3>2. Download the MicroBlocks virtual machine for the ESP32</h3>
+
+<p><span>To download the latest version, go to
+<a href="https://bitbucket.org/john_maloney/smallvm/src/master/precompiled/vm.ino.esp32.bin">here</a>
+and click the "View raw" link. In most browsers, that will actually download, not view, the file.
+The file <em>vm.ino.esp32.bin</em> will be downloaded.</span></p>
+
+<h3>3. Install MicroBlocks on your ESP32 </h3>
+
+<p><span>Plug in your ESP32 board and run:</span></p>
+
+<pre>
+esptool.py write_flash 0x10000 vm.ino.esp32.bin
+</pre>
+
+<p><span>It should find the correct serial port automatically.
+You'll see a bunch of stuff print in the terminal as the install happens.
+The entire process takes 40-45 seconds.</span></p>
+
+<p><span><em>Note: Some ESP32 boards require that you hold down a button in order
+install new firmware. Check the documentation for your board.</em></span></p>
+
+<h3>4. Connect</h3>
+
+<p><span>Start MicroBlocks, click the "Connect" button, and select the serial port.
+The indicator should turn green.</span></p>
+
+<p><span>To verify that everything is working, try the following:</span></p>
+
+<p><span><img src="SetUserLEDBlock.png" width="150" alt="SetUserLEDBlock.png"></span></p>
+
+<p><span>The user LED on your board should light up, showing that the board is connected.
+You're ready to code!</span></p>

@@ -1,5 +1,7 @@
 <h1 id="techspecs">How it Works</h1>
+
 <h2>The MicroBlocks Virtual Machine</h2>
+
 <h3>Instructions</h3>
 <p><span>MicroBlocks code is executed by a simple interpreter or <em>virtual machine</em> (VM) running on the microcontroller board. The instructions for this virtual machine are 32-bits consisting of an 8-bit operation (opcode) and a 24-bit operand:</p></span>
 
@@ -23,7 +25,7 @@ setLEDOp			// pop 'true' off the stack and set the state of the user LED to it
 <pre>
 mbTiltX				// pushes the value of the tilt X sensor
 pushImmediate 10		// pushes the number 10
-greaterThan			// remove the two arguments and pushes true if tilt-x is less than 10
+lessThan			// remove the two arguments and pushes true if tilt-x is less than 10
 setLEDOp			// pop a boolean value and and set the state of the user LED to it
 </pre>
 
@@ -31,24 +33,24 @@ setLEDOp			// pop a boolean value and and set the state of the user LED to it
 
 <p><span>MicroBlocks appears to run many scripts at the same time, but that is an illusion. The virtual machine actually runs a few instructions of one script, then a few instructions of the next script, and so on. It only executes one script at a time, but switches between those scripts (or "tasks") so quickly that they appear to be running simultaneously.</p></span>
 
-<p><span>Unlike many programming languages, MicroBlocks can only switch to the next task at certain well-defined points in the code: at the end of a loop or at an instruction that explicitly waits, such as "wait 10 milliseconds". This avoids many of the concurrency issues (or <em>race conditions</em>) that one encounters in other languages. It also means advanced users can implement their own higher-level concurrency mechanisms (e.g. locks, semaphores, or monitors) in MicroBlocks because a test followed by some action such as setting a flag cannot be interrupted by another MicroBlocks task partway through. (Such uninterruptible sequences are sometimes called <em>critical sections</em>. In MicroBlocks, every command sequence that does not contain a loop or a block that explicitly waits is an implicit critical section.)</p></span>
+<p><span>Unlike many programming languages, MicroBlocks can only switch to the next task at certain well-defined points in the code: at the end of a loop or at an instruction that explicitly waits, such as "wait 10 milliseconds". This avoids many of the concurrency issues (or <em>race conditions</em>) that one encounters in other languages. It also means advanced users can implement their own higher-level concurrency mechanisms (e.g. locks, semaphores, or monitors) in MicroBlocks because a test followed by some action such as setting a flag cannot be interrupted partway through by another MicroBlocks task. (Such uninterruptible sequences are sometimes called <em>critical sections</em>. In MicroBlocks, every command sequence that does not contain a loop or a block that explicitly waits is an implicit critical section.)</p></span>
 
-<p><span>Between running user scripts, the MicroBlocks virtual machine handles a few system chores. For example, it checks for incoming commands from the programming environment when the board is tethered. On some devices, it may also perform additional system tasks. For example, on the BBC micro:bit the virtual machine periodically updates the 5x5 LED display.</p></span>
+<p><span>Between running user scripts, the MicroBlocks virtual machine also takes care of system chores. For example, it checks for incoming commands from the programming environment when the board is tethered. On some devices, it also performs additional system tasks. For example, on the BBC micro:bit the virtual machine periodically updates the 5x5 LED display.</p></span>
 
 <h3>Protocol</h3>
 
-<p><span>The MicroBlocks VM communicates with IDEs and other types of software (such as the Mozilla Web of Things gateway) by means of a home brewed serial protocol.</span></p>
+<p><span>The MicroBlocks VM communicates with IDEs and other types of software (such as the Mozilla Web of Things gateway) by means of a simple serial protocol.</span></p>
 
 <p><span>You can find specifications for this protocol <a href="https://bitbucket.org/john_maloney/smallvm/src/master/SERIAL_PROTOCOL.md">here</a>.</span></p>
 
 <h2>The MicroBlocks Programming Environment (IDE)</h2>
 
-<p><span>There are currently two blocks-based programming environments for MicroBlocks, a stand-alone system based on <a href="https://gpblocks.org" target="_blank">GP</a> and one integrated into <a href="https://snap.berkeley.edu" target="_blank">Snap<em>!</em></a> that allows the MicroBlocks programs and Snap<em>!</em> programs to interact with each other when the board is tethered.
+<p><span>There are currently two blocks-based programming environments for MicroBlocks, a stand-alone system based on <a href="https://gpblocks.org" target="_blank">GP</a> and one integrated into <a href="https://snap.berkeley.edu" target="_blank">Snap<em>!</em></a> (under development) that allows the MicroBlocks programs and Snap<em>!</em> programs to interact with each other when the board is tethered.
 In the future, there could be other MicroBlocks programming environments, perhaps some using textual code representations rather than blocks.
 </span></p>
 
 <p><span>
-The programming environment includes a <em>compiler</em> that translates user scripts into a sequence of MicroBlocks opcodes and a code manager that downloads scripts to the board, starts and stops scripts, and keeps track of the running status of every script so it can display graphical feedback (e.g. a glowing border around scripts that are running). Both environments can display the instructions generated by the compiler, allowing users to see how their scripts get turned into low level <em>machine code</em> for the virtual machine.
+The programming environment includes a <em>compiler</em> that translates user scripts into a sequence of MicroBlocks opcodes and a code manager that downloads scripts to the board, starts and stops scripts, and keeps track of the running status of scripts so it can display graphical feedback (e.g. glowing borders around the scripts that are running). The IDE can also show the instructions generated by the compiler, allowing users to see how their scripts get turned into low level <em>machine code</em> for the virtual machine.
 </span></p>
 
 <!--
