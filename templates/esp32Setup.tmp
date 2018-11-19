@@ -22,14 +22,55 @@ you can do the following:</span></p>
 sudo pip install esptool
 </pre>
 
-<h3>2. Download the MicroBlocks virtual machine for the ESP32</h3>
+<p><span>
+Windows users could also try
+Flash Download Tool (ESP8266 & ESP32) available
+<a href="https://www.espressif.com/en/products/hardware/esp32/resources">here</a>,
+although the MicroBlocks team has not tested it.
+</span></p>
+
+<h3>2. Setup your ESP32 (first time only)</h3>
+
+<p><span>
+A new ESP32 needs to have three firmware files installed in Flash memory before it will boot: some hardware settings, the second stage bootloader (the primary one is in ROM), and a Flash
+memory partition table. You can download those three files from
+ <a href="https://bitbucket.org/john_maloney/smallvm/src/master/esp32">here</a>.
+</span></p>
+
+<p><span>Plug in your ESP32 board and run the following commands:</span></p>
+
+<pre>
+esptool.py erase_flash
+esptool.py write_flash 0xe00 boot_app0.bin
+esptool.py write_flash 0x1000 bootloader_dio_80m.bin
+esptool.py write_flash 0x8000 partitions.bin
+</pre>
+
+<p><span><em>Note: Some ESP32 boards require that you hold down a button in order
+install firmware. Check the documentation for your board.</em></span></p>
+
+<p><span>
+These files are fixed for a given ESP32 device, so once they've been installed
+you will usually not need to do this step again. You might need to reinstall the files
+if your Flash memory gets corrupted or, in some cases, if you program your board
+with another programming system (for example, one that uses an incompatible Flash
+partitioning).
+</span></p>
+
+<p><span>
+Further details about what these files are used for can be found
+<a href="https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/general-notes.html
+">here</a>.
+</span></p>
+
+<h3>3. Download the MicroBlocks virtual machine for the ESP32</h3>
 
 <p><span>To download the latest version, go to
 <a href="https://bitbucket.org/john_maloney/smallvm/src/master/precompiled/vm.ino.esp32.bin">here</a>
 and click the "View raw" link. In most browsers, that will actually download, not view, the file.
 The file <em>vm.ino.esp32.bin</em> will be downloaded.</span></p>
 
-<h3>3. Install MicroBlocks on your ESP32 </h3>
+<h3>4. Install MicroBlocks on your ESP32 </h3>
 
 <p><span>Plug in your ESP32 board and run:</span></p>
 
@@ -42,7 +83,7 @@ You'll see a bunch of stuff print in the terminal as the install happens.
 The entire process takes 40-45 seconds.</span></p>
 
 <p><span><em>Note: Some ESP32 boards require that you hold down a button in order
-install new firmware. Check the documentation for your board.</em></span></p>
+install firmware. Check the documentation for your board.</em></span></p>
 
 <h3>4. Connect</h3>
 
