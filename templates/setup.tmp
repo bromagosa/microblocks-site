@@ -82,7 +82,7 @@ as WiFi or Bluetooth support, but they generally require the user to connect add
 electronic components to do interesting things. Since these boards do not support
 drag-and-drop installation of MicroBlocks, you must use the appropriate (and free!)
 installation software for that board, such esptool.py for NodeMCU and ESP32 boards
-or the Arduinio IDE for 32-bit Arduinos.</span></p>
+or the Arduino IDE for 32-bit Arduinos.</span></p>
 
 <ul class="list">
     <li><a href="nodeMCUSetup.html">NodeMCU</a></li>
