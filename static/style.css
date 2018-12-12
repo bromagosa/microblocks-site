@@ -4,6 +4,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     font-family: roboto;
     color: #1a1a1a;
     background: linear-gradient(#fafafa, #d8ffff);
@@ -61,6 +64,7 @@ header {
     position: relative;
     padding: 1em;
     z-index: 1;
+    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -168,8 +172,10 @@ div#wrapper {
     padding: 1em;
     box-sizing: border-box;
     overflow: hidden;
+    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    flex: 1 0 auto;
 }
 
 div#wrapper a {
@@ -251,6 +257,7 @@ footer {
     background: url(field.svg);
     background-size: cover;
     color: #fafafa;
+    flex-shrink: 0;
 }
 
 footer .grass {

@@ -82,70 +82,27 @@
             <!-- hamburger menu -->
         </header>
         <div id="wrapper">
-<h1 id="intro">Introduction</h1>
-<p><span>
-    MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a> that runs right inside microcontroller boards such as the <a href="https://microbit.org" target="_blank">micro:bit</a>, the <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> and many <a href="https://arduino.cc" target="_blank">Arduino</a> boards.
-</span></p>
-<p><span>
-    The MicroBlocks system allows for dynamic, parallel and interactive programming, just like in Scratch, but with the twist of letting your projects run autonomously inside the board without being tethered to a computer. Thus, MicroBlocks provides the immediacy and liveness of tethered blocks programming, while supporting real-world applications that require precision timing, autonomous operation, or physically embedding the processor into projects. For example, one might write a program to record acceleration data, then embed the microcontroller and a small battery in a model rocket to explore G-forces at launch time.
-</span></p>
-<p><span>
-    In other words, MicroBlocks lets you program your boards exactly like you would in <a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>, <a href="http://s4a.cat" target="_blank">S4A</a> or the <a href="https://khanning.github.io/scratch-arduino-extension/" target="_blank">Arduino extension</a> for Scratch, and when you are happy with your program you can just unplug the board from your computer and everything will keep running as if by magic!
-</span></p>
-<p><span>
-    With MicroBlocks, you can build your own "real world" digital instruments, interactive jewelry, electronic games and measuring devices, all by using blocks.
-</span></p>
-<h1 id="examples">Examples</h1>
-<p><span></span></p>
-<ul class="flex videos">
-    <li>
-        <div class="youtube" data-embed="CqfFjn_kMc4"><div class="play-button"></div></div>
-        <h6>An electronic die</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="gPKXRC7CYu8"><div class="play-button"></div></div>
-        <h6>A square wave synthesizer</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="pTSedu0EbjY"><div class="play-button"></div></div>
-        <h6>A rock and roll party</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="fstO8b7i4pw"><div class="play-button"></div></div>
-        <h6>An animation with speed control</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="9mPrWXqf5nE"><div class="play-button"></div></div>
-        <h6>A bubble level</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="GiGiRHgWnKM"><div class="play-button"></div></div>
-        <h6>A rock-paper-scissors game</h6>
-    </li>
-    <li>
-        <div class="youtube" data-embed="xDQgpxCZkn4"><div class="play-button"></div></div>
-        <h6>A digital music box</h6>
-    </li>
+<h1 id="news">In the News</h1>
+<ul class="list">
+    <li><a href="https://www.citilab.eu/actualitat/2018/11/27/el-nou-robot-del-citilab-sestrena-a-les-escoles-de-cornella/">El nou robot del Citilab s’estrena a les escoles de Cornellà</a>, by Citilab (in Catalan)</li>
+    <li><a href="https://sfconservancy.org/news/2018/nov/20/microblocksjoin/">MicroBlocks Joins Conservancy</a>, by Software Freedom Conservancy</li>
+    <li><a href="https://helloworld.raspberrypi.org/issues/6">Introducing MicroBlocks</a>, by John Maloney, at the Hello World magazine</li>
+    <li><a href="https://www.scratchcatala.com/noticies/microblocks/">MicroBlocks: nou llenguatge de programació per a microcontroladors</a>, by Pau Nin (in Catalan)</li>
 </ul>
-<script>
-var videos = document.querySelectorAll('.youtube');
-for (var i = 0; i < videos.length; i++) { 
-    var thumb = 'https://img.youtube.com/vi/'+ videos[i].dataset.embed +'/sddefault.jpg',
-        image = new Image();
-
-    image.src = thumb;
-    image.addEventListener('load', function() { videos[i].appendChild(image); }(i));
-
-    videos[i].addEventListener('click', function() {
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('frameborder', '0');
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.setAttribute('src', 'https://www.youtube.com/embed/'+ this.dataset.embed +'?rel=0&showinfo=0&autoplay=1');
-        this.innerHTML = '';
-        this.appendChild(iframe);
-    });
-}
-</script>
+<h1 id="experiences">Experiences</h1>
+<ul class="list">
+    <li><a href="https://www.youtube.com/watch?v=PxqbOzcWqV8&list=PLEno-Cea7n-7IN1pxkdjpT64OwzyCAT2O">TecnoEstiu 2018 (YouTube playlist)</a> by Citilab</li>
+    <li><a href="http://faberresidency.com/microblocks-at-school/">Microblocks at school</a>, by Bernat Romagosa</li>
+    <li><a href="http://faberresidency.com/microblocks-in-the-pyrenees/">Microblocks in the Pyrenees</a>, by Tom Lauwers</li>
+    <li><a href="http://faberresidency.com/experience/">Our experience at the Faber residency</a>, by Bernat Romagosa</li>
+    <li><a href="http://faberresidency.com/evaluation-of-robotics-residency/">Evaluation of Robotics residency</a>, by Selçuk Balamir</li>
+</ul>
+<h1 id="tutorials">Tutorials</h1>
+<ul class="list">
+    <li><a href="https://gpblocks.org/hourOfCode2018/microbitIntro/">Introducing the BBC micro:bit: Animation and Buttons</a>, by John Maloney</li>
+    <li><a href="https://gpblocks.org/hourOfCode2018/microbitGame/">Make a "Falling Meteors" Game for the BBC micro:bit</a>, by John Maloney</li>
+    <li><a href="https://learn.adafruit.com/microblocks-circuitplayground-express-ornament">MicroBlocks and the Circuit Playground Express</a>, by Dave Astels</li>
+</ul>
             <div class="donate mobile">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">

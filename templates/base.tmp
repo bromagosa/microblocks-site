@@ -61,6 +61,11 @@
                     <a href="info.html#collaboration">Collaboration</a>
                     <a href="info.html#sponsorship">Sponsorship</a>
                     <a href="info.html#contact">Contact</a>
+                    <a class="header" href="stories.html">Stories</a>
+                    <a href="stories.html#news">In the News</a>
+                    <a href="stories.html#experiences">Experiences</a>
+                    <a href="stories.html#tutorials">Tutorials</a>
+
                     <div class="donate desktop">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
