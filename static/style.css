@@ -93,13 +93,6 @@ i#flying-bugs {
     100% { background-position: -2017px; }
 }
 
-.hamburger {
-    z-index: 1000;
-    position: fixed;
-    top: 5px;
-    right: 5px;
-}
-
 .hamburger i {
     display: none;
     width: 35px;
@@ -427,6 +420,7 @@ strong {
     .hamburger {
         background: #ecf9f9;
         z-index: 1000;
+        top: 5px;
         right: 5px;
         position: fixed;
     }
