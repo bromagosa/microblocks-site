@@ -85,7 +85,7 @@ installation software for that board, such esptool.py for NodeMCU and ESP32 boar
 or the Arduino IDE for 32-bit Arduinos.</span></p>
 
 <ul class="list">
-    <li><a href="nodeMCUSetup.html">NodeMCU</a></li>
-    <li><a href="esp32Setup.html">ESP32</a></li>
+    <li><a href="nodeMCUSetup">NodeMCU</a></li>
+    <li><a href="esp32Setup">ESP32</a></li>
     <li><em>Coming soon: Installing MicroBlocks with the Arduino IDE</em></li>
 </ul>
