@@ -398,6 +398,41 @@ strong {
     left: 0;
 }
 
+.event {
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.5em;
+    border-radius: 5px 0 5px 0;
+}
+
+.event h2 {
+    padding: 0;
+    padding-left: 0.2em;
+    margin-top: 0.5em;
+}
+
+.event .organizer,
+.event .date,
+.event .url,
+.event .location,
+.event .description {
+    margin-left: 0.2em;
+    display: block;
+}
+
+.event .url {
+    text-align: center;
+    margin: .5em;
+}
+
+.event .description span {
+    display: block;
+    padding-left: 0.25em;
+    font-style: italic;
+}
+
+
 /* Media query for small screens and tablets */
 @media only screen and (max-width: 1340px) {
     #wrapper {
