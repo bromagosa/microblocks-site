@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MicroBlocks: Small, Fast, Human Friendly</title>
+        <meta name="description" content="MicroBlocks is a dynamic, blocks-based language that runs right inside microcontrollers">
+        <meta name="author" content="Bernat Romagosa">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118134778-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118134778-1');
+        </script>
+
+        <script>
+            function showDropdown(menuElement) {
+                if (window.matchMedia('(max-width: 1180px)').matches) {
+                    menuElement.showing = !menuElement.showing;
+                } else {
+                    menuElement.showing = true; 
+                }
+
+                if (menuElement.showing) {
+                    menuElement.children.namedItem('content').style.display = 'block';
+                } else {
+                    menuElement.children.namedItem('content').style.display = 'none';
+                }
+            }
+        </script>
+    </head>
+    <body
+        onresize="document.querySelector('.dropdown-content').style.display = window.matchMedia('(max-width: 1180px)').matches ? 'none' : 'block';"
+    >
+
+        <img class="ribbon" src="alpha-ribbon.png"/>
+        <div id="flowers"></div>
+
+        <div class="dropdown">
+            <div class="hamburger" onclick="showDropdown(this);">
+                <i></i><i></i><i></i>
+                <div name="content" class="dropdown-content">
+                    <a class="header" href="index.html">Home</a>
+                    <a href="index.html#intro">Introduction</a>
+                    <a href="index.html#examples">Examples</a>
+                    <a class="header" href="download.html">Get MicroBlocks</a>
+                    <a href="download.html#download">Download Links</a>
+                    <a href="download.html#setup">Setup</a>
+                    <a class="header" href="tech.html">Technical Details</a>
+                    <a href="tech.html#source">Source</a>
+                    <a href="tech.html#devices">Supported Devices</a>
+                    <a href="tech.html#techspecs">How it Works</a>
+                    <a class="header" href="info.html">About</a>
+                    <a href="info.html#team">Team</a>
+                    <a href="info.html#credits">Credits</a>
+                    <a href="info.html#collaboration">Collaboration</a>
+                    <a href="info.html#sponsorship">Sponsorship</a>
+                    <a href="info.html#contact">Contact</a>
+                    <a class="header" href="events.html">Events</a>
+                    <a href="events.html#upcoming">Upcoming Events</a>
+                    <a href="events.html#newevent">Submit an Event</a>
+                    <a class="header" href="stories.html">Stories</a>
+                    <a href="stories.html#news">In the News</a>
+                    <a href="stories.html#experiences">Experiences</a>
+                    <a href="stories.html#tutorials">Tutorials</a>
+
+                    <div class="donate desktop">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="CHZLTCKCSFGTS">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate to MicroBlocks via PayPal">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="/" class="logo"><img src="logo.png"/></a>
+            <!-- CONSERVANCY CAMPAIGN, DECEMBER 2018
+            <a href="https://sfconservancy.org/supporter/"><img style="margin-top: 3em; width: 100%; height: auto;" src="ConservancyBanner2018.jpg" width="1200" height="150" border="0" alt="Conservancy, we love free software!"> </a>
+            -->
+            <i id="flying-bugs"></i>
+            <!-- hamburger menu -->
+        </header>
+        <div id="wrapper">
+<h1 id="upcoming">Upcoming Events</h1>
+<div class="events"></div>
+<script>
+    // Get all events from a Google Sheet
+    var url = 'https://sheets.googleapis.com/v4/spreadsheets/1Zd0MEe68i77bECHKtAqRTI8VGcmaJVNlDwLhySYgsWw/values/Respostes%20al%20formulari%201?key=AIzaSyBnrpDkEddq-GePUKlJXS_fV82ggNNmksg',
+        request = new XMLHttpRequest(),
+        eventsDiv = document.querySelector('.events');
+
+    request.open('GET', url);
+
+    request.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            if (this.status === 200 || this.status === 0) {
+                try {
+                    var rows = JSON.parse(this.response).values;
+                    rows.map(function (row) {
+                        // turn dates into actual dates
+                        var splitCell = row[5].split('/'); // date as DD/MM/YYYY
+                        row[0] = new Date(); // reuse unused row[0]
+                        row[0].setDate(splitCell[0]); // date means DOTM
+                        row[0].setMonth(splitCell[1] - 1); // months are 0-based
+                        row[0].setYear(splitCell[2]);
+                    });
+                    rows.splice(1).filter(
+                        function (row) {
+                            return new Date() <= row[0];
+                        }
+                    ).sort(
+                        function (a, b) {
+                            return a[0] > b[0];
+                        }).forEach(function (row) {
+                            if (row[9] === 'TRUE') { // event is approved
+
+                                newEvent(
+                                    row[1], // title
+                                    row[2], // organizer
+                                    row[3], // location
+                                    row[4], // URL
+                                    row[5], // date
+                                    row[6], // time
+                                    row[7]  // description
+                                );
+                            }
+                        }
+                    );
+                } catch (err) {
+                    // no events
+                }
+            }
+        }
+    };
+
+    request.send(null);
+    
+    function newEvent(
+        title,
+        organizer,
+        eventLocation,
+        url,
+        date,
+        time,
+        description
+    ) {
+        var eventDiv = document.createElement('div'),
+            titleH2 = document.createElement('h2'),
+            organizerSpan = document.createElement('span'),
+            locationSpan = document.createElement('span'),
+            urlAnchor = document.createElement('a'),
+            dateSpan = document.createElement('span'),
+            descriptionSpan = document.createElement('span');
+
+        eventDiv.classList.add('event');
+
+        titleH2.innerHTML = title;
+        titleH2.classList.add('title');
+        eventDiv.append(titleH2);
+
+        if (organizer) {
+            organizerSpan.innerHTML = '<strong>Organizer:</strong> ' + organizer;
+            organizerSpan.classList.add('organizer');
+            eventDiv.append(organizerSpan);
+        }
+
+        locationSpan.innerHTML = '<strong>Location:</strong> ' + eventLocation;
+        locationSpan.classList.add('location');
+        eventDiv.append(locationSpan);
+
+        dateSpan.innerHTML = '<strong>Date:</strong> ' + date;
+        dateSpan.classList.add('date');
+        eventDiv.append(dateSpan);
+
+        if (time) {
+            dateSpan.innerHTML += ', at ' + time;
+        }
+
+        if (description) {
+            descriptionSpan.innerHTML =
+                '<strong>Description:</strong><span>' + description + '</span>';
+            descriptionSpan.classList.add('description');
+            eventDiv.append(descriptionSpan);
+            if (url) {
+                urlAnchor.href = url;
+                urlAnchor.innerHTML = 'more information';
+                urlAnchor.classList.add('url');
+                descriptionSpan.append(urlAnchor);
+            }
+        }
+
+        eventsDiv.append(eventDiv);
+    };
+
+</script>
+<h1 id="new_event">Submit an Event</h1>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlLIGVubCgPM5Jd956xlNV6JkhI42gbLvTZ_vRgNlDQToULA/viewform?embedded=true" width="640" height="1584" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> 
+            <div class="donate mobile">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="CHZLTCKCSFGTS">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate to MicroBlocks via PayPal">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <a href="index.html"><i class="bunny"></i></a>
+            <small>&copy; <span class="year"></span> by <a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a>, <a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a> and <a href="http://romagosa.work" target="_blank">Bernat Romagosa</a>. MicroBlocks is free software, released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License v2.0</a>.</small>
+            <img class="grass" src="grass.png"/>
+        </footer>
+        <script>
+            var div = document.querySelector('#flowers'),
+                index = 0,
+                flowers = [];
+
+            for (var i = 0; i < 100; i++) {
+                var flower = document.createElement('img');
+                flower.src = 'flower.png';
+                flower.className = 'flower';
+                flower.rotation = Math.random() * 90;
+                flower.scale = Math.random();
+                flower.style.transform = 'rotate(' + flower.rotation + 'deg) scale(' + flower.scale + ')';
+                flower.style.filter = 'hue-rotate(' + Math.random() * 360 + 'deg)'; 
+                flower.style.left = Math.random() * document.body.scrollWidth;
+                flower.style.top = Math.random() * document.body.scrollHeight * 1.2;
+                div.append(flower);
+                flowers.push(flower)
+            }
+            document.onscroll = function () {
+                requestAnimationFrame(function () {
+                    flowers.forEach(function (flower) {
+                        flower.style.transform = 'rotate(' + flower.rotation * document.body.scrollTop * 0.05 + 'deg) scale(' + flower.scale + ')';
+                    });
+                    div.style.top = document.body.scrollTop * -1.2 + 'px';
+                    index += 10;
+                });
+            };
+
+            document.querySelector('.year').innerHTML = (new Date()).getFullYear();
+        </script>
+    </body>
+<html>
