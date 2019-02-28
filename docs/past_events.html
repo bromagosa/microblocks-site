@@ -92,14 +92,11 @@
         </header>
         <div id="wrapper">
 <script src="events.js"></script>
-<h1 id="upcoming">Upcoming Events</h1>
+<h1 id="past">Past Events</h1>
 <div class="events"></div>
-<p><span>Looking for past events? You can find them all <a href="past_events">here</a>.</span></p>
 <script>
-    new EventFetcher(document.querySelector('.events'), false);
+    new EventFetcher(document.querySelector('.events'), true);
 </script>
-<h1 id="new_event">Submit an Event</h1>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlLIGVubCgPM5Jd956xlNV6JkhI42gbLvTZ_vRgNlDQToULA/viewform?embedded=true" width="640" height="1584" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> 
             <div class="donate mobile">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
