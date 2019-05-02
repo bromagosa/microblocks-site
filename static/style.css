@@ -310,6 +310,10 @@ i.animation.tom {
     background: url("tom-animation.png") left center;
 }
 
+i.animation.amon {
+    background: url("amon-animation.png") left center;
+}
+
 @keyframes animate {
     100% { background-position: -640px; }
 }
