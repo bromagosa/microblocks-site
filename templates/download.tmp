@@ -1,5 +1,4 @@
-<h1 id="download">Download Links</h1>
-<a class="download-button">
+<a id="download" class="download-button">
     <div class="contents">
         <img class="pointing-bunny" src="pointing-bunny.png">
         <div class="text">
