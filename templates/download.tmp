@@ -1,34 +1,56 @@
 <h1 id="download">Download Links</h1>
-<p><small>Current version: <strong>0.1.36</strong>, released on <strong>May 7, 2019</strong>. Other versions are <a href="https://github.com/bromagosa/microblocks-site/releases">here</a>.</small></p>
-<p><span>Download MicroBlocks for your platform:</span></p>
-<h3>Installers</h3>
-<ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/microBlocks.setup.exe">Windows</a> (installer)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/MicroBlocks.zip">MacOS</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
-</ul>
-<h3>Standalone executables</h3>
-<ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-win.exe">Windows</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-linux64bit">Linux, 64-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-linux32bit">Linux, 32-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-raspberryPi">Raspberry Pi</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/ublocks-mac">MacOS</a></li>
-</ul>
-<h3>Chromebook App</h3>
-<ul class="list">
-  <li><a href=https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0">Chromebook App</a></li>
-</ul>
-<h3>Precompiled Virtual Machines</h3>
-<p><small><strong>Note:</strong> You probably do not need to download these.</small></p>
-<ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/vm.ino.BBCmicrobit.hex">BBC micro:bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/vm.ino.Calliope.hex">Calliope</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/vm.itsybitsy.uf2">Adafruit Itsy Bitsy</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/vm.ino.nodemcu.bin">NodeMCU</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/vm.ino.esp32.bin">Generic ESP32</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.36/vm.ino.citilab-ed1.bin">Citilab ED1</a></li>
-</ul>
+<a class="download-button">
+    <div class="contents">
+        <img class="pointing-bunny" src="pointing-bunny.png">
+        <div class="text">
+            <p><span>Download MicroBlocks for</span></p>
+            <p><span class="system"></span></p>
+        </div>
+    </div>
+</a>
+<br>
+<p><small>Current version: <strong>0.1.36</strong>, released on <strong>May 7, 2019</strong>.</small></p>
+<p><a href="additional_downloads">Additional download links</a></p>
+
+<script>
+var system,
+    version = '0.1.36'
+    baseURL = 'https://github.com/bromagosa/microblocks-site/releases/download/v' + version + '/',
+    filenames = {
+        'Windows': 'microBlocks.setup.exe',
+        'Mac OS': 'MicroBlocks.zip',
+        'Raspberry Pi (Raspbian)': 'ublocks-armhf.deb',
+        'Linux (64 bit)': 'ublocks-amd64.deb',
+        'Linux (32 bit)': 'ublocks-i386.deb'
+    };
+
+// Let's detect the host system
+if (window.navigator.userAgent.indexOf('Windows')!= -1) {
+    system ='Windows';
+} else if (window.navigator.userAgent.indexOf('Mac') != -1) {
+    system ='Mac OS';
+} else if (window.navigator.userAgent.indexOf('Linux') != -1) {
+    if (window.navigator.userAgent.indexOf('arm') != -1) {
+        system = 'Raspberry Pi (Raspbian)';
+    } else if (window.navigator.userAgent.indexOf('64') != -1) {
+        system = 'Linux (64 bit)';
+    } else {
+        system = 'Linux (32 bit)';
+    }
+} else if (window.navigator.userAgent.indexOf('CrOS') != -1) {
+    system ='Chrome OS';
+}
+
+if (!system) {
+    document.location.href = 'additional_downloads';
+}
+
+document.querySelector('.system').innerText = system;
+
+if (system !== 'Chrome OS') {
+    document.querySelector('.download-button').href = baseURL + filenames[system];
+} else {
+    document.querySelector('.download-button').href = 'https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0'
+}
+
+</script>
