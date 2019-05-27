@@ -343,6 +343,7 @@ strong {
 
 div#wrapper a.download-button::after {
     content: '';
+    margin: 0;
 }
 
 div#wrapper a.download-button::before {
@@ -356,29 +357,36 @@ div#wrapper a.download-button:hover {
 div#wrapper a.download-button {
     padding: 1em;
     display: block;
-    width: 80%;
+    width: 50%;
     background: rgba(0, 255, 255, 0.2);
     border-radius: 10px;
     font-style: normal;
-    margin: 0 auto;
+    margin-left: 1.5em;
+}
+
+a.download-button .pointing-bunny {
+    height: 90px;
 }
 
 a.download-button .contents {
     display: flex;
-    width: 60%;
     align-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
 }
 
 a.download-button .text {
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.3em;
 } 
+
+a.download-button p {
+    margin: 0;
+    padding: 0;
+}
 
 a.download-button .system {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .youtube {
