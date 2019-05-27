@@ -1,5 +1,5 @@
 <h1 id="examples">Examples</h1>
-<p><span></span></p>
+<h2>Vídeos</h2>
 <ul class="flex videos">
     <li>
         <div class="youtube" data-embed="CqfFjn_kMc4"><div class="play-button"></div></div>
@@ -29,6 +29,15 @@
         <div class="youtube" data-embed="xDQgpxCZkn4"><div class="play-button"></div></div>
         <h6>A digital music box</h6>
     </li>
+</ul>
+<h2>MicroBlocks Activity Cards</h2>
+<span><p>Get started with MicroBlocks with our activity cards!</p></span>
+<ul class="list">
+    <li><a href="cards/Microblocks_Cards_v2_01.pdf">Getting Started with MicroBlocks</a> (micro:bit, Circuit Playground Express)</li>
+    <li><a href="cards/Microblocks_Cards_v2_02.pdf">Playing with NeoPixels</a> (Circuit Playground Express)</li>
+    <li><a href="cards/Microblocks_Cards_v2_03.pdf">Playing with Remotes</a> (Circuit Playground Express)</li>
+    <li><a href="cards/Microblocks_Cards_v2_04.pdf">Playing with Sounds</a> (Circuit Playground Express)</li>
+    <li><a href="cards/Microblocks_Cards_v2_05.pdf">Playing with Buttons</a> (micro:bit, Circuit Playground Express)</li>
 </ul>
 <script>
 var videos = document.querySelectorAll('.youtube');
