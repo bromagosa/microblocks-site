@@ -8,12 +8,12 @@
     </div>
 </a>
 <br>
-<p><small>Current version: <strong>0.1.40</strong>, released on <strong>May 31, 2019</strong>.</small></p>
+<p><small>Current version: <strong>0.1.41</strong>, released on <strong>June 1, 2019</strong>.</small></p>
 <p><a href="additional_downloads">Additional download links</a></p>
 
 <script>
 var system,
-    version = '0.1.40'
+    version = '0.1.41'
     baseURL = 'https://github.com/bromagosa/microblocks-site/releases/download/v' + version + '/',
     filenames = {
         'Windows': 'microBlocks.setup.exe',
