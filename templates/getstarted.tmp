@@ -1,0 +1,14 @@
+<h1 id="getstarted">Get Started Now!</h1>
+
+<p><span>If you have a BBC micro:bit, Calliope mini, AdaFruit Circuit Playground Express, M5Stack or NodeMCU, getting started is easy:</span></p>
+
+<div class="video">
+    <video width="500" controls>
+        <source src="MicroBlocksSetup.mp4" type="video/mp4">
+        Movie showing the MicroBlocks setup procedure
+    </video>
+</div>
+
+<br>
+<br>
+<p><span>Take a look at our <a href="cards/MicroBlocks-activity-cards.pdf">MicroBlocks Activity Cards for the BBC micro:bit</a>, or check out the <a href="stories#tutorials">Tutorials</a> section for extensive documentation and examples.</span></p>
