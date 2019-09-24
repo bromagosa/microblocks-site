@@ -2,6 +2,9 @@
 <h2>MicroBlocks Activity Cards</h2>
 <span><p>Get started with MicroBlocks with our activity cards!</p></span>
 <ul class="list">
+    <li><a href="cards/MicroBlocks-activity-cards.pdf">MicroBlocks Activity Cards for the BBC micro:bit</a></li>
+</ul>
+<ul class="list">
     <li><a href="cards/Microblocks_Cards_v2_01.pdf">Getting Started with MicroBlocks</a> (micro:bit, Circuit Playground Express)</li>
     <li><a href="cards/Microblocks_Cards_v2_02.pdf">Playing with NeoPixels</a> (Circuit Playground Express)</li>
     <li><a href="cards/Microblocks_Cards_v2_03.pdf">Playing with Remotes</a> (Circuit Playground Express)</li>
@@ -16,4 +19,5 @@
     <li><a href="https://gpblocks.org/hourOfCode2018/microbitGame/">Make a "Falling Meteors" Game for the BBC micro:bit</a>, by John Maloney</li>
     <li><a href="https://learn.adafruit.com/microblocks-circuitplayground-express-ornament">MicroBlocks and the Circuit Playground Express</a>, by Dave Astels</li>
     <li><a href="http://wiki.edutec.citilab.eu/Introducci%C3%B3_a_MicroBlocks">Introducció a MicroBlocks</a>, by Edutec, Citilab (in Catalan)</li>
+    <li><a href="https://wiki.galpon.org/Instalación_e_recoñecemento_das_placas_CircuitPlayground_Express_—_Python_%2B_MicroBlocks_—_galego_%2B_castellano">Instalación e recoñecemento das placas CircuitPlayground Express</a>, by GALPon (in Galician and Spanish)</li>
 </ul>

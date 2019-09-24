@@ -70,6 +70,7 @@
                     <a href="stories#news">In the News</a>
                     <a href="stories#experiences">Experiences</a>
                     <a href="stories#tutorials">Tutorials</a>
+                    <a href="stories#examples">Examples</a>
 
                     <div class="donate desktop">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -114,6 +115,9 @@
 <h2>MicroBlocks Activity Cards</h2>
 <span><p>Get started with MicroBlocks with our activity cards!</p></span>
 <ul class="list">
+    <li><a href="cards/MicroBlocks-activity-cards.pdf">MicroBlocks Activity Cards for the BBC micro:bit</a></li>
+</ul>
+<ul class="list">
     <li><a href="cards/Microblocks_Cards_v2_01.pdf">Getting Started with MicroBlocks</a> (micro:bit, Circuit Playground Express)</li>
     <li><a href="cards/Microblocks_Cards_v2_02.pdf">Playing with NeoPixels</a> (Circuit Playground Express)</li>
     <li><a href="cards/Microblocks_Cards_v2_03.pdf">Playing with Remotes</a> (Circuit Playground Express)</li>
@@ -128,7 +132,58 @@
     <li><a href="https://gpblocks.org/hourOfCode2018/microbitGame/">Make a "Falling Meteors" Game for the BBC micro:bit</a>, by John Maloney</li>
     <li><a href="https://learn.adafruit.com/microblocks-circuitplayground-express-ornament">MicroBlocks and the Circuit Playground Express</a>, by Dave Astels</li>
     <li><a href="http://wiki.edutec.citilab.eu/Introducci%C3%B3_a_MicroBlocks">Introducció a MicroBlocks</a>, by Edutec, Citilab (in Catalan)</li>
+    <li><a href="https://wiki.galpon.org/Instalación_e_recoñecemento_das_placas_CircuitPlayground_Express_—_Python_%2B_MicroBlocks_—_galego_%2B_castellano">Instalación e recoñecemento das placas CircuitPlayground Express</a>, by GALPon (in Galician and Spanish)</li>
 </ul>
+<h1 id="examples">Examples</h1>
+<ul class="flex videos">
+    <li>
+        <div class="youtube" data-embed="CqfFjn_kMc4"><div class="play-button"></div></div>
+        <h6>An electronic die</h6>
+    </li>
+    <li>
+        <div class="youtube" data-embed="gPKXRC7CYu8"><div class="play-button"></div></div>
+        <h6>A square wave synthesizer</h6>
+    </li>
+    <li>
+        <div class="youtube" data-embed="pTSedu0EbjY"><div class="play-button"></div></div>
+        <h6>A rock and roll party</h6>
+    </li>
+    <li>
+        <div class="youtube" data-embed="fstO8b7i4pw"><div class="play-button"></div></div>
+        <h6>An animation with speed control</h6>
+    </li>
+    <li>
+        <div class="youtube" data-embed="9mPrWXqf5nE"><div class="play-button"></div></div>
+        <h6>A bubble level</h6>
+    </li>
+    <li>
+        <div class="youtube" data-embed="GiGiRHgWnKM"><div class="play-button"></div></div>
+        <h6>A rock-paper-scissors game</h6>
+    </li>
+    <li>
+        <div class="youtube" data-embed="xDQgpxCZkn4"><div class="play-button"></div></div>
+        <h6>A digital music box</h6>
+    </li>
+</ul>
+<script>
+var videos = document.querySelectorAll('.youtube');
+for (var i = 0; i < videos.length; i++) { 
+    var thumb = 'https://img.youtube.com/vi/'+ videos[i].dataset.embed +'/sddefault.jpg',
+        image = new Image();
+
+    image.src = thumb;
+    image.addEventListener('load', function() { videos[i].appendChild(image); }(i));
+
+    videos[i].addEventListener('click', function() {
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/'+ this.dataset.embed +'?rel=0&showinfo=0&autoplay=1');
+        this.innerHTML = '';
+        this.appendChild(iframe);
+    });
+}
+</script>
             <div class="donate mobile">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">

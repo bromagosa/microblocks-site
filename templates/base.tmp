@@ -70,6 +70,7 @@
                     <a href="stories#news">In the News</a>
                     <a href="stories#experiences">Experiences</a>
                     <a href="stories#tutorials">Tutorials</a>
+                    <a href="stories#examples">Examples</a>
 
                     <div class="donate desktop">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
