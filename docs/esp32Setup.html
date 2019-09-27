@@ -91,18 +91,77 @@
             <!-- hamburger menu -->
         </header>
         <div id="wrapper">
-<h1 id="ESP32">ESP32 Setup (Advanced!)</h1>
+<h1 id="ESP32">ESP32 Setup</h1>
 
-<p><span>These notes are for advanced users who want to work with MicroBlocks on
+<p><span>These notes are for users who want to work with MicroBlocks on
 ESP32 boards and are comfortable with the extra technical challenges involved.</span></p>
 
 <h2>The ESP32</h2>
 
-<p><span>The <a href="http://esp32.net">ESP32</a> is a module from Espressif Systems that combines a 32-bit dual-core processor with WiFi and Bluetooth functionality. Boards based on this module are available for around $11 on Amazon. OddWires makes a nice ESP32 board along with a family of add-on boards called the <a href="https://www.oddwires.com/io/">IoT-Bus Io</a>.</span></p>
+<p><span>The <a href="http://esp32.net">ESP32</a> is a module from Espressif Systems that
+combines a 32-bit dual-core processor with WiFi and Bluetooth functionality. Boards based
+on this module are available for around $11 on Amazon. OddWires makes a nice ESP32 board
+along with a family of add-on boards called the
+<a href="https://www.oddwires.com/io/">IoT-Bus Io</a>.
+MicroBlocks is supported on several other ESP32 boards, including the ED1 board from
+Citilab in Barcelona and the M5Stack.
+</span></p>
 
-<p><span>Installing and using MicroBlocks on ESP32 boards is more complex than other boards such as the BBC micro:bit, so the ESP32 is not yet recommended for beginners.</span></p>
+<h2>Prepare your system</h3>
 
-<h2>ESP32 Setup</h2>
+<p><span>Install the serial driver, following the directions for your board
+<a href=" https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html">here</a>.
+</span></p>
+
+<p><span>On Linux, install <a href=" https://pythonhosted.org/pyserial/">PySerial</a>
+and add yourself to the "dialout" group by running this in a terminal:
+<pre>
+sudo usermod -G dialout -a `whoami`
+</pre>
+
+</span></p>
+
+<h2>Easy Setup using the MicroBlocks IDE</h2>
+
+<p><span>The easiest way to install MicroBlocks on one of the supported boards is to use
+the MicroBlocks IDE.
+</span></p>
+
+<p><span>
+<strong>Chromebook note</strong>: Currently it is
+not possible install the MicroBlocks firmware on ESP32 or ESP8266 boards from a Chromebook.
+However, a Windows, Mac, or Linux laptop can be used to install the MicroBlocks firmware,
+and then the board can be used with MicroBlocks on Chromebooks.
+</span></p>
+
+<p><span>First, prepare your system following the instructions above and plug in your board.
+Then, select <em>update firmware on board</em> from the MicroBlocks menu:
+</span></p>
+
+<p><span><img src="UpdateFirmware.png" width="250" alt="UpdateFirmware.png"></span></p>
+
+<p><span>The installation process usually takes 20-30 seconds.
+When it is done, the indicator should turn green. If it does not,
+try unplugging and replugging the board.
+</span></p>
+
+<p><span>To verify that everything is working, try the following:</span></p>
+
+<p><span><img src="SetUserLEDBlock.png" width="150" alt="SetUserLEDBlock.png"></span></p>
+
+<p><span>The user LED on your board should light up, showing that the board is connected.
+You're ready to code!</span></p>
+
+<p><span><strong>Note:</strong> If your LED doesn't light up it may be because your board
+uses a different pin for the user LED. You can use the "say" block to check that MicroBlocks
+is working.
+</span></p>
+
+<h2>Manual Setup with ESPTool (advanced!)</h2>
+
+<p><span>Manually installing and MicroBlocks on ESP32 boards is more complex than using
+the IDE, but advanced users may find these instructions of interest.
+</span></p>
 
 <h3>1. Install esptool.py</h3>
 
@@ -116,10 +175,9 @@ sudo pip install esptool
 </pre>
 
 <p><span>
-Windows users could also try
-Flash Download Tool (ESP8266 & ESP32) available
+Windows users might also try the Flash Download Tool (ESP8266 & ESP32) available
 <a href="https://www.espressif.com/en/products/hardware/esp32/resources">here</a>,
-although the MicroBlocks team has not tested it.
+although the MicroBlocks team has not tested that path.
 </span></p>
 
 <h3>2. Setup your ESP32 (first time only)</h3>
@@ -130,17 +188,26 @@ memory partition table. You can download those three files from
  <a href="https://bitbucket.org/john_maloney/smallvm/src/master/esp32">here</a>.
 </span></p>
 
-<p><span>Plug in your ESP32 board and run the following commands:</span></p>
+<p><span>
+<strong>Important! Make sure the MicroBlocks IDE is not running before proceeding.
+It interferes with esptool.py.</strong>
+</span></p>
+
+<p><span>
+Plug in your ESP32 board and run the following commands:</span></p>
 
 <pre>
 esptool.py erase_flash
-esptool.py write_flash 0xe00 boot_app0.bin
-esptool.py write_flash 0x1000 bootloader_dio_80m.bin
-esptool.py write_flash 0x8000 partitions.bin
+esptool.py -b 921600 write_flash 0x1000 bootloader_dio_40m.bin 0x8000 partitions.bin 0xe000 boot_app0.bin
 </pre>
 
-<p><span><em>Note: Some ESP32 boards require that you hold down a button in order
-install firmware. Check the documentation for your board.</em></span></p>
+<p><span>It should find the correct serial port automatically.
+You'll see a bunch of stuff print in the terminal as the install happens.
+The entire process takes 40-60 seconds.</span></p>
+
+<p><span><em>Note: Some ESP32 boards require that you hold down a button (often marked "prog") in order
+install firmware. Check the documentation for your board.
+</em></span></p>
 
 <p><span>
 These files are fixed for a given ESP32 device, so once they've been installed
@@ -156,14 +223,20 @@ Further details about what these files are used for can be found
 ">here</a>.
 </span></p>
 
-<h3>3. Download the MicroBlocks virtual machine for the ESP32</h3>
+<h3>3. Download the MicroBlocks firmware for your ESP32</h3>
 
-<p><span>To download the latest version, go to
-<a href="https://bitbucket.org/john_maloney/smallvm/src/master/precompiled/vm.ino.esp32.bin">here</a>
+<p><span>Download the firmware for your your ESP32 board (e.g. <em>Generic ESP32</em>) from
+<a href="http://microblocks.fun/additional_downloads">here</a>
 and click the "View raw" link. In most browsers, that will actually download, not view, the file.
-The file <em>vm.ino.esp32.bin</em> will be downloaded.</span></p>
+For example, for a generic ESP32 board, the file <em>vm.ino.esp32.bin</em> will be downloaded.
+</span></p>
 
-<h3>4. Install MicroBlocks on your ESP32 </h3>
+<h3>4. Install the firmware</h3>
+
+<p><span>
+<strong>Important! Make sure the MicroBlocks IDE is not running before proceeding.
+It interferes with esptool.py.</strong>
+</span></p>
 
 <p><span>Plug in your ESP32 board and run:</span></p>
 
@@ -171,24 +244,10 @@ The file <em>vm.ino.esp32.bin</em> will be downloaded.</span></p>
 esptool.py write_flash 0x10000 vm.ino.esp32.bin
 </pre>
 
-<p><span>It should find the correct serial port automatically.
+<p><span>Again, esptool should find the correct serial port automatically.
 You'll see a bunch of stuff print in the terminal as the install happens.
-The entire process takes 40-45 seconds.</span></p>
-
-<p><span><em>Note: Some ESP32 boards require that you hold down a button in order
-install firmware. Check the documentation for your board.</em></span></p>
-
-<h3>4. Connect</h3>
-
-<p><span>Start MicroBlocks, click the "Connect" button, and select the serial port.
-The indicator should turn green.</span></p>
-
-<p><span>To verify that everything is working, try the following:</span></p>
-
-<p><span><img src="SetUserLEDBlock.png" width="150" alt="SetUserLEDBlock.png"></span></p>
-
-<p><span>The user LED on your board should light up, showing that the board is connected.
-You're ready to code!</span></p>
+The entire process takes 20-30 seconds.
+</span></p>
             <div class="donate mobile">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
