@@ -1,20 +1,20 @@
 <h1 id="download">Additional download Links</h1>
-<p><small>Current version: <strong>0.2.3</strong>, released on <strong>September 16, 2019</strong>.</small></p>
+<p><small>Current version: <strong>0.2.4</strong>, released on <strong>October 11, 2019</strong>.</small></p>
 <h3>Installers</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/microBlocks.setup.exe">Windows</a> (installer)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/MicroBlocks.zip">MacOS</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/microBlocks.setup.exe">Windows</a> (installer)</li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/MicroBlocks.zip">MacOS</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
 </ul>
 <h3>Standalone executables</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-win.exe">Windows</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-linux64bit">Linux, 64-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-linux32bit">Linux, 32-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-raspberryPi">Raspberry Pi</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/ublocks-mac">MacOS</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-win.exe">Windows</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-linux64bit">Linux, 64-bit</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-linux32bit">Linux, 32-bit</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-raspberryPi">Raspberry Pi</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/ublocks-mac">MacOS</a></li>
 </ul>
 <h3>Chromebook App</h3>
 <ul class="list">
@@ -22,13 +22,13 @@
 </ul>
 <h3>Precompiled Virtual Machines</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/vm.ino.BBCmicrobit.hex">BBC micro:bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/vm.ino.Calliope.hex">Calliope</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/vm.itsybitsy.uf2">Adafruit Itsy Bitsy</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/vm.ino.nodemcu.bin">NodeMCU</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/vm.ino.esp32.bin">Generic ESP32</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.3/vm.ino.citilab-ed1.bin">Citilab ED1</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/vm.ino.BBCmicrobit.hex">BBC micro:bit</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/vm.ino.Calliope.hex">Calliope</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/vm.itsybitsy.uf2">Adafruit Itsy Bitsy</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/vm.ino.nodemcu.bin">NodeMCU</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/vm.ino.esp32.bin">Generic ESP32</a></li>
+    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.2.4/vm.ino.citilab-ed1.bin">Citilab ED1</a></li>
 </ul>
 <h3>Previous versions</h3>
 <ul class="list">
