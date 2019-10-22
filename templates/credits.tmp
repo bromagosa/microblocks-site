@@ -8,8 +8,10 @@
     <li><span><em>Cobie van de Ven</em> contributed the Dutch translation.</span></li>
     <li><span><em>Turgut Güneysu</em> contributed the Turkish translation.</span></li>
     <li><span><em>Mel Azzi</em> contributed the Arabic translation.</span></li>
+    <li><span><em>Mel Azzi</em> also contributed support for RTL languages.</span></li>
     <li><span><em>Ozoda Ismailova</em> contributed the Uzbek translation.</span></li>
     <li><span><em>Miguel Bouzada</em> contributed the Galician translation.</span></li>
+    <li><span><em>José García</em> contributed several optimizations and enhancements for the ED1 board.</span></li>
 </ul>
 <p><span>The MicroBlocks IDE includes the following packages and libraries:</span></p>
 <ul class="list">
