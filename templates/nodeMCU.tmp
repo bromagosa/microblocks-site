@@ -56,9 +56,8 @@ sudo pip install esptool
 <h3>2. Download the MicroBlocks virtual machine for the NodeMCU</h3>
 
 <p><span>To download the latest version, go to
-<a href="https://bitbucket.org/john_maloney/smallvm/src/master/precompiled/vm.ino.nodemcu.bin">this page</a>
-on the MicroBlocks repository and click the "View raw" link.
-In most browsers, that will actually download, not view, the file.
+<a href="http://microblocks.fun/additional_downloads">this page</a>
+and click the [NodeMCU link.
 The file <em>vm.ino.nodemcu.bin</em> will be downloaded.</span></p>
 
 <h3>3. Install MicroBlocks on your NodeMCU</h3>
