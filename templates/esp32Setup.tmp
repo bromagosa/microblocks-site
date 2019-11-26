@@ -133,9 +133,8 @@ Further details about what these files are used for can be found
 <h3>3. Download the MicroBlocks firmware for your ESP32</h3>
 
 <p><span>Download the firmware for your your ESP32 board (e.g. <em>Generic ESP32</em>) from
-<a href="http://microblocks.fun/additional_downloads">here</a>
-and click the "View raw" link. In most browsers, that will actually download, not view, the file.
-For example, for a generic ESP32 board, the file <em>vm.ino.esp32.bin</em> will be downloaded.
+<a href="http://microblocks.fun/additional_downloads">here</a>.
+The downloaded file will end in .bin (e.g.<em>vm.ino.esp32.bin</em>).
 </span></p>
 
 <h3>4. Install the firmware</h3>
