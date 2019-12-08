@@ -18,6 +18,25 @@ format under the Creative Commons CC BY-SA 4.0 license
 <a href="https://drive.google.com/drive/folders/1_zaKlpiEaTIvscpz3nMVw3MClHevXFOD?usp=sharing[]">here</a>.
 </p></span>
 
+<h2>Mozilla IoT Activity Cards</h2>
+<span><p>These activities connect MicroBlocks projects to the internet using Mozilla's free, open-source
+WebThing Gateway software running on a Raspberry Pi, allowing them to be controlled securely from any web browser.
+</p></span>
+
+<ul class="list">
+    <li>
+    	<a href="cards/WOT_WebLight.pdf">Web Light</a> (micro:bit, Circuit Playground Express)
+    	<a href="videos/WebLight.mp4">video</a>
+    </li>
+    <li>
+    	<a href="cards/WOT_WebButton.pdf">Web Button</a> (micro:bit, Circuit Playground Express)
+    </li>
+    <li>
+    	<a href="cards/WOT_Run-in-placeRace.pdf">Run-in-place Race</a> (micro:bit, Circuit Playground Express)
+    	<a href="videos/RunInPlaceRaceV3.mp4">video</a>
+    </li>
+</ul>
+
 <h2>Other Tutorials</h2>
 <ul class="list">
     <li><a href="https://sites.google.com/clongowes.net/microblocksbasicexamples/home">A Large Collection of Basic Examples to Show Sensors in Action</a>, by John Hegarty</li>
