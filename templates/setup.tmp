@@ -3,10 +3,9 @@
 <p><span>If you have a BBC micro:bit, Calliope mini, AdaFruit Circuit Playground Express, M5Stack or NodeMCU setup is easy!
 You can follow the setup instructions below or watch this movie:</span></p>
 
-<video width="500" controls>
-  <source src="MicroBlocksSetup.mp4" type="video/mp4">
-Movie showing the MicroBlocks setup procedure
-</video>
+<p>
+    <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://diode.zone/videos/embed/62706ca1-df7f-47d2-ad47-7989999266ee" frameborder="0" allowfullscreen>Movie showing the MicroBlocks setup procedure</iframe>
+</p>
 
 <h2>Install serial drivers (Windows only)</h2>
 <p><span>When you plug in your board, Windows 10 should find and install the correct drivers. On earlier versions of Windows, you may need to manually install the drivers using one of the links below.</span></p>
