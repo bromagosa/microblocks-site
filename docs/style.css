@@ -75,6 +75,20 @@ header {
     left: 0;
 }
 
+.banner {
+    /* SFC campaign banner */
+    margin: 30px auto 0 auto;
+    max-width: 940px;
+}
+
+.banner a::before, .banner a::after {
+    content: '' !important;
+}
+
+.banner img {
+    border-radius: 10px;
+}
+
 header .logo img {
     padding-top: 2em;
 }
