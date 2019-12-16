@@ -1,13 +1,3 @@
-<!-- CONSERVANCY CAMPAIGN, DECEMBER 2019 -->
-<div class="banner">
-    <a href="https://sfconservancy.org/supporter">
-        <img style="width: 100%;"
-             src="https://sfconservancy.org/img/banners/2019-member-projects-banner.png"
-             alt="Conservancy helps make our work possible.
-             Please donate to them today to support community-driven free software projects!">
-    </a>
-</div>
-
 <h1 id="intro">Introduction</h1>
 <p><span>
     MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a>
