@@ -8,9 +8,12 @@ community. Please check whether your language is in the following list:
 Current languages:
 [translations](https://bitbucket.org/john_maloney/smallvm/src/master/translations/)
 
-If it is, you will need to download it. To do so, click on the language file
-name. This will take you to a new page where you can see the contents of that
-file. You'll then need to click on the button with the three dots (
+If it isn't, please head over to [Adding a new language](#newlang).
+
+If it is but needs updating, you will need to download it. To do so, click on
+the language file name. This will take you to a new page where you can see the
+contents of that file. You'll then need to click on the button with the three
+dots (
 <svg width="24" height="24" viewBox="0 0 24 24" focusable="false"
         role="presentation">
     <g fill="currentColor" fill-rule="evenodd">
@@ -42,7 +45,7 @@ from [this link](https://bitbucket.org/john_maloney/smallvm/get/master.zip) and
 unzip the downloaded file, or use git to clone our BitBucket repository into
 your local computer:
 
-    https://bitbucket.org/john_maloney/smallvm/get/master.zip
+    git clone https://bitbucket.org/john_maloney/smallvm
 
 Now cd into the smallvm directory and run the following command:
 
@@ -50,12 +53,11 @@ Now cd into the smallvm directory and run the following command:
 
 Where *[Your Language]* is the name of the language you want to translate to.
 Please note that this name should not be in English, but in the language you're
-translating to itself. For instance, for French you would use "Français", and
-for Arabic you would use "عربى".
+translating to. For instance, for French you would use "Français", and for
+Arabic you would use "عربى".
 
-This will have generated a new translation file that you can find under the
-*translations* folder. You can now edit it with your favorite text editor and
-follow the instructions in the next section.
+This will generate a new translation file that you can find under the
+*translations* folder. You can now follow the instructions in the next section.
 
 <a name="translating" style="visibility:hidden"></a>
 ### Editing a language file
@@ -77,7 +79,7 @@ example, in this case:
     button A
     --MISSING--
 
-The *Input* string has already been translated, but *button A* is missing, so
+the *Input* string has already been translated, but *button A* is missing, so
 you will need to replace the *--MISSING--* tag with your translation.
 
 For blocks, the underscore represents an input slot. Your translation of a block
@@ -92,14 +94,14 @@ in other languages, but this limitation makes the translation mechanism much
 easier to implement and also results in more readable language files and fewer
 translator errors.
 
-Lines starting with the pound sign (#) are comments and can be ignored. Adding
+Lines starting with the pound symbol (#) are comments and can be ignored. Adding
 or modifying any comments will not break anything, but your modifications will
 be lost the next time that the translation file is updated with new strings.
 
 <a name="submitting" style="visibility:hidden"></a>
 ### Submitting a language file
 
-You can just send us the translation file over email at
+When you're done, you can just send us the translation file over email at
 <interest@microblocks.fun> and we'll include it in the next release.
 
 Alternatively, if you know how to use Git, you can send a pull request to our
