@@ -11,7 +11,7 @@
     <li><span><em>Ozoda Ismailova</em> contributed the Uzbek translation.</span></li>
     <li><span><em>Miguel Bouzada</em> contributed the Galician translation.</span></li>
     <li><span><em>José García</em> contributed several optimizations and bug fixes for the ED1 board, the RFID library, and PWM and servo support for ESP32.</span></li>
-    <li><span><em>Joan Guillén</em> and </em>Josep Ferràndiz</em> contributed the ultrasound distance sensor library.</span></li>
+    <li><span><em>Joan Guillén</em> and <em>Josep Ferràndiz</em> contributed the ultrasound distance sensor library.</span></li>
     <li><span><em>Vladimir Zhdanov</em> contributed the Russian translation.</span></li>
 </ul>
 <p><span>The MicroBlocks IDE includes the following packages and libraries:</span></p>
