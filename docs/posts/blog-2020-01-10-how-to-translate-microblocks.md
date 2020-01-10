@@ -1,5 +1,7 @@
 # How to translate MicroBlocks
-## 2020-01-10
+** 2020-01-10 <small>*by Bernat Romagosa*</small> **
+
+<br>
 
 ### Currently available languages
 MicroBlocks has been translated to a bunch of languages by members of the
