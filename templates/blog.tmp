@@ -1,5 +1,5 @@
 <h1 id="blog">Blog</h1>
-<ul>
+<ul class="post-list">
 @include=blog-post-list
 </ul>
 @include=blog-post

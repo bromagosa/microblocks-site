@@ -164,7 +164,7 @@ i#flying-bugs {
 
 .donate.mobile {
     display: none;
-}   
+}
 
 div#flowers {
     position: fixed;
@@ -401,7 +401,7 @@ a.download-button .contents {
 
 a.download-button .text {
     font-size: 1.3em;
-} 
+}
 
 a.download-button p {
     margin: 0;
@@ -508,6 +508,12 @@ a.download-button .system {
     font-style: italic;
 }
 
+
+/* BLOG */
+
+.post-list ul {
+    font-size: 1.25em;
+}
 
 /* Media query for small screens and tablets */
 @media only screen and (max-width: 1340px) {
