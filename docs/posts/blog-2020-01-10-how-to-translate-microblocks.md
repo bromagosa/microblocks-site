@@ -1,5 +1,8 @@
 # How to translate MicroBlocks
-** 2020-01-10 <small>*by Bernat Romagosa*</small> **
+
+_**By Bernat Romagosa**_
+
+_**2020-01-10**_
 
 <br>
 

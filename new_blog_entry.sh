@@ -12,11 +12,15 @@ echo "blog-post" >> pages/"$filename".snp # append blog post template
 echo "<li><a href=\"$filename\">$title</a> (`date +%F`)</li>" >> \
         templates/blog-post-list.tmp # add link to new page
 
-echo "# $title" > static/posts/"$filename".md # create markdown post file
-echo "** `date +%F` <small>*by Author*</small> **" >> static/posts/"$filename".md # add date and author
-echo "" >> static/posts/"$filename".md # add newline
-echo "<br>" >> static/posts/"$filename".md # add html line break
-echo "" >> static/posts/"$filename".md # add newline
+filepath=static/posts/"$filename".md
 
+echo "# $title" > $filepath # create markdown post file and add title
+echo "" >> $filepath # add newline
+echo "_**By Author**_" >> $filepath # add author
+echo "" >> $filepath # add newline
+echo "_**`date +%F`**_" >> $filepath # add date
+echo "" >> $filepath # add newline
+echo "<br>" >> $filepath # add html line break
+echo "" >> $filepath # add newline
 
 "${EDITOR:-vi}" static/posts/"$filename".md # edit .md file in default editor
