@@ -2,4 +2,3 @@
 <ul class="post-list">
 @include=blog-post-list
 </ul>
-@include=blog-post

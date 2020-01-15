@@ -95,48 +95,6 @@
 <li><a href="blog-2020-01-10-how-to-translate-microblocks">How to translate MicroBlocks</a> (2020-01-10)</li>
 <li><a href="blog-2020-01-15-microblocks,-snap!,-and-the-web">MicroBlocks, Snap!, and the web</a> (2020-01-15)</li>
 </ul>
-<div id="post-content">
-</div>
-<script src="markdown.js"></script>
-<script>
-var container = document.querySelector('#post-content'),
-    parser = new DOMParser();
-
-function readTextFile (file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open('GET', file, false);
-    rawFile.onreadystatechange = function () {
-        if (rawFile.readyState === 4) {
-            if (rawFile.status === 200 || rawFile.status == 0) {
-                var allText = rawFile.responseText;
-                callback(allText);
-            }
-        }
-    };
-    rawFile.send();
-}
-
-function append (text) {
-    container.appendChild(
-        parser.parseFromString(
-            '<div>' + markdown.toHTML(text) + '</div>',
-            'text/html'
-        ).body.children[0]
-    );
-}
-
-function appendMarkdownFromFile (fileName) {
-    readTextFile(
-        fileName + '?version=' +
-            Math.floor(Math.random()*10000), // prevent caching
-        function (text) {
-            append(text);
-        }
-    );
-}
-
-appendMarkdownFromFile('posts' + location.pathname + '.md');
-</script>
             <div class="donate mobile">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick">
