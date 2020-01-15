@@ -71,10 +71,9 @@ However, there's a much easier and more fun way to interact with MicroBlocks
 from the web, and that's to use Snap<em>!</em>.
 
 To do that, you just need to import [this blocks library](WebThing.xml) into
-Snap<em>!</em>). It's very important that you access Snap<em>!</em> from its
-[extensions domain](http://extensions.snap.berkeley.edu) at
-<http://extensions.snap.berkeley.edu>, otherwise you won't be able to
-communicate with the IDE.
+Snap<em>!</em>. It's very important that you access Snap<em>!</em> from its
+extensions domain at <http://extensions.snap.berkeley.edu>, otherwise you won't
+be able to communicate with the IDE.
 
 Once you've loaded the library into Snap<em>!</em> you'll find a few new blocks
 under the *Sensing* category.
