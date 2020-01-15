@@ -515,6 +515,10 @@ ul.post-list {
     font-size: 1.25em;
 }
 
+ul.post-list li {
+    margin-bottom: 1em;
+}
+
 /* Media query for small screens and tablets */
 @media only screen and (max-width: 1340px) {
     #wrapper {
