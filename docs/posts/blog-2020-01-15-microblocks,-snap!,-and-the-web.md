@@ -13,10 +13,10 @@ called WebThings. You can read all about it at <https://iot.mozilla.org/>.
 
 If your board is WiFi-enabled, you can turn it into a WebThing by loading the
 *Web Thing* library into MicroBlocks (more on this in a future article), but in
-case your board does _not_ have WiFi access, MicroBlocks has you covered.
+case your board does _not_ have WiFi access, MicroBlocks still has you covered.
 
 The basic idea is that the MicroBlocks environment itself, the IDE, can be
-accessed from the internet as if it was a Mozilla Web Thing. To do that, you
+accessed from the network as if it was a Mozilla Web Thing. To do that, you
 first need to enable our Mozilla WebThings server by following these steps:
 
 1) Click on the settings menu (gear icon)
