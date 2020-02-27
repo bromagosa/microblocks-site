@@ -57,6 +57,9 @@ Here's an example of how to do that using cURL:
 
     curl -X PUT "http://localhost:6473/properties/letter" -d '{"letter":"M"}'
 
+<small>**NOTE**: if you're a Windows user, you may need to use double-double
+quotes in the data argument, like this: `"{""letter"":""M""}"`</small>
+
 And here's how to do the same thing using Javascript:
 
     req = new XMLHttpRequest();
