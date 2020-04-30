@@ -1,20 +1,20 @@
 <h1 id="download">All Files</h1>
-<p>Version <strong>0.4.0</strong>, released <strong>April 11, 2020</strong></p>
+<p id="latest">Version <strong class="version"></strong>, released on <strong class="date"></strong></p>
 
 <h3>Installers</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/microBlocks.setup.exe">Windows</a> (installer)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/MicroBlocks.zip">MacOS</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
+    <li><a href="https://microblocks.fun/downloads/latest/packages/microBlocks.setup.exe">Windows</a> (installer)</li>
+    <li><a href="https://microblocks.fun/downloads/latest/packages/MicroBlocks.app.zip">MacOS</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/packages/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
+    <li><a href="https://microblocks.fun/downloads/latest/packages/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
+    <li><a href="https://microblocks.fun/downloads/latest/packages/ublocks-armhf.deb">Raspberry Pi</a> (Raspbian)</li>
 </ul>
 <h3>Standalone executables</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/ublocks-win.zip">Windows</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/ublocks-linux64bit.zip">Linux, 64-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/ublocks-linux32bit.zip">Linux, 32-bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/ublocks-raspberryPi.zip">Raspberry Pi</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-win.zip">Windows</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-linux64bit.zip">Linux, 64-bit</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-linux32bit.zip">Linux, 32-bit</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-raspberryPi.zip">Raspberry Pi</a></li>
 </ul>
 <h3>Chromebook App</h3>
 <ul class="list">
@@ -22,11 +22,23 @@
 </ul>
 <h3>Precompiled Virtual Machines</h3>
 <ul class="list">
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/vm.ino.BBCmicrobit.hex">BBC micro:bit</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/vm.ino.Calliope.hex">Calliope</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/vm.itsybitsy.uf2">Adafruit Itsy Bitsy</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/vm.ino.nodemcu.bin">NodeMCU</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/vm.ino.esp32.bin">Generic ESP32</a></li>
-    <li><a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.4.0/vm.ino.citilab-ed1.bin">Citilab ED1</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.BBCmicrobit.hex">BBC micro:bit</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.Calliope.hex">Calliope</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.itsybitsy.uf2">Adafruit Itsy Bitsy</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.nodemcu.bin">NodeMCU</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.esp32.bin">Generic ESP32</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.citilab-ed1.bin">Citilab ED1</a></li>
 </ul>
+
+<script>
+var req = new XMLHttpRequest();
+req.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.querySelector('#latest .version').innerText = this.responseText.split('\\n')[0];
+        document.querySelector('#latest .date').innerText = this.responseText.split('\\n')[1];
+    }
+};
+req.open('GET', '/downloads/latest/VERSION.txt');
+req.send();
+</script>

@@ -8,17 +8,19 @@
     </div>
 </a>
 <br>
-<p>Current version: <strong>0.4.0</strong>, released on <strong>April 11, 2020</strong></p>
+<p id="latest">Current version: <strong class="version"></strong>, released on <strong class="date"></strong></p>
 <p><a href="additional_downloads">All files for current version</a></p>
-<p><a href="https://github.com/bromagosa/microblocks-site/releases">All versions and release notes</a></p>
+<p><a href="https://microblocks.fun/downloads">All versions and release notes</a></p>
 
 <script>
 var system,
-    version = '0.4.0'
-    baseURL = 'https://github.com/bromagosa/microblocks-site/releases/download/v' + version + '/',
+    version,
+    release_date,
+    req = new XMLHttpRequest(),
+    baseURL = 'https://microblocks.fun/downloads/latest/packages/',
     filenames = {
         'Windows': 'microBlocks.setup.exe',
-        'Mac OS': 'MicroBlocks.zip',
+        'Mac OS': 'MicroBlocks.app.zip',
         'Raspberry Pi (Raspbian)': 'ublocks-armhf.deb',
         'Linux (64 bit)': 'ublocks-amd64.deb',
         'Linux (32 bit)': 'ublocks-i386.deb'
@@ -45,12 +47,27 @@ if (!system) {
     document.location.href = 'additional_downloads';
 }
 
-document.querySelector('.system').innerText = system;
-
 if (system !== 'Chrome OS') {
     document.querySelector('.download-button').href = baseURL + filenames[system];
 } else {
     document.querySelector('.download-button').href = 'https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0'
 }
+
+document.querySelector('.system').innerText = system;
+
+// Let's fetch the latest version and release date
+req.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        version = this.responseText.split('\\n')[0];
+        release_date = this.responseText.split('\\n')[1];
+        console.log(version);
+        console.log(release_date);
+        document.querySelector('#latest .version').innerText = version;
+        document.querySelector('#latest .date').innerText = release_date;
+    }
+};
+
+req.open('GET', '/downloads/latest/VERSION.txt');
+req.send();
 
 </script>
