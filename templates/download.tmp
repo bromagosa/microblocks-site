@@ -19,7 +19,7 @@ var system,
     req = new XMLHttpRequest(),
     baseURL = 'https://microblocks.fun/downloads/latest/packages/',
     filenames = {
-        'Windows': 'microBlocks.setup.exe',
+        'Windows': 'microBlocks%20setup.exe',
         'Mac OS': 'MicroBlocks.app.zip',
         'Raspberry Pi (Raspbian)': 'ublocks-armhf.deb',
         'Linux (64 bit)': 'ublocks-amd64.deb',

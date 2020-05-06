@@ -3,7 +3,7 @@
 
 <h3>Installers</h3>
 <ul class="list">
-    <li><a href="https://microblocks.fun/downloads/latest/packages/microBlocks.setup.exe">Windows</a> (installer)</li>
+    <li><a href="https://microblocks.fun/downloads/latest/packages/microBlocks%20setup.exe">Windows</a> (installer)</li>
     <li><a href="https://microblocks.fun/downloads/latest/packages/MicroBlocks.app.zip">MacOS</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/packages/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
     <li><a href="https://microblocks.fun/downloads/latest/packages/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
