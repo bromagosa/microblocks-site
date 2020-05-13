@@ -29,6 +29,9 @@
     <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.nodemcu.bin">NodeMCU</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.esp32.bin">Generic ESP32</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.citilab-ed1.bin">Citilab ED1</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.m5stack.bin">M5Stack</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.m5stick.bin">M5Stick</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.m5atom.bin">M5Atom Matrix</a></li>
 </ul>
 
 <script>
