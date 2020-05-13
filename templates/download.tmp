@@ -60,10 +60,8 @@ req.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         version = this.responseText.split('\\n')[0];
         release_date = this.responseText.split('\\n')[1];
-        console.log(version);
-        console.log(release_date);
         document.querySelector('#latest .version').innerText = version;
-        document.querySelector('#latest .date').innerText = release_date;
+        document.querySelector('#latest .date').innerText = formatDate(release_date);
     }
 };
 

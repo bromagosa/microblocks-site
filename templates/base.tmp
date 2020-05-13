@@ -21,6 +21,27 @@
         </script>
 
         <script>
+            function formatDate(dateString) {
+                var splitDate = dateString.split('/');
+                return splitDate[0] +
+                    ' ' +
+                    [
+                        'January',
+                        'February',
+                        'March',
+                        'April',
+                        'May',
+                        'June',
+                        'July',
+                        'August',
+                        'September',
+                        'October',
+                        'November',
+                        'December'
+                    ][parseInt(splitDate[1]) - 1] +
+                    ' ' +
+                    splitDate[2]
+            };
             function showDropdown(menuElement) {
                 if (window.matchMedia('(max-width: 1180px)').matches) {
                     menuElement.showing = !menuElement.showing;
@@ -33,7 +54,7 @@
                 } else {
                     menuElement.children.namedItem('content').style.display = 'none';
                 }
-            }
+            };
         </script>
     </head>
     <body
