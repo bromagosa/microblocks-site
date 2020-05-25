@@ -18,7 +18,7 @@ you can run MicroBlocks!
 MicroBlocks uses a new, experimental
 Chromium feature known as "WebSerial API" to communicate with the
 microcontroller. For now, that feature must be enabled using a browser
-setting or "flag". Start by entering "chrome:\\flags" in the nav bar
+setting or *flag*. Start by entering "chrome:\\flags" in the nav bar
 of the browser:
 
 <img src="chromeFlagsPage.png" width="150px"/>
@@ -37,7 +37,7 @@ to install the firmware. If you have a micro:bit, Calliope mini, or AdaFruit
 microcontroller, you can also install the firmware by downloading the
 appropriate precompiled virtual machine from:
 
-[https://microblocks.fun/additional_downloads](https://microblocks.fun/additional_downloads)
+<a href="https://microblocks.fun/additional_downloads">Additional Downloads</a>
 
 then dragging and dropping it onto the USB drive for your microcontroller.
 
