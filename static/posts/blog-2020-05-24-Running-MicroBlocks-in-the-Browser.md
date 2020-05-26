@@ -18,7 +18,7 @@ you can run MicroBlocks!
 MicroBlocks uses a new, experimental
 Chromium feature known as "WebSerial API" to communicate with the
 microcontroller. For now, that feature must be enabled using a browser
-setting or *flag*. Start by entering "chrome:\\flags" in the nav bar
+setting or *flag*. Start by entering "chrome://flags" in the nav bar
 of the browser:
 
 <img src="chromeFlagsPage.png" width="150px"/>
