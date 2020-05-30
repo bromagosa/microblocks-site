@@ -11,6 +11,7 @@
 <p id="latest">Current version: <strong class="version"></strong>, released on <strong class="date"></strong></p>
 <p><a href="additional_downloads">All files for current version</a></p>
 <p><a href="https://microblocks.fun/downloads">All versions and release notes</a></p>
+<p><a href="https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb?authuser=0">Chromebook App</a></p>
 
 <script>
 var system,
