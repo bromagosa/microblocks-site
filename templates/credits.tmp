@@ -1,18 +1,18 @@
 <h1 id="credits">Credits</h1>
 <p><span>We would like to thank the following people for their contributions to MicroBlocks:</span></p>
 <ul class="list">
-    <li><span><em>Constantine Rotkevich</em> designed the MicroBlocks bunny logo.</span></li>
-    <li><span><em>Gilles Mateu</em> and <em>David Perrenoud</em> contributed the French translation.</span></li>
-    <li><span><em>Gilles Mateu</em> also contributed initial experimental support for persistence in ESP32.</span></a></li>
-    <li><span><em>Marius Unsel</em> contributed the German translation.</span></a></li>
-    <li><span><em>Cobie van de Ven</em> contributed the Dutch translation.</span></li>
-    <li><span><em>Turgut Güneysu</em> contributed the Turkish translation, the Helicopter game, instructions on how to compile esptool for Windows, and countless hours of testing and reporting bugs.</span></li>
-    <li><span><em>Mel Azzi</em> contributed the Arabic translation and support for RTL languages.</span></li>
-    <li><span><em>Ozoda Ismailova</em> contributed the Uzbek translation.</span></li>
-    <li><span><em>Miguel Bouzada</em> contributed the Galician translation.</span></li>
-    <li><span><em>José García Yeste</em> contributed several optimizations and bug fixes for the ED1 board, plus PWM and servo support for ESP32 boards. He's also contributed libraries for RFID sensors, the TCS34725 color sensor, the BMX280 barometric pressure sensor, the PAJ7620 gesture sensor, the VL6180x distance sensor, and libraries for displaying BMP image files and playing WAV sound files,</span></li>
-    <li><span><em>Joan Guillén</em> and <em>Josep Ferràndiz</em> contributed the ultrasound distance sensor library.</span></li>
-    <li><span><em>Vladimir Zhdanov</em> contributed the Russian translation.</span></li>
+    <li><span><strong><em>Constantine Rotkevich</em></strong> designed the MicroBlocks bunny logo.</span></li>
+    <li><span><strong><em>Gilles Mateu</em></strong> and <strong><em>David Perrenoud</em></strong> contributed the French translation.</span></li>
+    <li><span><strong><em>Gilles Mateu</em></strong> also contributed initial experimental support for persistence in ESP32.</span></a></li>
+    <li><span><strong><em>Marius Unsel</em></strong> contributed the German translation.</span></a></li>
+    <li><span><strong><em>Cobie van de Ven</em></strong> contributed the Dutch translation.</span></li>
+    <li><span><strong><em>Turgut Güneysu</em></strong> contributed the Turkish translation, the Helicopter game, instructions on how to compile esptool for Windows, and countless hours of testing and reporting bugs.</span></li>
+    <li><span><strong><em>Mel Azzi</em></strong> contributed the Arabic translation and support for RTL languages.</span></li>
+    <li><span><strong><em>Ozoda Ismailova</em></strong> contributed the Uzbek translation.</span></li>
+    <li><span><strong><em>Miguel Bouzada</em></strong> contributed the Galician translation.</span></li>
+    <li><span><strong><em>José García Yeste</em></strong> contributed several optimizations and bug fixes for the ED1 board, plus PWM and servo support for ESP32 boards. He's also contributed libraries for RFID sensors, the TCS34725 color sensor, the BMX280 barometric pressure sensor, the PAJ7620 gesture sensor, the VL6180x distance sensor, and libraries for displaying BMP image files and playing WAV sound files,</span></li>
+    <li><span><strong><em>Joan Guillén</em></strong> and <strong><em>Josep Ferràndiz</em></strong> contributed the ultrasound distance sensor library.</span></li>
+    <li><span><strong><em>Vladimir Zhdanov</em></strong> contributed the Russian translation.</span></li>
 </ul>
 <p><span>The MicroBlocks IDE includes the following packages and libraries:</span></p>
 <ul class="list">
