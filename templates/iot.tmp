@@ -1,0 +1,43 @@
+<h1 id="tutorials">Mozilla IoT</h1>
+
+<span><p>
+With Mozilla's free, open-source <a href="https://iot.mozilla.org">WebThing Gateway</a>
+software running on a Raspberry Pi, you can connect MicroBlocks to the internet.
+Using a web browser on a computer or mobile device, you can
+control things (e.g. lights, fans, or plant watering systems)
+and monitor sensors from anywhere on the internet!
+Even better, this is all done securely. Your data remains on your own
+Raspberry Pi gateway, so it can't be stolen or data-mined.
+</p></span>
+
+<h2>Activity Cards</h2>
+<span><p>
+These cards and videos will help you get started creating MicroBlocks IoT projects.
+Once you've created a project, you can connect it to the WebThing gateway via a USB cable.
+Or, if you have a board that supports WiFi, you can connect your project to the
+gateway wirelessly.
+</p></span>
+
+<ul class="list">
+    <li>
+    	<a href="cards/WOT_WebLight.pdf">Web Light</a>
+    	<a href="https://diode.zone/videos/watch/fbaa93f8-7508-4888-af02-950b45a09aac">video</a>
+    </li>
+    <li>
+    	<a href="cards/WOT_WebButton.pdf">Web Button</a>
+    	<a href="https://diode.zone/videos/watch/6c40d8c4-4a7a-43d4-aa21-181bc547933e">video</a>
+    </li>
+    <li>
+    	<a href="cards/WOT_Run-in-placeRace.pdf">Run-in-place Race</a>
+    	<a href="https://diode.zone/videos/watch/eb535dfe-09a3-4d6c-9455-ed7cf56751c3">video</a>
+    </li>
+    <li>
+    	<a href="cards/WOT_HelloLED.pdf">Hello LED</a>
+    </li>
+    <li>
+    	<a href="cards/WOT_Doorbell.pdf">Doorbell</a> (NeoPixels optional)
+    </li>
+    <li>
+    	<a href="cards/WOT_WebThings_Gateway.pdf">Using the WebThings Gateway</a>
+    </li>
+</ul>
