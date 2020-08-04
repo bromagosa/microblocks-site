@@ -9,10 +9,11 @@
     <li><span><strong><em>Turgut Güneysu</em></strong> contributed the Turkish translation, the Helicopter game, instructions on how to compile esptool for Windows, and countless hours of testing and reporting bugs.</span></li>
     <li><span><strong><em>Mel Azzi</em></strong> contributed the Arabic translation and support for RTL languages.</span></li>
     <li><span><strong><em>Ozoda Ismailova</em></strong> contributed the Uzbek translation.</span></li>
+    <li><span><strong><em>Vladimir Zhdanov</em></strong> contributed the Russian translation.</span></li>
+    <li><span><strong><em>Nargiza Kholmatova</em></strong> contributed updates to the Uzbek and Russian translations.</span></li>
     <li><span><strong><em>Miguel Bouzada</em></strong> contributed the Galician translation.</span></li>
     <li><span><strong><em>José García Yeste</em></strong> contributed several optimizations and bug fixes for the ED1 board, plus PWM and servo support for ESP32 boards. He's also contributed libraries for RFID sensors, the TCS34725 color sensor, the BMX280 barometric pressure sensor, the PAJ7620 gesture sensor, the VL6180x distance sensor, and libraries for displaying BMP image files and playing WAV sound files,</span></li>
     <li><span><strong><em>Joan Guillén</em></strong> and <strong><em>Josep Ferràndiz</em></strong> contributed the ultrasound distance sensor library.</span></li>
-    <li><span><strong><em>Vladimir Zhdanov</em></strong> contributed the Russian translation.</span></li>
     <li><span><strong><em>Simon Mong</em></strong> contributed the Simplified Mandarin Chinese translation.</span></li>
 </ul>
 <p><span>The MicroBlocks IDE includes the following packages and libraries:</span></p>
