@@ -8,10 +8,11 @@ To make them last longer, the cards can be laminated or printed on card stock.
 
 <p><span><img src="Activity_Cards.jpg" width="250" alt="Activity_Cards.jpg"></span></p>
 
-<h2>micro:bit</h2>
+<h2>Easy Activity Cards: micro:bit</h2>
 
 <span><p>
 These cards help students get started with the micro:bit.
+They are ideal for younger students or anyone just getting started with the micro:bit.
 No additional components are needed except where noted.
 </p></span>
 
@@ -27,10 +28,11 @@ No additional components are needed except where noted.
     <li><a href="cards/mb_IR_Remote_Control.pdf">IR Remote Control </a> (requires an IR receiver and an IR remote control)</li>
 </ul>
 
-<h2>Circuit Playground Express</h2>
+<h2>Easy Activity Cards: Circuit Playground Express</h2>
 
 <span><p>
 These cards help students get started with AdaFruit Circuit Playground Express.
+They are ideal for younger students or anyone just getting started with the micro:bit.
 No additional components are needed except where noted.
 </p></span>
 
@@ -41,6 +43,18 @@ No additional components are needed except where noted.
     <li><a href="cards/cpx_IR_Remote_Control.pdf">IR Remote Control</a> (requires an IR remote control)</li>
 </ul>
 
+<h2>More Activity Cards: micro:bit</h2>
+
+<span><p>
+These cards start from the basics but move more quickly than the Easy Activity Cards.
+They are ideal for grades 6-college and adults.
+No additional components are needed except where noted.
+</p></span>
+
+<span><p>
+Coming soon!
+</p></span>
+
 <h2>Mozilla IoT</h2>
 <span><p>
 These <a href="iot.html">Mozilla IoT cards</a> show how to connect MicroBlocks
@@ -48,11 +62,11 @@ projects to the internet using Mozilla's free, open-source WebThing Gateway soft
 running on a Raspberry Pi.
 </p></span>
 
-<h1 id="guided_activities">Guided Activities</h1>
+<h1 id="guided_activities">Activity Guides</h1>
 <span><p>
-A guided activity is a series of experiments that explore a set of related ideas.
+An activity guide is a series of experiments that explore a set of related ideas.
 Activity guides are written in the form of "teacher notes" but they can also
-be used as self-guided tutorials.
+be used as tutorials.
 </p></span>
 
 <ul class="list">
@@ -63,7 +77,7 @@ be used as self-guided tutorials.
     <li><a href="cards/tn_Time_Scales.pdf">Time Scales</a></li>
 </ul>
 
-<h1 id="remixing">Translating or Remixing Materials</h1>
+<h1 id="remixing">Translating or Remixing Activity Cards and Guides</h1>
 <span><p>
 Want to translate or remix these materials? They are all available in Google Slides/Docs
 format under the Creative Commons CC BY-SA 4.0 license
@@ -72,14 +86,15 @@ If you translate any materials, please send us a link to your translations
 so we can share it with others.
 </p></span>
 
-<h1 id="remixing">Creating Your Own Materials</h1>
+<h1 id="remixing">Creating Your Own</h1>
 <span><p>
-Have ideas for your own activity cards or guided activities?
-We encourage you to use the MicroBlocks activity card format, but note that the bunny image,
-the name "MicroBlocks, and the phrase "Small, Fast, Human Friendly" are registered US trademarks
+Have ideas for your own activity cards or activity guides?
+We encourage you to use the MicroBlocks formats!
+However, note that the bunny image, the name "MicroBlocks,
+and the phrase "Small, Fast, Human Friendly" are registered US trademarks
 and can't be used without written permission from our fiscal sponsor,
 the Software Freedom Conservancy.
-Those trademarks (including the bunny image) should not appear on your cards.
+Those trademarks (including the bunny image) should not appear on your own cards.
 <span></p>
 
 <span><p>
@@ -97,4 +112,6 @@ If you'd like to share your materials with the MicroBlocks community, please get
     <li><a href="http://wiki.edutec.citilab.eu/Introducci%C3%B3_a_MicroBlocks">Introducció a MicroBlocks</a> by Edutec, Citilab (in Catalan)</li>
     <li><a href="https://wiki.galpon.org/Instalación_e_recoñecemento_das_placas_CircuitPlayground_Express_—_Python_%2B_MicroBlocks_—_galego_%2B_castellano">Instalación e recoñecemento das placas CircuitPlayground Express</a> by GALPon (in Galician and Spanish)</li>
     <li><a href="Diseno_de_actividades_STEAM_en_el_aula.pdf">Diseño de actividades STEAM en el aula</a> by Fab Lab Yucatán (in Spanish)</li>
+   <li><a href="https://kidslab.dev/2020/08/03/microblocks-with-bernat-romagosa/">MicroBlocks with Bernat Romagosa, Kidslab interview (podcast)</a></li>
+
 </ul>

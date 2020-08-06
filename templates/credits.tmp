@@ -4,7 +4,7 @@
     <li><span><strong><em>Constantine Rotkevich</em></strong> designed the MicroBlocks bunny logo.</span></li>
     <li><span><strong><em>Gilles Mateu</em></strong> and <strong><em>David Perrenoud</em></strong> contributed the French translation.</span></li>
     <li><span><strong><em>Gilles Mateu</em></strong> also contributed initial experimental support for persistence in ESP32.</span></a></li>
-    <li><span><strong><em>Marius Unsel</em></strong> contributed the German translation.</span></a></li>
+    <li><span><strong><em>Marius Unsel</em></strong> and <strong><em>Jadga Hügle</em></strong> contributed the German translation.</span></a></li>
     <li><span><strong><em>Cobie van de Ven</em></strong> contributed the Dutch translation.</span></li>
     <li><span><strong><em>Turgut Güneysu</em></strong> contributed the Turkish translation, the Helicopter game, instructions on how to compile esptool for Windows, and countless hours of testing and reporting bugs.</span></li>
     <li><span><strong><em>Mel Azzi</em></strong> contributed the Arabic translation and support for RTL languages.</span></li>
@@ -15,7 +15,13 @@
     <li><span><strong><em>José García Yeste</em></strong> contributed several optimizations and bug fixes for the ED1 board, plus PWM and servo support for ESP32 boards. He's also contributed libraries for RFID sensors, the TCS34725 color sensor, the BMX280 barometric pressure sensor, the PAJ7620 gesture sensor, the VL6180x distance sensor, and libraries for displaying BMP image files and playing WAV sound files,</span></li>
     <li><span><strong><em>Joan Guillén</em></strong> and <strong><em>Josep Ferràndiz</em></strong> contributed the ultrasound distance sensor library.</span></li>
     <li><span><strong><em>Simon Mong</em></strong> contributed the Simplified Mandarin Chinese translation.</span></li>
+    <li><span><strong><em>Tom Lauwers</em></strong> contributed the Hummingbird:bit and Finch libraries, as well as the Dutch translation.</span></li>
+    <li><span><strong><em>Mozilla Open Source Support</em></strong> program provided a generous grant to improve MicroBlocks support for the Mozilla Web Thing gateway.</span></li>
+
+</span></li>
+
 </ul>
+
 <p><span>The MicroBlocks IDE includes the following packages and libraries:</span></p>
 <ul class="list">
     <li><span><a href="http://gpblocks.org">GP</a> is the programming language in which the IDE is built. <small><a href="https://github.com/jhmaloney/GP-Mods/blob/master/LICENSE">License: MPLv2</a> <a href="https://github.com/jhmaloney/GP-Mods">Source code</a></small></span></li>
