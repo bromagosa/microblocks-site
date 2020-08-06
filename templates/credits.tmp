@@ -29,10 +29,9 @@
     <li><span><strong><em>Joan Guillén</em></strong> and <strong><em>Josep Ferràndiz</em></strong> contributed the ultrasound distance sensor library.</span></li>
     <li><span><strong><em>Simon Mong</em></strong> contributed the Simplified Mandarin Chinese translation.</span></li>
     <li><span><strong><em>Tom Lauwers</em></strong> contributed the Hummingbird:bit and Finch libraries, as well as the Dutch translation.</span></li>
-    <li><span><strong><em>Mozilla Open Source Support</em></strong> program provided a generous grant to improve MicroBlocks support for the Mozilla Web Thing gateway.</span></li>
-
-</span></li>
-
+    <li><span><strong><em>Mozilla Open Source Support</em></strong> program provided a generous grant to improve MicroBlocks support for the
+<a href="https://iot.mozilla.org/gateway">WebThings Gateway</a>
+by Mozilla.</span></li>
 </ul>
 
 <p><span>The MicroBlocks IDE includes the following packages and libraries:</span></p>
