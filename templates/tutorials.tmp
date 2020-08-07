@@ -46,31 +46,40 @@ No additional components are needed except where noted.
 <h2>More Activity Cards: micro:bit</h2>
 
 <span><p>
-These cards start from the basics but move more quickly than the Easy Activity Cards.
-They are ideal for grades 6-college and adults.
+These activity cards start from the basics but move more quickly than the Easy Activity Cards.
+They are ideal for grades 6-12, college, and adults.
 No additional components are needed except where noted.
 </p></span>
 
-<span><p>
-Coming soon!
-</p></span>
+<ul class="list">
+    <li><a href="cards2/1_mb_Buttons_Display.pdf">Buttons | LED Display </a></li>
+    <li><a href="cards2/2_mb_Scrolling.pdf">Scrolling | Magic 8-Ball</a></li>
+    <li><a href="cards2/3_mb_Radio.pdf">Radio | Texting</a></li>
+   <li><a href="cards2/4_mb_Sound.pdf">Sound | Music </a> (requires headphones, piezo, or speaker)</li>
+   <li><a href="cards2/5_mb_NeoPixels.pdf">Colorful LEDs | Ambulance</a> (requires NeoPixels)</li>
+   <li><a href="cards2/6_mb_Sensors.pdf">Sensors | Graphing</a></li>
+   <li><a href="cards2/7_mb_Motion.pdf">Step Counter | Motion</a></li>
+   <li><a href="cards2/8_mb_DataLogging.pdf">Data | Logging</a></li>
+   <li><a href="cards2/9_mb_Games.pdf">Games | Simon</a></li>
+   <li><a href="cards2/10_mb_FlashlightTag.pdf">Flashlight Remote | Tag</a> (requires a flashlight)</li>
+ </ul>
 
-<h2>Mozilla IoT</h2>
+<h2>Mozilla IoT Activity Cards </h2>
 <span><p>
 These <a href="iot.html">Mozilla IoT cards</a> show how to connect MicroBlocks
 projects to the internet using Mozilla's free, open-source WebThing Gateway software
 running on a Raspberry Pi.
+These cards are suitable for grades 6-12, college, and adults.
 </p></span>
 
 <h1 id="guided_activities">Activity Guides</h1>
 <span><p>
 An activity guide is a series of experiments that explore a set of related ideas.
 Activity guides are written in the form of "teacher notes" but they can also
-be used as tutorials.
+be used as tutorials. They can be adapted for various grade levels.
 </p></span>
 
 <ul class="list">
-    <li><a href="cards/tn_Getting_Started.pdf">Getting Started with MicroBlocks</a></li>
     <li><a href="cards/tn_Color_Mixing.pdf">Color Mixing</a></li>
     <li><a href="cards/tn_Exploring_Electricity.pdf">Exploring Electricity</a></li>
     <li><a href="cards/tn_micro_bit_dance.pdf">Make a micro:bit Dance</a> (uses old servo blocks)</li>
