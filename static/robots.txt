@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /downloads/
 Disallow: /packages/
 Disallow: /standalone/
 Disallow: /vm/
