@@ -16,3 +16,30 @@
 <p><span>
     With MicroBlocks, you can build your own "real world" digital instruments, interactive jewelry, electronic games and measuring devices, all by using blocks.
 </span></p>
+
+<h2>Next Steps</h2>
+
+<p><span>
+Visit the <a href="download">Download</a> page to download the MicroBlocks app
+for Windows, MacOS, Linux, or Raspberry Pi.
+If you have a Chromebook, you can get the
+<a href="https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb">Chromebook App</a>.
+</span></p>
+
+<p><span>
+You can also
+<a href="https://microblocks.fun/run/microblocks.html">run MicroBlocks in a Chrome or Edge browser</a>
+without installing anything.
+To allow MicroBlocks to connect to your board,
+you'll need visit the "chrome://flags" page and enable the "Experimental Web Platform features" flag.
+See
+<a href="http://microblocks.fun/blog-2020-05-24-Running-MicroBlocks-in-the-Browser">Running MicroBlocks in the Browser</a>.
+</span></p>
+
+<h2>Activity Cards</h2>
+
+<p><span>
+Visit the <a href="learn">Learn</a> section to find activity cards that
+will help you get started and then explore projects involving animation, colorful LEDs,
+sound, servo motors, communications, remote control, Internet of Things and more.
+</span></p>
