@@ -230,6 +230,36 @@ iframe {
     border: 1px solid grey;
 }
 
+div.pillar {
+    padding-left: 1.6em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+div.pillar:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+video.pillars-left {
+    flex-shrink: 0.3;
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+div.pillars-right {
+    padding-left: 1.5em;
+}
+
+div.pillar:nth-child(odd) div.pillars-right {
+    padding-left: 0;
+    padding-right: 1.5em;
+}
+
+div.pillars-right h2 {
+    padding-left: 0;
+}
+
 ul.flex {
     display: flex;
     flex-direction: row;

@@ -1,4 +1,4 @@
-<h1 id="intro">Introduction</h1>
+<p>
 <p><span>
     MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a>
     that runs right inside microcontroller boards such as the
@@ -7,6 +7,76 @@
     <a href="https://www.adafruit.com/product/3333" target="_blank">AdaFruit Circuit Playground Express</a>,
     and many <a href="https://arduino.cc" target="_blank">Arduino</a> boards.
 </span></p>
+
+<h1 id="whatsspecial">What makes it special?</h1>
+<div class="pillar">
+    <video class="pillars-left" loop autoplay>
+        <source src="liveness.mp4" type="video/mp4">
+    </video>
+    <div class="pillars-right">
+        <h2>Live</h2>
+        <span>
+            MicroBlocks is a live environment. Click on a block and it runs immediately, right on the board.
+            Explore light, sound, and other action commands. See or graph sensor values in real time.
+            No more waiting for your code to compile and download.
+        </span>
+    </div>
+</div>
+<div class="pillar">
+    <video class="pillars-left" loop autoplay>
+        <source src="concurrency.mp4" type="video/mp4">
+    </video>
+    <div class="pillars-right">
+        <h2>Concurrent</h2>
+        <span>
+            Want to play some music while animating a string of colorful LEDs? No problem!
+            MicroBlocks lets you write separate scripts for each task and run them
+            at the same time. Your code is simpler to write and easier to understand.
+        </span>
+    </div>
+</div>
+<div class="pillar">
+    <video class="pillars-left" loop autoplay>
+        <source src="portability.mp4" type="video/mp4">
+    </video>
+    <div class="pillars-right">
+        <h2>Portable</h2>
+        <span>
+            MicroBlocks runs on many different boards, but your scripts are portable.
+            Buttons, sensors, and display blocks behave the same on all boards with the required hardware.
+            MicroBlocks even simulates the micro:bit 5x5 LED display on TFT displays.
+        </span>
+    </div>
+</div>
+<div class="pillar">
+    <video class="pillars-left" loop autoplay>
+        <source src="autonomy.mp4" type="video/mp4">
+    </video>
+    <div class="pillars-right">
+        <h2>Unplug and go!</h2>
+        <span>
+            When you like what your program does, just unplug the board, connect a battery,
+            and you're good to go. Make a pocket game, fitness app, or light-up costume that
+            goes wherever you do.
+        </span>
+    </div>
+</div>
+<div class="pillar">
+    <video class="pillars-left" loop autoplay>
+        <source src="decompiler.mp4" type="video/mp4">
+    </video>
+    <div class="pillars-right">
+        <h2>Plug in to share</h2>
+        <span>
+            With MicroBlocks, the board acts like a memory stick.
+            No need for files; just plug in a board and the scripts reappear.
+            Hand your board to a friend so they can explore your code.
+            They might even add a cool new feature!
+        </span>
+    </div>
+</div>
+
+<h1 id="intro">What is it about?</h1>
 <p><span>
     The MicroBlocks system allows for dynamic, parallel and interactive programming, just like in Scratch, but with the twist of letting your projects run autonomously inside the board without being tethered to a computer. Thus, MicroBlocks provides the immediacy and liveness of tethered blocks programming, while supporting real-world applications that require precision timing, autonomous operation, or physically embedding the processor into projects. For example, one might write a program to record acceleration data, then embed the microcontroller and a small battery in a model rocket to explore G-forces at launch time.
 </span></p>
