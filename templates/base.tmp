@@ -62,6 +62,7 @@
     >
 
         <img class="ribbon" src="alpha-ribbon.png"/>
+        <!-- <img class="ribbon" src="beta-ribbon.png"/> -->
         <div id="flowers"></div>
 
         <div class="dropdown">

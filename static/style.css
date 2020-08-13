@@ -619,6 +619,24 @@ ul.post-list li {
         display: none;
     }
 
+
+    div.pillar,
+    div.pillar:nth-child(odd) {
+        flex-flow: wrap-reverse;
+        flex-direction: unset;
+    }
+    video.pillars-left {
+        flex-basis: content;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    div.pillars-right,
+    div.pillar:nth-child(odd) div.pillars-right {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 1em;
+    }
+
     footer {
         height: 52px;
     }
