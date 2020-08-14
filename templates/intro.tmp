@@ -18,7 +18,7 @@
             No more waiting for your code to compile and download.
         </span>
     </div>
-    <video class="pillars-video" loop autoplay>
+    <video class="pillars-video" loop autoplay muted>
         <source src="liveness.mp4" type="video/mp4">
     </video>
 </div>
@@ -31,7 +31,7 @@
             at the same time. Your code is simpler to write and easier to understand.
         </span>
     </div>
-    <video class="pillars-video" loop autoplay>
+    <video class="pillars-video" loop autoplay muted>
         <source src="concurrency.mp4" type="video/mp4">
     </video>
 </div>
@@ -44,7 +44,7 @@
             MicroBlocks even simulates the micro:bit 5x5 LED display on TFT displays.
         </span>
     </div>
-    <video class="pillars-video" loop autoplay>
+    <video class="pillars-video" loop autoplay muted>
         <source src="portability.mp4" type="video/mp4">
     </video>
 </div>
@@ -57,7 +57,7 @@
             goes wherever you do.
         </span>
     </div>
-    <video class="pillars-video" loop autoplay>
+    <video class="pillars-video" loop autoplay muted>
         <source src="autonomy.mp4" type="video/mp4">
     </video>
 </div>
@@ -72,7 +72,7 @@
             They might even add a cool new feature!
         </span>
     </div>
-    <video class="pillars-video" loop autoplay>
+    <video class="pillars-video" loop autoplay muted>
         <source src="decompiler.mp4" type="video/mp4">
     </video>
 </div>
