@@ -3,6 +3,7 @@ Disallow: /downloads/
 Disallow: /packages/
 Disallow: /standalone/
 Disallow: /vm/
+Disallow: /run/
 
 User-agent: PetalBot
 Disallow: /
