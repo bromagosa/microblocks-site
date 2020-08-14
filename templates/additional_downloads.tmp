@@ -12,6 +12,7 @@
 <h3>Standalone executables</h3>
 <ul class="list">
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-win.zip">Windows</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/standalone/MicroBlocksUnsigned.app.zip">MacOS, unsigned</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-linux64bit.zip">Linux, 64-bit</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-linux32bit.zip">Linux, 32-bit</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-raspberryPi.zip">Raspberry Pi</a></li>
