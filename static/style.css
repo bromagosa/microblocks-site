@@ -234,29 +234,29 @@ div.pillar {
     padding-left: 1.6em;
     margin-bottom: 3em;
     display: flex;
-    flex-direction: row;
-}
-
-div.pillar:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
-video.pillars-left {
+div.pillar:nth-child(odd) {
+    flex-direction: row;
+}
+
+video.pillars-video {
     flex-shrink: 0.3;
     max-width: 50%;
     border-radius: 10px;
 }
 
-div.pillars-right {
+div.pillars-text {
     padding-left: 1.5em;
 }
 
-div.pillar:nth-child(odd) div.pillars-right {
+div.pillar:nth-child(odd) div.pillars-text {
     padding-left: 0;
     padding-right: 1.5em;
 }
 
-div.pillars-right h2 {
+div.pillars-text h2 {
     padding-left: 0;
 }
 
@@ -622,16 +622,16 @@ ul.post-list li {
 
     div.pillar,
     div.pillar:nth-child(odd) {
-        flex-flow: wrap-reverse;
+        flex-flow: wrap;
         flex-direction: unset;
     }
-    video.pillars-left {
+    video.pillars-video {
         flex-basis: content;
         max-width: 100%;
         margin: 0 auto;
     }
-    div.pillars-right,
-    div.pillar:nth-child(odd) div.pillars-right {
+    div.pillars-text,
+    div.pillar:nth-child(odd) div.pillars-text {
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 1em;

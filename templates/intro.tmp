@@ -10,10 +10,7 @@
 
 <h1 id="whatsspecial">What makes it special?</h1>
 <div class="pillar">
-    <video class="pillars-left" loop autoplay>
-        <source src="liveness.mp4" type="video/mp4">
-    </video>
-    <div class="pillars-right">
+    <div class="pillars-text">
         <h2>Live</h2>
         <span>
             MicroBlocks is a live environment. Click on a block and it runs immediately, right on the board.
@@ -21,12 +18,12 @@
             No more waiting for your code to compile and download.
         </span>
     </div>
+    <video class="pillars-video" loop autoplay>
+        <source src="liveness.mp4" type="video/mp4">
+    </video>
 </div>
 <div class="pillar">
-    <video class="pillars-left" loop autoplay>
-        <source src="concurrency.mp4" type="video/mp4">
-    </video>
-    <div class="pillars-right">
+    <div class="pillars-text">
         <h2>Concurrent</h2>
         <span>
             Want to play some music while animating a string of colorful LEDs? No problem!
@@ -34,12 +31,12 @@
             at the same time. Your code is simpler to write and easier to understand.
         </span>
     </div>
+    <video class="pillars-video" loop autoplay>
+        <source src="concurrency.mp4" type="video/mp4">
+    </video>
 </div>
 <div class="pillar">
-    <video class="pillars-left" loop autoplay>
-        <source src="portability.mp4" type="video/mp4">
-    </video>
-    <div class="pillars-right">
+    <div class="pillars-text">
         <h2>Portable</h2>
         <span>
             MicroBlocks runs on many different boards, but your scripts are portable.
@@ -47,12 +44,12 @@
             MicroBlocks even simulates the micro:bit 5x5 LED display on TFT displays.
         </span>
     </div>
+    <video class="pillars-video" loop autoplay>
+        <source src="portability.mp4" type="video/mp4">
+    </video>
 </div>
 <div class="pillar">
-    <video class="pillars-left" loop autoplay>
-        <source src="autonomy.mp4" type="video/mp4">
-    </video>
-    <div class="pillars-right">
+    <div class="pillars-text">
         <h2>Unplug and go!</h2>
         <span>
             When you like what your program does, just unplug the board, connect a battery,
@@ -60,13 +57,13 @@
             goes wherever you do.
         </span>
     </div>
+    <video class="pillars-video" loop autoplay>
+        <source src="autonomy.mp4" type="video/mp4">
+    </video>
 </div>
 <!--
 <div class="pillar">
-    <video class="pillars-left" loop autoplay>
-        <source src="decompiler.mp4" type="video/mp4">
-    </video>
-    <div class="pillars-right">
+    <div class="pillars-text">
         <h2>Plug in to share</h2>
         <span>
             With MicroBlocks, the board acts like a memory stick.
@@ -75,6 +72,9 @@
             They might even add a cool new feature!
         </span>
     </div>
+    <video class="pillars-video" loop autoplay>
+        <source src="decompiler.mp4" type="video/mp4">
+    </video>
 </div>
 -->
 
