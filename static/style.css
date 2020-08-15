@@ -232,7 +232,8 @@ iframe {
 
 div.pillar {
     padding-left: 1.6em;
-    margin-bottom: 3em;
+    margin-top: 3em;
+    margin-bottom: 8em;
     display: flex;
     flex-direction: row-reverse;
 }

@@ -1,21 +1,24 @@
 <p>
 <p><span>
-    MicroBlocks is a new programming language inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a>
-    that runs right inside microcontroller boards such as the
+    MicroBlocks is a blocks programming language for physical computing inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a>.
+    It runs on microcontrollers such as the
     <a href="https://microbit.org" target="_blank">micro:bit</a>,
-    <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a>,
+    <a href="https://calliope.cc/en" target="_blank">Calliope mini</a>,
     <a href="https://www.adafruit.com/product/3333" target="_blank">AdaFruit Circuit Playground Express</a>,
-    and many <a href="https://arduino.cc" target="_blank">Arduino</a> boards.
+    <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a>,
+    <a href="https://m5stack.com/collections/m5-core/products/grey-development-core" target="_blank">M5 Stack</a>,
+    and many others.
 </span></p>
 
 <h1 id="whatsspecial">What makes it special?</h1>
 <div class="pillar">
     <div class="pillars-text">
-        <h2>Live</h2>
+        <h2>Click to Explore</h2>
         <span>
-            MicroBlocks is a live environment. Click on a block and it runs immediately, right on the board.
-            Explore light, sound, and other action commands. See or graph sensor values in real time.
-            No more waiting for your code to compile and download.
+            MicroBlocks is a live environment.
+            Click on a block and it runs immediately, right on the board.
+            Try out commands. See and graph sensor values in real time.
+            No more waiting for code to compile and download.
         </span>
     </div>
     <video class="pillars-video" loop autoplay muted>
@@ -24,9 +27,9 @@
 </div>
 <div class="pillar">
     <div class="pillars-text">
-        <h2>Concurrent</h2>
+        <h2>Multitask Naturally</h2>
         <span>
-            Want to play some music while animating a string of colorful LEDs? No problem!
+            Want to display an animation while controling a motor? No problem!
             MicroBlocks lets you write separate scripts for each task and run them
             at the same time. Your code is simpler to write and easier to understand.
         </span>
@@ -37,10 +40,10 @@
 </div>
 <div class="pillar">
     <div class="pillars-text">
-        <h2>Portable</h2>
+        <h2>Run Everywhere</h2>
         <span>
             MicroBlocks runs on many different boards, but your scripts are portable.
-            Buttons, sensors, and display blocks behave the same on all boards with the required hardware.
+            Buttons, sensors, and display blocks behave the same on all boards with the relevant hardware.
             MicroBlocks even simulates the micro:bit 5x5 LED display on TFT displays.
         </span>
     </div>
@@ -52,9 +55,9 @@
     <div class="pillars-text">
         <h2>Unplug and go!</h2>
         <span>
-            When you like what your program does, just unplug the board, connect a battery,
-            and you're good to go. Make a pocket game, fitness app, or light-up costume that
-            goes wherever you do.
+			MicroBlocks downloads your code as you write it.
+            When you like what your program does, just unplug the board and you're good to go.
+            Make a game, a fitness app, or light-up clothing that goes wherever you do.
         </span>
     </div>
     <video class="pillars-video" loop autoplay muted>
@@ -78,15 +81,42 @@
 </div>
 -->
 
-<h1 id="intro">What is it about?</h1>
+<h1 id="intro">Combining Liveness and Autonomy</h1>
 <p><span>
-    The MicroBlocks system allows for dynamic, parallel and interactive programming, just like in Scratch, but with the twist of letting your projects run autonomously inside the board without being tethered to a computer. Thus, MicroBlocks provides the immediacy and liveness of tethered blocks programming, while supporting real-world applications that require precision timing, autonomous operation, or physically embedding the processor into projects. For example, one might write a program to record acceleration data, then embed the microcontroller and a small battery in a model rocket to explore G-forces at launch time.
+MicroBlocks provides the liveness of a tethered blocks programming system such as
+<a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>,
+making it easy to get started, encouraging experimentation, and fostering deep engagement.
+MicroBlocks compiles and downloads your scripts as you work, so you never have to wait.
+You can even change a script while it is running and see the effect immediately.
 </span></p>
+
 <p><span>
-    In other words, MicroBlocks lets you program your boards exactly like you would in <a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>, <a href="http://s4a.cat" target="_blank">S4A</a> or the <a href="https://khanning.github.io/scratch-arduino-extension/" target="_blank">Arduino extension</a> for Scratch, and when you are happy with your program you can just unplug the board from your computer and everything will keep running as if by magic!
+Unlike tethered systems, MicroBlocks code runs on the microcontroller, not the host computer.
+This autonomy allows MicroBlocks to do things that require precise timing, such as generating
+music by toggling a pin or decoding the signal from a television remote control.
+Tethered systems are unable to do those things because the latency and jitter of
+the USB serial connection makes such precise timing impossible.
 </span></p>
+
 <p><span>
-    With MicroBlocks, you can build your own "real world" digital instruments, interactive jewelry, electronic games and measuring devices, all by using blocks.
+Because MicroBlocks is not dependent on the host computer for execution,
+the program continues to run when the microcontroller is untethered and powered by a battery.
+That supports applications like animated costumes, self-contained
+art projects, interactive signs, pocket games, and remote data collection.
+For example, you might use MicroBlocks to record the G-forces in a model rocket.
+</span></p>
+
+<p><span>
+In the past, users had to choose between tethered and compilation-based programming systems.
+Tethered systems provide liveness but cannot do precise timing and are forwever dependent on their host computer.
+Compilation-based systems provide precise timing and autonomous operation,
+but require a tedious wait after every code change for the program to compile and download.
+</span></p>
+
+<p><span>
+MicroBlocks combines the liveness of a tethered system
+with autonomous program execution on the microcontroller.
+With MicroBlocks, you no longer need to choose; you can have the best of both worlds!
 </span></p>
 
 <h2>Next Steps</h2>
