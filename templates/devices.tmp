@@ -3,11 +3,10 @@
 <h2>Technical Requirements</h2>
 
 <p><span>The MicroBlocks virtual machine is designed for 32 bit microcontrollers.
-It requires at least 12Kb of RAM and 50Kb of Flash memory. For most supported boards,
+It requires at least 16Kb of RAM and 64Kb of Flash memory. For most supported boards,
 the virtual machine is built on the Arduino board definitions and libraries,
 but it has been ported to vanilla Linux.
-In the past, it was also built using the mbed libraries,
-although that option is no longer maintained.</span></p>
+</span></p>
 
 <h2>MicroBlocks Capable Boards</h2>
 

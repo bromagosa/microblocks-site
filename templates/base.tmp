@@ -70,33 +70,25 @@
                 <i></i><i></i><i></i>
                 <div name="content" class="dropdown-content">
                     <a class="header" href="/">Home</a>
-                    <a href="index#intro">Introduction</a>
-                    <a href="index#getstarted">Get Started</a>
-                    <a class="header" href="download">Get MicroBlocks</a>
-                    <a href="download#download">Download Links</a>
+                    <a href="index#whatsspecial">What makes it special?</a>
+                    <a href="index#intro">Combining Liveness and Autonomy</a>
+                    <a class="header" href="download">Get MicroBlocks!</a>
+                    <a href="download#download">Download</a>
                     <a href="download#setup">Setup</a>
                     <a class="header" href="learn">Learn</a>
+                    <a href="learn#getstarted">Getting Started</a>
                     <a href="learn#activity_cards">Activity Cards</a>
-                    <a href="learn#guided_activities">Guided Activities</a>
                     <a href="learn#other_resources">Other Resources</a>
-                    <a class="header" href="tech">Technical Details</a>
-                    <a href="tech#source">Source</a>
-                    <a href="tech#devices">Supported Devices</a>
-                    <a href="tech#techspecs">How it Works</a>
-                    <a class="header" href="blog">Blog</a>
                     <a class="header" href="info">About</a>
                     <a href="info#team">Team</a>
-                    <a href="info#credits">Credits</a>
-                    <a href="info#collaboration">Collaboration</a>
-                    <a href="info#sponsorship">Sponsorship</a>
+                    <a href="info#sponsorship">Support</a>
                     <a href="info#contact">Contact</a>
-                    <a class="header" href="events">Events</a>
-                    <a href="events#upcoming">Upcoming Events</a>
-                    <a href="events#newevent">Submit an Event</a>
                     <a class="header" href="stories">Stories</a>
-                    <a href="stories#news">In the News</a>
+                    <a href="stories#news">Articles and Papers</a>
                     <a href="stories#experiences">Experiences</a>
-                    <a href="stories#examples">Example Videos</a>
+                    <a class="header" href="events">Events</a>
+                    <a class="header" href="blog">Blog</a>
+                    <a class="header" href="tech">Technical Details</a>
 
                     <div class="donate desktop">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

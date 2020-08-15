@@ -1,8 +1,12 @@
 <h1 id="source">Source</h1>
-<p><span>The source code for the firmware (virtual machine)
-and MicroBlocks standalone IDE is
+<p><span>MicroBlocks is free software, released under the Mozilla Public License v2.0
+The source code is
 <a href="https://bitbucket.org/john_maloney/smallvm">here</a>.
-<br>
-The Snap<em>!</em> MicroBlocks IDE (in development) is
-<a href="https://bitbucket.org/bromagosa/snap-ublocks/">here</a>
-</span>.</p>
+</span></p>
+
+<p><span>An incomplete MicroBlocks IDE for Snap<em>!</em> by Jens Mönig is
+<a href="https://bitbucket.org/bromagosa/snap-ublocks/">here</a>.
+The Snap<em>!</em> code hasn't been worked on for a few years and
+its future is unclear, but it would be a good starting point
+for anyone who wants to create a MicroBlocks IDE in Javascript.
+</span></p>

@@ -1,4 +1,4 @@
-<h1 id="tutorials">Activity Cards</h1>
+<h1 id="activity_cards">Activity Cards</h1>
 
 <span><p>
 Activity cards present simple scripts to help users get started with an activity.
@@ -32,7 +32,7 @@ No additional components are needed except where noted.
 
 <span><p>
 These cards help students get started with AdaFruit Circuit Playground Express.
-They are ideal for younger students or anyone just getting started with the micro:bit.
+They are ideal for younger students or anyone just getting started.
 No additional components are needed except where noted.
 </p></span>
 
@@ -55,13 +55,13 @@ No additional components are needed except where noted.
     <li><a href="cards2/1_mb_Buttons_Display.pdf">Buttons | LED Display </a></li>
     <li><a href="cards2/2_mb_Scrolling.pdf">Scrolling | Magic 8-Ball</a></li>
     <li><a href="cards2/3_mb_Radio.pdf">Radio | Texting</a></li>
-   <li><a href="cards2/4_mb_Sound.pdf">Sound | Music </a> (requires headphones, piezo, or speaker)</li>
-   <li><a href="cards2/5_mb_NeoPixels.pdf">Colorful LEDs | Ambulance</a> (requires NeoPixels)</li>
-   <li><a href="cards2/6_mb_Sensors.pdf">Sensors | Graphing</a></li>
-   <li><a href="cards2/7_mb_Motion.pdf">Step Counter | Motion</a></li>
-   <li><a href="cards2/8_mb_DataLogging.pdf">Data | Logging</a></li>
-   <li><a href="cards2/9_mb_Games.pdf">Games | Simon</a></li>
-   <li><a href="cards2/10_mb_FlashlightTag.pdf">Flashlight Remote | Tag</a> (requires a flashlight)</li>
+    <li><a href="cards2/4_mb_Sound.pdf">Sound | Music </a> (requires headphones, piezo, or speaker)</li>
+    <li><a href="cards2/5_mb_NeoPixels.pdf">Colorful LEDs | Ambulance</a> (requires NeoPixels)</li>
+    <li><a href="cards2/6_mb_Sensors.pdf">Sensors | Graphing</a></li>
+    <li><a href="cards2/7_mb_Motion.pdf">Step Counter | Motion</a></li>
+    <li><a href="cards2/8_mb_DataLogging.pdf">Data | Logging</a></li>
+    <li><a href="cards2/9_mb_Games.pdf">Games | Simon</a></li>
+    <li><a href="cards2/10_mb_FlashlightTag.pdf">Flashlight Remote | Tag</a> (requires a flashlight)</li>
  </ul>
 
 <h2>Mozilla IoT Activity Cards </h2>
@@ -72,10 +72,10 @@ running on a Raspberry Pi.
 These cards are suitable for grades 6-12, college, and adults.
 </p></span>
 
-<h1 id="guided_activities">Activity Guides</h1>
+<h1 id="extended_activities">Extended Activities</h1>
 <span><p>
-An activity guide is a series of experiments that explore a set of related ideas.
-Activity guides are written in the form of "teacher notes" but they can also
+An extended activity is a series of experiments that explore a set of related ideas.
+Extended activity guides are written in the form of "teacher notes" but they can also
 be used as tutorials. They can be adapted for various grade levels.
 </p></span>
 
@@ -95,7 +95,7 @@ If you translate any materials, please send us a link to your translations
 so we can share it with others.
 </p></span>
 
-<h1 id="remixing">Creating Your Own</h1>
+<h2 id="creating">Creating Your Own</h2>
 <span><p>
 Have ideas for your own activity cards or activity guides?
 We encourage you to use the MicroBlocks formats!
@@ -121,6 +121,6 @@ If you'd like to share your materials with the MicroBlocks community, please get
     <li><a href="http://wiki.edutec.citilab.eu/Introducci%C3%B3_a_MicroBlocks">Introducció a MicroBlocks</a> by Edutec, Citilab (in Catalan)</li>
     <li><a href="https://wiki.galpon.org/Instalación_e_recoñecemento_das_placas_CircuitPlayground_Express_—_Python_%2B_MicroBlocks_—_galego_%2B_castellano">Instalación e recoñecemento das placas CircuitPlayground Express</a> by GALPon (in Galician and Spanish)</li>
     <li><a href="Diseno_de_actividades_STEAM_en_el_aula.pdf">Diseño de actividades STEAM en el aula</a> by Fab Lab Yucatán (in Spanish)</li>
-   <li><a href="https://kidslab.dev/2020/08/03/microblocks-with-bernat-romagosa/">MicroBlocks with Bernat Romagosa, Kidslab interview (podcast)</a></li>
+    <li><a href="https://kidslab.dev/2020/08/03/microblocks-with-bernat-romagosa/">MicroBlocks with Bernat Romagosa, Kidslab interview (podcast)</a></li>
 
 </ul>
