@@ -1,18 +1,30 @@
 <h1 id="sponsorship">Support</h1>
 
-<p><span>MicroBlocks is a not-for-profit project that depends on donations from individuals and organizations.</span></p>
+<p><span>
+MicroBlocks is a not-for-profit project under the fiscal sponsorship of the
+<a href="https://sfconservancy.org" target="_blank">Software Freedom Conservancy</a>,
+a 501(c)(3) non-profit.
+</span></p>
 
 <ul class="flex"><li><a href="http://sfconservancy.org" target="_blank"><img class="logo" src="sfc.png"/></a></li></ul>
 
-<p><span>MicroBlocks is a proud member of the <a href="https://sfconservancy.org" target="_blank">Software Freedom Conservancy</a>, a 501c3 non-profit, so MicroBlocks can receive tax-deductible donations, grants, and sponsorships from individuals and organizations.</span></p>
+<p><span>
+MicroBlocks can accept tax-deductible donations, grants, and sponsorships
+from individuals and organizations.
+If you find MicroBlocks useful, we invite you or your organization to contribute.
+</span></p>
 
-<p><span>If you find MicroBlocks useful, we invite you or your organization to contribute.
-
-<p><span>You can use the Donate button at the bottom of the page or click
+<p><span>
+You can use the Donate button at the bottom of the page or click
 <a onclick="document.querySelector('.donate.desktop form').submit()">here</a>
-to make a small personal donation to the project via PayPal or credit card. If you would like to make a larger donation or grant via wire transfer, or sponsor this project in some other way, please contact the Conservancy at
+to make a small personal donation to the project via PayPal or credit card.
+</span></p>
+
+<p><span>
+If you would like to make a larger donation via wire transfer
+or sponsor this project in some other way, please contact the Software Freedom Conservancy at
 <a href="mailto:supporters@tix.sfconservancy.org">supporters@tix.sfconservancy.org</a>.
 Be sure to mention that you want your donation to go to the MicroBlocks project.
 </span></p>
 
-<p><span>Thank you.  Every little bit helps!</span></p>
+<p><span>Thank you. Every little bit helps!</span></p>

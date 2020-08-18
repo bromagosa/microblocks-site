@@ -10,10 +10,10 @@
     and many others.
 </span></p>
 
-<h1 id="whatsspecial">What makes it special?</h1>
+<h1 id="whatsspecial">What makes MicroBlocks special?</h1>
 <div class="pillar">
     <div class="pillars-text">
-        <h2>Click to Explore</h2>
+        <h2>Live Coding</h2>
         <span>
             MicroBlocks is a live environment.
             Click on a block and it runs immediately, right on the board.
@@ -51,7 +51,7 @@
         <source src="portability.mp4" type="video/mp4">
     </video>
 </div>
-<div class="pillar">
+<div class="pillar" style="margin-bottom=0em">
     <div class="pillars-text">
         <h2>Unplug and go!</h2>
         <span>
@@ -81,45 +81,9 @@
 </div>
 -->
 
-<h1 id="intro">Combining Liveness and Autonomy</h1>
-<p><span>
-MicroBlocks provides the liveness of a tethered blocks programming system such as
-<a href="http://snap4arduino.rocks" target="_blank">Snap4Arduino</a>,
-making it easy to get started, encouraging experimentation, and fostering deep engagement.
-MicroBlocks compiles and downloads your scripts as you work, so you never have to wait.
-You can even change a script while it is running and see the effect immediately.
-</span></p>
+<h1 id="nextsteps">Next Steps</h1>
 
-<p><span>
-Unlike tethered systems, MicroBlocks code runs on the microcontroller, not the host computer.
-This autonomy allows MicroBlocks to do things that require precise timing, such as generating
-music by toggling a pin or decoding the signal from a television remote control.
-Tethered systems are unable to do those things because the latency and jitter of
-the USB serial connection makes such precise timing impossible.
-</span></p>
-
-<p><span>
-Because MicroBlocks is not dependent on the host computer for execution,
-the program continues to run when the microcontroller is untethered and powered by a battery.
-That supports applications like animated costumes, self-contained
-art projects, interactive signs, pocket games, and remote data collection.
-For example, you might use MicroBlocks to record the G-forces in a model rocket.
-</span></p>
-
-<p><span>
-In the past, users had to choose between tethered and compilation-based programming systems.
-Tethered systems provide liveness but cannot do precise timing and are forwever dependent on their host computer.
-Compilation-based systems provide precise timing and autonomous operation,
-but require a tedious wait after every code change for the program to compile and download.
-</span></p>
-
-<p><span>
-MicroBlocks combines the liveness of a tethered system
-with autonomous program execution on the microcontroller.
-With MicroBlocks, you no longer need to choose; you can have the best of both worlds!
-</span></p>
-
-<h2>Next Steps</h2>
+<h2>Get MicroBlocks</h2>
 
 <p><span>
 Visit the <a href="download">Download</a> page to download the MicroBlocks app
@@ -128,11 +92,16 @@ If you have a Chromebook, you can get the
 <a href="https://chrome.google.com/webstore/detail/microblocks/cbmcbhgijipgdmlnieolilhghfmnngbb">Chromebook App</a>.
 </span></p>
 
+<h2>Run MicroBlocks in Chrome or Edge Browser</h2>
+
 <p><span>
 You can also
 <a href="https://microblocks.fun/run/microblocks.html">run MicroBlocks in a Chrome or Edge browser</a>
 without installing anything.
-To allow MicroBlocks to connect to your board,
+</span></p>
+
+<p><span>
+<strong>NOTE:</strong> To allow MicroBlocks to connect to your board,
 you'll need visit the "chrome://flags" page and enable the "Experimental Web Platform features" flag.
 See
 <a href="http://microblocks.fun/blog-2020-05-24-Running-MicroBlocks-in-the-Browser">Running MicroBlocks in the Browser</a>.

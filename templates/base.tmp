@@ -71,7 +71,7 @@
                 <div name="content" class="dropdown-content">
                     <a class="header" href="/">Home</a>
                     <a href="index#whatsspecial">What makes it special?</a>
-                    <a href="index#intro">Combining Liveness and Autonomy</a>
+                    <a href="index#nextsteps">Next Steps</a>
                     <a class="header" href="download">Get MicroBlocks!</a>
                     <a href="download#download">Download</a>
                     <a href="download#setup">Setup</a>
@@ -86,9 +86,6 @@
                     <a class="header" href="stories">Stories</a>
                     <a href="stories#news">Articles and Papers</a>
                     <a href="stories#experiences">Experiences</a>
-                    <a class="header" href="events">Events</a>
-                    <a class="header" href="blog">Blog</a>
-                    <a class="header" href="tech">Technical Details</a>
 
                     <div class="donate desktop">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
