@@ -1,8 +1,8 @@
 <h1 id="getstarted">Getting Started</h1>
 
 <p><span>If you have one of the many microcontrollers boards that MicroBlocks supports
-(including BBC micro:bit, Calliope mini, AdaFruit Circuit Playground Express,
-Citilab ED1 board, M5 Stack/Stick/Atom, ESP32, and NodeMCU), getting started is easy:
+(such as the micro:bit, Calliope mini, AdaFruit Circuit Playground Express,
+Citilab ED1, M5 Stack/Stick/Atom, ESP32, or NodeMCU), getting started is easy:
 </span></p>
 
 <p><span>
