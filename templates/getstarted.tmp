@@ -1,9 +1,24 @@
 <h1 id="getstarted">Getting Started</h1>
 
-<p><span>If you have a BBC micro:bit, Calliope mini, AdaFruit Circuit Playground Express,
-Citilab ED1 board, M5 Stack/Stick/Atom, ESP32 or NodeMCU, getting started is easy.
-Although slightly out of date, this video will show you how:</span></p>
+<p><span>If you have one of the many microcontrollers boards that MicroBlocks supports
+(including BBC micro:bit, Calliope mini, AdaFruit Circuit Playground Express,
+Citilab ED1 board, M5 Stack/Stick/Atom, ESP32, and NodeMCU), getting started is easy:
+</span></p>
+
+<p><span>
+<a href="QuickStart.pdf">
+<img src="QuickStart_thumbnail.png" width="220" alt="QuickStart_thumbnail.png">
+</a>
+</span></p>
+
+<p><span>Although slightly out of date, this video may also be helpful:</span></p>
 
 <div class="video">
-    <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://diode.zone/videos/embed/62706ca1-df7f-47d2-ad47-7989999266ee" frameborder="0" allowfullscreen>Movie showing the MicroBlocks setup procedure</iframe>
+    <iframe width="560" height="315" align="left"
+    sandbox="allow-same-origin allow-scripts"
+    src="https://diode.zone/videos/embed/62706ca1-df7f-47d2-ad47-7989999266ee"
+    frameborder="0" allowfullscreen>
+    Movie showing the MicroBlocks setup procedure
+    </iframe>
 </div>
+<br clear="all">
