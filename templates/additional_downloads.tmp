@@ -3,7 +3,7 @@
 
 <h3>Installers</h3>
 <ul class="list">
-    <li><a href="https://microblocks.fun/downloads/latest/packages/microBlocks%20setup.exe">Windows</a> (installer)</li>
+    <li><a href="https://microblocks.fun/downloads/latest/packages/microBlocks%20setup.exe">Windows</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/packages/MicroBlocks.app.zip">MacOS</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/packages/ublocks-amd64.deb">Linux, 64-bit</a> (deb)</li>
     <li><a href="https://microblocks.fun/downloads/latest/packages/ublocks-i386.deb">Linux, 32-bit</a> (deb)</li>
@@ -12,7 +12,6 @@
 <h3>Standalone executables</h3>
 <ul class="list">
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-win.zip">Windows</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/standalone/MicroBlocksUnsigned.app.zip">MacOS, unsigned</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-linux64bit.zip">Linux, 64-bit</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-linux32bit.zip">Linux, 32-bit</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/standalone/ublocks-raspberryPi.zip">Raspberry Pi</a></li>
@@ -23,16 +22,18 @@
 </ul>
 <h3>Precompiled Virtual Machines</h3>
 <ul class="list">
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.BBCmicrobit.hex">BBC micro:bit</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.microbit.hex">BBC micro:bit</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.calliope.hex">Calliope</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/vm/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.Calliope.hex">Calliope</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.cplay52.uf2">Adafruit Circuit Playground Bluefruit</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.clue.uf2">Adafruit Clue</a></li>
     <li><a href="https://microblocks.fun/downloads/latest/vm/vm.itsybitsy.uf2">Adafruit Itsy Bitsy</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.nodemcu.bin">NodeMCU</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.esp32.bin">Generic ESP32</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.citilab-ed1.bin">Citilab ED1</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.m5stack.bin">M5Stack</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.m5stick.bin">M5Stick</a></li>
-    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.ino.m5atom.bin">M5Atom Matrix</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.nodemcu.bin">NodeMCU (ESP8266)</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.esp32.bin">Generic ESP32</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.citilab-ed1.bin">Citilab ED1</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.m5stack.bin">M5Stack</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.m5stick.bin">M5Stick</a></li>
+    <li><a href="https://microblocks.fun/downloads/latest/vm/vm.m5atom.bin">M5Atom Matrix</a></li>
 </ul>
 
 <script>
