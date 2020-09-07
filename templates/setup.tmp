@@ -61,7 +61,7 @@ sudo usermod -G dialout -a YOUR_USER_NAME
 <p><span>To connect to your board, click the <i>Connect</i> button and select the serial port.</span></p>
 <p><span><img src="ConnectMenu.png" width="150" alt="ConnectMenu.png"></span></p>
 <p><span>When the board is connected the connection indicator will turn green:</span></p>
-<p><span><img src="Connected.png" width="150" alt="Connected.png"></span></p>
+<p><span><img src="Connected.png" alt="Connected.png"></span></p>
 <p><span>As a quick test, click on the block:</span></p>
 <p><span><img src="SetUserLEDBlock.png" width="150" alt="SetUserLEDBlock.png"></span></p>
 <p><span>The user LED on your board should light up, showing that the board is connected. You're ready to code!</span></p>
