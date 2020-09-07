@@ -1,91 +1,125 @@
 <h1 id="setup">Setup</h1>
 
-<p><span>If you have a BBC micro:bit, Calliope mini, AdaFruit Circuit Playground Express, M5Stack or NodeMCU setup is easy!
+<p><span>If you have a BBC micro:bit, Calliope mini, Adafruit Circuit Playground Express,
+Citilab ED1, AdaFruit Clue, M5 Stack, M5 StickC, M5 Atom Matrix, ESP32, or NodeMCU setup is easy!
 You can follow the setup instructions below or watch this movie:</span></p>
 
 <p>
-    <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://diode.zone/videos/embed/62706ca1-df7f-47d2-ad47-7989999266ee" frameborder="0" allowfullscreen>Movie showing the MicroBlocks setup procedure</iframe>
+<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://diode.zone/videos/embed/62706ca1-df7f-47d2-ad47-7989999266ee" frameborder="0" allowfullscreen>Movie showing the MicroBlocks setup procedure</iframe>
 </p>
 
-<h2>Install serial drivers (Windows only)</h2>
-<p><span>When you plug in your board, Windows 8 and 10 should find and install the correct drivers.
-On earlier versions of Windows, you may need to manually install the drivers using one of the links below.</span></p>
-<p><span><b>Note:</b> Be sure to plug in your board board before installing the drivers.</span></p>
-<p><span><a href="https://os.mbed.com/docs/mbed-os/v6.2/program-setup/windows-serial-driver.html">Serial drivers for BBC micro:bit and Calliope mini (mbed)</a></span></p>
-<p><span><a href="https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (AdaFruit boards)</a></span></p>
+<h2>Windows</h2>
 
-<h2>Open with menu the first time (Macintosh only)</h2>
+<p><span>
+Windows 8 and 10 should find and install the correct drivers but Windows 7
+users may need to manually install drivers using one of the links below.
+Be sure to plug in your board board before installing the drivers.
+</span></p>
 
-<p><span>On Mac OS X, you have to use the open menu the first time you run MicroBlocks.</span></p>
-<p><span>Right-click on MicroBlocks.app and select "Open" from the menu:</span></p>
-<p><span><img src="OpenMenu.png" width="500" alt="OpenMenu.png"></span></p>
-<p><span>Then click the "Open" button in the confirmation dialog:<p><span>
-<p><span><img src="OpenConfirmDialog.png" width="500" alt="OpenConfirmDialog.png"></span></p>
-<p><span><b>Note:</b> You will need administrator access to do this.</span></p>
-<p><span><b>Note:</b> Most browsers are set to automatically unzip downloaded files. If your browser is not, you'll see a file like "MicroBlocks.zip" in your downloads folder. Just double-click on that file to unzip it, then follow the instructions above to open the unzipped application.</span></p>
+<p><span>
+<a href="https://os.mbed.com/docs/mbed-os/v6.2/program-setup/windows-serial-driver.html">Serial drivers for BBC micro:bit and Calliope mini (mbed)</a>
+<br>
+<a href="https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (Adafruit boards)</a>
+</span></p>
 
-<h2>Add yourself to the serial port group (Linux only)</h2>
-<p><span>On most Linux systems, users don’t have access to the USB serial port by default, so MicroBlocks will get an error when it tries to open the serial port to connect to the board.  One solution to that is to launch MicroBlocks from the command line using “sudo”:</span></p>
+<h2>Mac OS</h2>
+
+<p><span>
+On Mac OS, you'll need to use the open menu the first time you run MicroBlocks.
+Right-click on MicroBlocks.app and select "Open" from the menu:
+</span></p>
+
+<p><span><img src="OpenMenu.png" width="350" alt="OpenMenu.png"></span></p>
+
+<p><span>
+Then click the "Open" button in the confirmation dialog:
+</span></p>
+
+<p><span><img src="OpenConfirmDialog.png" width="450" alt="OpenConfirmDialog.png"></span></p>
+
+<p><span>
+The dialog box will close. Now, double-click on MicrloBlocks.app to open it.
+</span></p>
+
+<p><span><strong>Note:</strong>You may need administrator access to do this.</span></p>
+
+<h2>Linux</h2>
+
+<p><span>
+On Linux systems, users don’t have access to the USB serial port by default.
+To fix that, just add yourself to the "dialout" group by running this in a terminal:
 <pre>
-sudo ublocks-linux64bit
+sudo usermod -G dialout -a `whoami`
 </pre>
-<p><span>A more convenient long term solution is to add yourself to the group that owns the serial port.
-First, with the micro:bit attached, print the serial port entry with the command:</span></p>
-<pre>
-ls -l /dev/ttyACM0
-</pre>
-<p><span>You'll see a line such as:</span></p>
-<pre>
-crw-rw---- 1 root dialout 166, 0 Jan 25 07:23 /dev/ttyACM0
-</pre>
-<p><span>The serial port’s group is the word after “root”, in this case “dialout”. Add yourself to that group:</span></p>
-<pre>
-sudo usermod -G dialout -a YOUR_USER_NAME
-</pre>
-<p><span>Log out and back in to make this change take effect. Now you can start MicroBlocks simply by double-clicking on it's icon.</span></p>
+</span></p>
 
-<h2>Plug in your board</h2>
-<p><span><img src="connect-board.png" width="500" alt="connect-board.png"></span></p>
+<p><span>
+Log out and back in to make the change take effect.
+You should see "dialout" when you list your groups.
+</span></p>
 
-<h2>Install MicroBlocks on your board (first time only)</h2>
-<p><span><strong>Note:</strong> If you have a Circuit Playground Express you need to click the small "boot" button in the middle of the board twice quickly to prepare the board. The 10 NeoPixels around the edge of the board will turn green when the board is ready.</span></p>
-<p><span><img src="CPXinBootMode.jpg" width="500" alt="CPXinBootMode.jpg"></span></p>
-<p><span>Start MicroBlocks, then click the "About" button and select <i>install MicroBlocks on board</i>:</span></p>
-<p><span><img src="InstallMenu.png" width="500" alt="InstallMenu.png"></span></p>
-<p><span>Select your board from the menu (there will only one entry in the menu unless you have several boards plugged in):</span></p>
+<h2>Install MicroBlocks Firmware</h2>
+
+<p><span>
+<strong>Note:</strong>
+This process is slightly different on Chromebooks; follow the on-screen instructions.
+</span></p>
+
+<p><span>
+Start MicroBlocks, plug in your board, click the MicroBlocks menu (gear icon),
+ and select "update firmware on board":
+</span></p>
+
+<p><span><img src="InstallMenu.png" width="300" alt="InstallMenu.png"></span></p>
+
+<p><span>
+<strong>Note:</strong>
+If you have an Adafruit board such as the Circuit Playground Express
+click the small boot button in the middle of the board twice quickly
+to prepare the board before installing firmware.
+The NeoPixel(s) on the board will turn green when the board is ready.
+</span></p>
+
+<p><span><img src="CPXinBootMode.jpg" width="400" alt="CPXinBootMode.jpg"></span></p>
+
+<p><span>
+It MicroBlocks cannot tell what kind of board is plugged in, it will present a menu:
+</span></p>
+
 <p><span><img src="BoardSelectionMenu.png" width="150" alt="BoardSelectionMenu.png"></span></p>
-<p><span><b>Note:</b> This process is slightly different on Chromebooks; follow the on-screen instructions.</span></p>
-<p><span>It takes five to ten seconds to install MicroBlocks. When that's done, the board unmounts its USB drive, causing a notification to appear on some platforms. That's normal; you can just close the notification window.</span></p>
 
-<h2>Connect to your board</h2>
-<p><span>To connect to your board, click the <i>Connect</i> button and select the serial port.</span></p>
-<p><span><img src="ConnectMenu.png" width="150" alt="ConnectMenu.png"></span></p>
-<p><span>When the board is connected the connection indicator will turn green:</span></p>
+<p><span>
+It takes five or ten seconds to install MicroBlocks.
+When that's done, some boards unmount their USB drive, causing a notification to appear.
+That's normal; you can just close the notification window.
+</span></p>
+
+<p><span>
+Once the firmware is installed, the connection indicator should turn green:
+</span></p>
+
 <p><span><img src="Connected.png" alt="Connected.png"></span></p>
-<p><span>As a quick test, click on the block:</span></p>
+
+<p><span>
+If it doesn't, try unplugging and the re-plugging the board.
+As a quick test, click on the block:
+</span></p>
+
 <p><span><img src="SetUserLEDBlock.png" width="150" alt="SetUserLEDBlock.png"></span></p>
-<p><span>The user LED on your board should light up, showing that the board is connected. You're ready to code!</span></p>
 
-<h2>Advanced Setup for Other Boards</h2>
+<p><span>
+The user LED on your board should light up, showing that the board is connected.
+You're ready to code!
+</span></p>
 
-<p><span>If you have an Adafruit ItsyBitsy, you can install MicroBlocks by drag-and-drop.
-First, download the precompiled binary,
-<a href="https://github.com/bromagosa/microblocks-site/releases/download/v0.1.25/vm.itsybitsy.uf2">vm.itsybitsy.uf2</a>.
-Plug your ItsyBitsy into a USB port and double-click the tiny reset button
-on the board. The LED should turn green, and the ItsyBitsy should appear
-on your computer as a Flash drive. Drag and drop vm.itsybitsy.uf2 onto that drive.
-The VM will install, the Flash drive will eject itself, and you're good to go!</span></p>
+<h2>Other Boards</h2>
 
-<p><span>MicroBlocks also runs on some microcontroller boards that are a bit
-more challenging to use. These boards may have additional features, such
-as WiFi or Bluetooth support, but they generally require the user to connect additional
-electronic components to do interesting things. Since these boards do not support
-drag-and-drop installation of MicroBlocks, you must use the appropriate (and free!)
-installation software for that board, such esptool.py for NodeMCU and ESP32 boards
-or the Arduino IDE for 32-bit Arduinos.</span></p>
+<p><span>
+MicroBlocks also runs on various other boards.
+Firmware for ESP8266 (NodeMCU) and ESP32 boards can be installed directly from MicroBlocks.
+</span></p>
 
 <ul class="list">
     <li><a href="nodeMCUSetup">NodeMCU</a></li>
     <li><a href="esp32Setup">ESP32</a></li>
-    <li><em>Coming soon: Installing MicroBlocks with the Arduino IDE</em></li>
 </ul>
