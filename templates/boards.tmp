@@ -10,11 +10,11 @@ This page highlights some that are especially useful for learners and educators.
 <p><span><img src="boards/microbit.png" width="400"></span></p>
 
 <span><p>
-The micro:bit is the most popular board for education by far.
+The micro:bit is one of the most popular microcontroller boards for education.
 Over four million micro:bits have been distributed in over sixty countries
 <a href="https://cacm.acm.org/magazines/2020/3/243028-the-bbc-microbit-from-the-u-k-to-the-world/fulltext">ACM 2020</a>
-and the micro:bit Educational Foundation reports that over twenty million
-students have used micro:bits.
+and the <a href="https://microbit.org/about/">micro:bit Educational Foundation</a>
+reports that over twenty million students have used micro:bits.
 </p></span>
 
 <span><p>
@@ -27,7 +27,8 @@ but adding components is not necessary. The many built in features
 of the micro:bit allow beginners to do interesting things immediately
 without wiring. That simplicity allows the micro:bit to be used
 by elementary school children (grades 3-5) as well as teens and adults.
-As Seymour Papert might say, the micro:bit has a low floor and a high ceiling.
+The micro:bit has a
+<a href="http://www.wismath.org/Resources/Documents/Annual%20Conference/210JMetke-Low%20Floor%20High%20Ceiling%20Handouts.pdf">low floor and a high ceiling</a/.
 </p></span>
 
 <h2><a href="https://calliope.cc/calliope-mini/uebersicht">Calliope mini</a> ($50)</h2>
@@ -36,17 +37,16 @@ As Seymour Papert might say, the micro:bit has a low floor and a high ceiling.
 
 <span><p>
 The Calliope mini is a German variant of the micro:bit, with a few
-changes and extensions. The most obvious change is that shape of the
+changes and extensions. The most obvious change is the shape of the
 board, which was optimized for use with alligator clips. The Calliope
 mini also has a built-in speaker, a microphone, and an RGB LED.
-While it lacks the micro:bit's edge connector, it has pins for
-controlling two motors plus two Grove connectors for connecting
-additional components.
+While it lacks the micro:bit's edge connector, it has two Grove connectors
+for connecting additional components.
 </p></span>
 
 <span><p>
 In the US, the Calliope mini is available from
-<a href="https://www.adafruit.com/product/4071">AdaFruit</a>.
+<a href="https://www.adafruit.com/product/4071">Adafruit</a>.
 
 </p></span>
 
@@ -55,7 +55,7 @@ In the US, the Calliope mini is available from
 <p><span><img src="boards/cpx.png" width="550"></span></p>
 
 <span><p>
-The AdaFruit Circuit Playground Express and Circuit Playground Bluefruit are
+The Adafruit Circuit Playground Express and Circuit Playground Bluefruit are
 also popular with educators. These boards feature a set of buttons and
 sensors similar to those of the micro:bit, but replace the 5x5 LED
 display with a circle of 10 programmable RGB LED "NeoPixels"
@@ -106,20 +106,19 @@ ED1 from a web browser or from a <a href="https://snap.berkeley.edu/">Snap!</a>
 program.
 </p></span>
 
-<h2><a href="https://www.adafruit.com/product/4500">AdaFruit Clue</a> ($40)</h2>
+<h2><a href="https://www.adafruit.com/product/4500">Adafruit Clue</a> ($40)</h2>
 
 <p><span><img src="boards/clue.png" width="400"></span></p>
 
 <span><p>
-The Clue, a new board from AdaFruit, was recently featured on the
+The Clue, a new board from Adafruit, was recently featured on the
 cover of Make: magazine. Like the ED1, it has a TFT display (240x240)
 and speaker. It also has an impressive collection of built in sensors
 (motion, magnetometer, proximity/light/color/gesture,
 sound, humidity, temperature, and barometric pressure/altitude)
 and features a radio that can interoperate with the micro:bit.
-However, the most unique feature of the Clue is that it has an
-edge connector that is compatible with the micro:bit edge
-connector, so it can take advantage of the extension board ecosystem
+A useful feature of the Clue is a micro:bit-compatible edge connector,
+allowing the Clue to can take advantage of extension boards
 created for the micro:bit.
 </p></span>
 
@@ -165,7 +164,7 @@ built-in battery.
 
 <span><p>
 Created by the Chinese company Espressif, the ESP8266 and ESP32 are WiFi-enabled
-microcontroller modules that are used most of the WiFi-capable boards
+microcontroller modules that are used by most of the WiFi-capable boards
 that MicroBlocks supports.
 Those modules are also available in inexpensive bare-bones boards designed
 for electronics hobbyists such as the NodeMCU and Wemos d1 mini. Such
@@ -180,10 +179,9 @@ listed here.
 <span><p>
 However, their low cost and WiFi capabilities makes these boards useful
 for advanced students or makers who want to explore IoT applications.
-These boards can be found on Amazon and are often cheaper if you buy multiple boards.
-It's a good idea to check the reviews before buying one of these boards. Some
-boards are too wide to be conveniently used in electronic prototyping boards
-and some super-cheap boards from Chinese mail order companies lack USB-serial chips.
+It's a good idea to check reviews before buying one of these boards.
+Some boards are too wide to be conveniently used in electronic prototyping boards
+while others lack USB-serial chips.
 </p></span>
 
 <h2>Other Boards</h2>
