@@ -166,9 +166,9 @@ built-in battery.
 Created by the Chinese company Espressif, the ESP8266 and ESP32 are WiFi-enabled
 microcontroller modules that are used by most of the WiFi-capable boards
 that MicroBlocks supports.
-Those modules are also available in inexpensive bare-bones boards designed
-for electronics hobbyists such as the NodeMCU and Wemos d1 mini. Such
-boards don't have much built in -- at most a single programmable
+Those modules are also available in inexpensive bare-bones boards designed for electronics
+hobbyists such as the NodeMCU (left), ESP-32S (center) and Wemos d1 mini (right).
+Such boards don't have much built in -- at most a single programmable
 button and one or two LED's. They are designed to be plugged into an
 electronics prototyping board and connected to additional components.
 Since some wiring is required to make these boards do interesting things,

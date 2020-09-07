@@ -46,7 +46,7 @@ they use a variety of pins for the user LED.
 <p><span>
 Most ESP8266 boards have two buttons.
 One of them, usually marked "RST", "Reset", or "EN", is the hardware reset button.
-The other button, usually marked "Flash", sometimes needs to be held down to force the
+The other button, usually marked "Flash", sometimes can be held down to force the
 chip into bootloader mode when installing firmware (not necessary on well-designed
 boards), but can also be used as "Button A" in MicroBlocks. It is connected
 to pin 3. That pin has a pull up resistor so it is high ("true" in MicroBlocks)
@@ -61,7 +61,7 @@ That pin is analog input-only; it can't be used as an output.
 <h2>Serial Setup</h3>
 
 <p><span>On some systems, you may need to install a serial driver.
-Depending on the USB-serial chip on your board you may need
+Depending on the USB-serial chip on your board you may need either
 <a href="https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers">CH340G driver</a> or
 <a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers">Silcon Labs CP210x driver</a>.
 </span></p>

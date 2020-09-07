@@ -17,7 +17,7 @@ and beginners than boards with more built-in features.
 <h2>Serial Setup</h3>
 
 <p><span>On some systems, you may need to install a serial driver.
-Depending on the USB-serial chip on your board you may need
+Depending on the USB-serial chip on your board you may need either
 <a href="https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers">CH340G driver</a> or
 <a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers">Silcon Labs CP210x driver</a>.
 </span></p>
