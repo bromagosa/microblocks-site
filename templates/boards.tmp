@@ -1,0 +1,192 @@
+<h1 id="boardguide">Board Guide</h1>
+
+<span><p>
+MicroBlocks runs on a wide variety of microcontroller boards.
+This page highlights some that are especially useful for learners and educators.
+</p></span>
+
+<h2><a href="http://microbit.org">BBC micro:bit</a> ($15-$18)</h2>
+
+<p><span><img src="boards/microbit.png" width="400"></span></p>
+
+<span><p>
+The micro:bit is one of the most popular microcontroller boards for education.
+Over four million micro:bits have been distributed in over sixty countries
+<a href="https://cacm.acm.org/magazines/2020/3/243028-the-bbc-microbit-from-the-u-k-to-the-world/fulltext">ACM 2020</a>
+and the <a href="https://microbit.org/about/">micro:bit Educational Foundation</a>
+reports that over twenty million students have used micro:bits.
+</p></span>
+
+<span><p>
+The micro:bit has a rich set of features, including
+two buttons, a 5x5 LED array that can display graphics and text,
+a radio that supports peer-to-peer messaging, and sensors
+for light, motion, and temperature. The micro:bit also has an edge
+connector that allows additional devices to be connected if desired,
+but adding components is not necessary. The many built in features
+of the micro:bit allow beginners to do interesting things immediately
+without wiring. That simplicity allows the micro:bit to be used
+by elementary school children (grades 3-5) as well as teens and adults.
+The micro:bit has a
+<a href="http://www.wismath.org/Resources/Documents/Annual%20Conference/210JMetke-Low%20Floor%20High%20Ceiling%20Handouts.pdf">low floor and a high ceiling</a/.
+</p></span>
+
+<h2><a href="https://calliope.cc/calliope-mini/uebersicht">Calliope mini</a> ($50)</h2>
+
+<p><span><img src="boards/calliope.png" width="450"></span></p>
+
+<span><p>
+The Calliope mini is a German variant of the micro:bit, with a few
+changes and extensions. The most obvious change is the shape of the
+board, which was optimized for use with alligator clips. The Calliope
+mini also has a built-in speaker, a microphone, and an RGB LED.
+While it lacks the micro:bit's edge connector, it has two Grove connectors
+for connecting additional components.
+</p></span>
+
+<span><p>
+In the US, the Calliope mini is available from
+<a href="https://www.adafruit.com/product/4071">Adafruit</a>.
+
+</p></span>
+
+<h2><a href="https://www.adafruit.com/product/3333">Circuit Playground Express</a> and <a href="https://www.adafruit.com/product/4333">Circuit Playground Bluefruit</a> ($25)</h2>
+
+<p><span><img src="boards/cpx.png" width="550"></span></p>
+
+<span><p>
+The Adafruit Circuit Playground Express and Circuit Playground Bluefruit are
+also popular with educators. These boards feature a set of buttons and
+sensors similar to those of the micro:bit, but replace the 5x5 LED
+display with a circle of 10 programmable RGB LED "NeoPixels"
+than can be used to create colorful, eye-catching animations.
+These boards also have good built-in speakers and eight alligator-clip
+friendly GPIO pins. Less obviously, these boards have beefy power
+supplies that can drive multiple external devices such as servo motors
+or NeoPixels strips making them especially useful in art projects.
+</p></span>
+
+<span><p>
+The Circuit Playground Bluefruit (but not the Express) has a radio
+that can communicate with the micro:bit and Calliope mini.
+</p></span>
+
+<h2><a href="https://market.citilab.eu/ca/producte/placa-ed1/">Citilab ED1</a> (€38.50)</h2>
+
+<p><span><img src="boards/ed1.png" width="450"></span></p>
+
+<span><p>
+The ED1 board and the related
+<a href="https://market.citilab.eu/ca/producte/kit-robotica-ed1/">robot kit</a>
+were developed by the Citilab Cornellà EduLab specifically for K-12 education.
+EduLab has led workshops for thousands of school children in the Barcelona area
+using MicroBlocks on the ED1.
+Over the past several years, the ED1 board and robot kit have gone through
+multiple design-and-test cycles, and it shows.
+Their robot uses stepper motors (the motor controller is built into
+the board) for precision.
+As a result, it can turn and move by exact amounts and,
+when dragging a pen, is capable of drawing geometric figures accurately.
+</p></span>
+
+<span><p>
+The ED1 has a 128x128 TFT display that can be used to display
+text and graphics. There is even a Logo Turtle library for it. The display
+can simulate the micro:bit's 5x5 LED display, so the ED1 can run
+micro:bit programs. The board includes a nice built-in speaker,
+six touch buttons, motion, light, and temperature sensors, an
+IR receiver, and a set of GPIO pins for connecting additional devices.
+
+</p></span>
+
+<span><p>
+Finally, the ED1 supports WiFi. Using MicroBlocks libraries, you can
+create a small HTTP server that you can use to remotely control the
+ED1 from a web browser or from a <a href="https://snap.berkeley.edu/">Snap!</a>
+program.
+</p></span>
+
+<h2><a href="https://www.adafruit.com/product/4500">Adafruit Clue</a> ($40)</h2>
+
+<p><span><img src="boards/clue.png" width="400"></span></p>
+
+<span><p>
+The Clue, a new board from Adafruit, was recently featured on the
+cover of Make: magazine. Like the ED1, it has a TFT display (240x240)
+and speaker. It also has an impressive collection of built in sensors
+(motion, magnetometer, proximity/light/color/gesture,
+sound, humidity, temperature, and barometric pressure/altitude)
+and features a radio that can interoperate with the micro:bit.
+A useful feature of the Clue is a micro:bit-compatible edge connector,
+allowing the Clue to can take advantage of extension boards
+created for the micro:bit.
+</p></span>
+
+<h2><a href="https://m5stack.com/collections/m5-core/products/grey-development-core?variant=16804796006490">M5Stack Grey</a> ($34)</h2>
+
+<p><span><img src="boards/m5stack.png" width="400"></span></p>
+
+<span><p>
+M5Stack products feature plastic cases that make them look more like
+consumer products than most microcontroller boards. The M5Stack Grey
+features a large TFT display (320x240), three buttons, motion sensor,
+speaker, WiFi, and a built-in rechargeable battery.
+A set of GPIO pins are accessible through slots in the sides of the unit.
+The M5Stack Basic Core model is similar to the Grey model but omits the motion sensor.
+</p></span>
+
+<h2><a href="https://m5stack.com/collections/m5-core/products/stick-c">M5 Stick-C</a> ($10)</h2>
+
+<p><span><img src="boards/m5stickC.png" width="450"></span></p>
+
+<span><p>
+The M5 Stick-C features a tiny TFT display (160x80), a motion sensor,
+two buttons, an IR transmitter, WiFi, and a small rechargeable
+battery. Small and light, the M5Stick-C can be worn on the wrist and
+used to create your own fitness device or smart watch.
+</p></span>
+
+<h2><a href="https://m5stack.com/collections/m5-core/products/atom-matrix-esp32-development-kit">M5 Atom Matrix</a> ($10)</h2>
+
+<p><span><img src="boards/m5atomMatrix.png" width="450"></span></p>
+
+<span><p>
+The M5 Atom Matrix is tiny -- only one inch (24 mm) square! Instead of
+a TFT display, it has a 5x5 grid of programmable RGB LED's and the
+entire top is a button (but that's the only button). It has a built-in
+motion sensor, an IR transmitter, and WiFi, but it does not have a
+built-in battery.
+</p></span>
+
+<h2>ESP8266 ($4) and ESP32 ($8)</h2>
+
+<p><span><img src="boards/espboards.png" width="450"></span></p>
+
+<span><p>
+Created by the Chinese company Espressif, the ESP8266 and ESP32 are WiFi-enabled
+microcontroller modules that are used by most of the WiFi-capable boards
+that MicroBlocks supports.
+Those modules are also available in inexpensive bare-bones boards designed for electronics
+hobbyists such as the NodeMCU (left), ESP-32S (center) and Wemos d1 mini (right).
+Such boards don't have much built in -- at most a single programmable
+button and one or two LED's. They are designed to be plugged into an
+electronics prototyping board and connected to additional components.
+Since some wiring is required to make these boards do interesting things,
+they have a steeper learning curve for beginners than the other boards
+listed here.
+</p></span>
+
+<span><p>
+However, their low cost and WiFi capabilities makes these boards useful
+for advanced students or makers who want to explore IoT applications.
+It's a good idea to check reviews before buying one of these boards.
+Some boards are too wide to be conveniently used in electronic prototyping boards
+while others lack USB-serial chips.
+</p></span>
+
+<h2>Other Boards</h2>
+
+<span><p>
+In addition to the boards listed here, MicroBlocks runs on
+<a href="https://bitbucket.org/john_maloney/smallvm/wiki/Devices">many other boards</a>.
+</p></span>
