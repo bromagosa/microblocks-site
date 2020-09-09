@@ -1,3 +1,4 @@
+<script src="utils.js"></script>
 <a id="download" class="download-button" onclick="preventImpatience(this);">
     <div class="contents">
         <img class="pointing-bunny" src="pointing-bunny.png">
@@ -68,10 +69,5 @@ req.onreadystatechange = function() {
 
 req.open('GET', '/downloads/latest/VERSION.txt');
 req.send();
-
-function preventImpatience (anchor) {
-    anchor.style['pointer-events'] = 'none';
-    setTimeout(function () { anchor.style['pointer-events'] = 'auto'; }, 1500);
-};
 
 </script>
