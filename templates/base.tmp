@@ -117,7 +117,7 @@
         </div>
         <footer>
             <a href="/"><i class="bunny"></i></a>
-            <small>&copy; <span class="year"></span> by <a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a>, <a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a> and <a href="http://romagosa.work" target="_blank">Bernat Romagosa</a>. MicroBlocks is free software, released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License v2.0</a>.</small>
+            <small>&copy; <span class="year"></span> by <a href="https://harc.ycr.org/member/john_maloney/" target="_blank">John Maloney</a>, <a href="https://github.com/jmoenig" target="_blank">Jens Mönig</a> and <a href="http://romagosa.work" target="_blank">Bernat Romagosa</a>. MicroBlocks is <a href="https://bitbucket.org/john_maloney/smallvm" target="_bklank">free software</a>, released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License v2.0</a>.</small>
             <img class="grass" src="grass.png"/>
         </footer>
         <script>
