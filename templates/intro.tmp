@@ -1,6 +1,16 @@
+<!--
+<a href="download" class="banner beta">
+    <i class="dancing-rosza"></i>
+    <div class="right">
+        <h4>1.0 beta released</h4>
+        <strong>Get It Now!</strong>
+    </div>
+</a>
+-->
 <p>
 <p><span>
-    MicroBlocks is a blocks programming language for physical computing inspired by <a href="https://scratch.mit.edu" target="_blank">Scratch</a>.
+    MicroBlocks is a blocks programming language for physical computing inspired by
+    <a href="https://scratch.mit.edu" target="_blank">Scratch</a>.
     It runs on microcontrollers such as the
     <a href="https://microbit.org" target="_blank">micro:bit</a>,
     <a href="https://calliope.cc/en" target="_blank">Calliope mini</a>,

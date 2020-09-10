@@ -76,17 +76,55 @@ header {
 }
 
 .banner {
-    /* SFC campaign banner */
     margin: 30px auto 0 auto;
-    max-width: 940px;
+    font-style: normal !important;
 }
 
-.banner a::before, .banner a::after {
+.banner a::before, .banner a::after,
+a.banner::before, a.banner::after {
     content: '' !important;
 }
 
 .banner img {
     border-radius: 10px;
+}
+
+.banner.beta {
+    /* 1.0 beta release banner */
+    display: table;
+    background: #c0e7a8;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 3em;
+}
+
+.banner h4 {
+    font-size: 2em;
+    margin-bottom: .3em;
+    margin-right: 1em;
+}
+
+i.dancing-rosza {
+    display: inline-block;
+    vertical-align: text-bottom;
+    background: url("dancing-bunny.png") left center;
+    width: 64px;
+    height: 79px;
+    animation: dance 1.2s steps(10) infinite;
+}
+
+@keyframes dance {
+    100% { background-position: -640px; }
+}
+
+.banner div.right {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.banner strong {
+    font-size: 1.4em;
 }
 
 header .logo img {
