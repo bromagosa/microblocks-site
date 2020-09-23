@@ -1,4 +1,4 @@
-<!--
+
 <a href="download" class="banner beta">
     <i class="dancing-rosza"></i>
     <div class="right">
@@ -6,7 +6,7 @@
         <strong>Get It Now!</strong>
     </div>
 </a>
--->
+
 <p>
 <p><span>
     MicroBlocks is a blocks programming language for physical computing inspired by
@@ -39,7 +39,7 @@
     <div class="pillars-text">
         <h2>Multitask Naturally</h2>
         <span>
-            Want to display an animation while controling a motor? No problem!
+            Want to display an animation while controlling a motor? No problem!
             MicroBlocks lets you write separate scripts for each task and run them
             at the same time. Your code is simpler to write and easier to understand.
         </span>
