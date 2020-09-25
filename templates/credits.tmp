@@ -32,6 +32,7 @@
     <li><span><strong><em>Tom Lauwers</em></strong> contributed the Hummingbird:bit and Finch libraries, as well as the Dutch translation.</span></li>
     <li><span><strong><em>Paul Stoffregen</em></strong> contributed support for persistence on the Teensy 3.2, 4.0 and 4.1 boards.</span></li>
     <li><span><strong><em>Filipe Oliveira Gomes</em></strong> contributed the Portuguese translation.</span></li>
+    <li><span><strong><em>Ayachika Kitazaki</em></strong> contributed the Japanese translation.</span></li>
     <li><span><strong><em>Mozilla Open Source Support</em></strong> program provided a generous grant to improve MicroBlocks support for the
 <a href="https://iot.mozilla.org/gateway">WebThings Gateway</a>
 by Mozilla.</span></li>
