@@ -7,3 +7,6 @@ Disallow: /run/
 
 User-agent: PetalBot
 Disallow: /
+
+User-agent: Adsbot
+Disallow: /
