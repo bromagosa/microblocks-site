@@ -15,9 +15,7 @@
     <a href="https://microbit.org" target="_blank">micro:bit</a>,
     <a href="https://calliope.cc/en" target="_blank">Calliope mini</a>,
     <a href="https://www.adafruit.com/product/3333" target="_blank">AdaFruit Circuit Playground Express</a>,
-    <a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a>,
-    <a href="https://m5stack.com/collections/m5-core/products/grey-development-core" target="_blank">M5 Stack</a>,
-    and many others.
+	and <a href="boardguide" target="_blank">many others</a>.
 </span></p>
 
 <h1 id="whatsspecial">What makes MicroBlocks special?</h1>

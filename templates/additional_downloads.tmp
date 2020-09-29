@@ -28,12 +28,13 @@
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.cplay52.uf2">Adafruit Circuit Playground Bluefruit</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.clue.uf2">Adafruit Clue</a></li>
-    <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.nodemcu.bin">NodeMCU (ESP8266)</a></li>
-    <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.esp32.bin">Generic ESP32</a></li>
+    <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.itsybitsy.uf2">AdaFruit ItsyBitsy M0</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.citilab-ed1.bin">Citilab ED1</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.m5stack.bin">M5Stack</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.m5stick.bin">M5Stick</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.m5atom.bin">M5Atom Matrix</a></li>
+    <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.esp32.bin">Generic ESP32</a></li>
+    <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.nodemcu.bin">NodeMCU (ESP8266)</a></li>
 </ul>
 
 <script>
