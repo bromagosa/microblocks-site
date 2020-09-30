@@ -1,12 +1,17 @@
-<h1 id="news">Articles and Papers</h1>
+<h1 id="news">News</h1>
+
 <ul class="list">
+	<li><a href="MicroBlocks_1.0_Release.pdf">MicroBlocks 1.0 Released (September 30, 2020)</a></li>
+</ul>
 
-     <li><a href="https://www.scratchcatala.com/noticies/microblocks/">MicroBlocks: nou llenguatge de programació per a microcontroladors</a>, by Pau Nin (April 2018, in Catalan)</li>
-    <li><a href="https://inventtolearn.com/the-microbit-matters/">The micro:bit matters</a>, by Gary Stager (August 2018)</li>
-     <li><a href="https://helloworld.raspberrypi.org/issues/6">Introducing MicroBlocks</a>, by John Maloney (Hello World magazine, September 2018)</li>
-    <li><a href="https://sfconservancy.org/news/2018/nov/20/microblocksjoin/">MicroBlocks Joins Conservancy</a>, by Software Freedom Conservancy (November 2018)</li>
-     <li><a href="https://www.citilab.eu/actualitat/2018/11/27/el-nou-robot-del-citilab-sestrena-a-les-escoles-de-cornella/">El nou robot del Citilab s’estrena a les escoles de Cornellà</a>, by Citilab (November 2018, in Catalan)</li>
-    <li><a href="documents/Cabrera-Maloney-Weintrop_2019.pdf">Programs in the Palm of your Hand</a>, by Lautaro Cabrera, John Maloney and David Weintrop (IDC, June 2019)</li>
-    <li><a href="https://makezine.com/2020/07/31/microcontrollers-meet-microblocks/">Microcontrollers, Meet MicroBlocks</a>, by Kathy Giori (Make magazine, August 2020)</li>
+<h1 id="articles">Articles and Papers</h1>
 
+<ul class="list">
+	<li><a href="https://www.scratchcatala.com/noticies/microblocks/">MicroBlocks: nou llenguatge de programació per a microcontroladors</a>, by Pau Nin (April 2018, in Catalan)</li>
+	<li><a href="https://inventtolearn.com/the-microbit-matters/">The micro:bit matters</a>, by Gary Stager (August 2018)</li>
+	<li><a href="https://helloworld.raspberrypi.org/issues/6">Introducing MicroBlocks</a>, by John Maloney (Hello World magazine, September 2018)</li>
+	<li><a href="https://sfconservancy.org/news/2018/nov/20/microblocksjoin/">MicroBlocks Joins Conservancy</a>, by Software Freedom Conservancy (November 2018)</li>
+	<li><a href="https://www.citilab.eu/actualitat/2018/11/27/el-nou-robot-del-citilab-sestrena-a-les-escoles-de-cornella/">El nou robot del Citilab s’estrena a les escoles de Cornellà</a>, by Citilab (November 2018, in Catalan)</li>
+	<li><a href="documents/Cabrera-Maloney-Weintrop_2019.pdf">Programs in the Palm of your Hand</a>, by Lautaro Cabrera, John Maloney and David Weintrop (IDC, June 2019)</li>
+	<li><a href="https://makezine.com/2020/07/31/microcontrollers-meet-microblocks/">Microcontrollers, Meet MicroBlocks</a>, by Kathy Giori (Make magazine, August 2020)</li>
 </ul>
