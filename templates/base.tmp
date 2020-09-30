@@ -70,7 +70,7 @@
                 <i></i><i></i><i></i>
                 <div name="content" class="dropdown-content">
                     <a class="header" href="/">Home</a>
-                    <a href="index#whatsspecial">What makes it special?</a>
+                    <a href="index#whatsspecial">What makes MicroBlocks special?</a>
                     <a href="index#nextsteps">Next Steps</a>
                     <a class="header" href="download">Get MicroBlocks!</a>
                     <a href="download#download">Download</a>
@@ -79,15 +79,16 @@
                     <a href="learn#getstarted">Quickstart Guide</a>
                     <a href="learn#activity_cards">Activity Cards</a>
                     <a href="learn#other_resources">Other Resources</a>
-                    <a class="header" href="boardguide">Boards</a>
+                    <a class="header" href="boardguide">Board Guide</a>
+                    <a class="header" href="stories">Publications</a>
+                    <a href="stories#news">News</a>
+                    <a href="stories#articles">Articles and Papers</a>
+                    <a href="stories#experiences">Experience Reports</a>
                     <a class="header" href="info">About</a>
-                    <a href="info#mission">Our Mission</a>
+                    <a href="info#mission">Mission</a>
                     <a href="info#team">Team</a>
                     <a href="info#sponsorship">Support</a>
                     <a href="info#contact">Contact</a>
-                    <a class="header" href="stories">Stories</a>
-                    <a href="stories#news">Articles and Papers</a>
-                    <a href="stories#experiences">Experiences</a>
 
                     <div class="donate desktop">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
