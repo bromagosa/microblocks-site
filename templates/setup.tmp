@@ -2,12 +2,29 @@
 
 <p><span>
 Getting started is as easy as:
-<br>
+</span></p>
+
+<p><span>
 1. Download and install Microblocks. See below for any additional setup steps for your system.
-<br>
+	<ul class="list">
+		<li><a href="https://youtu.be/FdOzKiSYyV8">Mac OS Setup</a></li>
+	</ul>
+</span></p>
+
+<p><span>
 2. Plug in your board and install the MicroBlocks firmware.
-<br>
+	<ul class="list">
+		<li><a href="https://youtu.be/V4u2_GN8JnU">Install Firmware, micro:bit</a></li>
+		<li><a href="https://youtu.be/UN-pkP5oqLw">Install Firmware, Circuit Playground Express</a></li>
+	</ul>
+</span></p>
+
+<p><span>
 3. Start coding!
+	<ul class="list">
+		<li><a href="https://youtu.be/cf2xsYSTqgY">Quick Intro, micro:bit</a></li>
+		<li><a href="https://youtu.be/ayLqWwqItxg">Quick Intro, Circuit Playground Express</a></li>
+	</ul>
 </span></p>
 
 <h2>Additional Setup Steps</h2>
@@ -30,8 +47,7 @@ Be sure to plug in your board before installing the drivers.
 
 <p><span>
 On Mac OS, you need to confirm that MicroBlocks was downloaded from the internet
-the first time you run it. Follow these instructions or
-watch this <a href="https://youtu.be/FdOzKiSYyV8">one minute video</a> to see how.
+the first time you run it.
 </span></p>
 
 <p><span>
@@ -47,7 +63,7 @@ Then click the "Open" button in the confirmation dialog:
 <p><span><img src="OpenConfirmDialog.png" width="450" alt="OpenConfirmDialog.png"></span></p>
 
 <p><span>
-The dialog box will close. Now, double-click on MicrloBlocks.app to open it.
+The dialog box will close. Now, double-click on MicroBlocks.app to open it.
 </span></p>
 
 <h3>Linux</h3>
@@ -66,15 +82,6 @@ You should see "dialout" when you list your groups.
 </span></p>
 
 <h2>Install MicroBlocks Firmware</h2>
-
-<p><span>
-Installing the MicroBlocks firmware is easy!
-<br>
-<br>
-<a href="https://youtu.be/V4u2_GN8JnU">Install firmware on the micro:bit</a>
-<br>
-<a href="https://youtu.be/UN-pkP5oqLw">Install firmware on AdaFruit Circuit Playground Express</a>
-</span></p>
 
 <p><span>
 Start MicroBlocks, plug in your board, click the MicroBlocks menu (gear icon),
@@ -128,14 +135,6 @@ As a quick test, click on the block:
 <p><span>
 The user LED on your board should light up, showing that the board is connected.
 You're ready to code!
-</span></p>
-
-<p><span>
-These videos will help you get started.
-<br>
-<a href="https://youtu.be/cf2xsYSTqgY">Quick intro, micro:bit</a>
-<br>
-<a href="https://youtu.be/ayLqWwqItxg">Quick intro, AdaFruit Circuit Playground Express</a>
 </span></p>
 
 <h2>ESP Boards</h2>
