@@ -61,7 +61,7 @@
         onresize="document.querySelector('.dropdown-content').style.display = window.matchMedia('(max-width: 1180px)').matches ? 'none' : 'block';"
     >
 
-    <img class="ribbon" src="alpha-ribbon.png"/> 
+    <img class="ribbon" src="alpha-ribbon.png"/>
         <!--        <img class="ribbon" src="beta-ribbon.png"/> -->
         <div id="flowers"></div>
 
@@ -74,9 +74,9 @@
                     <a href="index#nextsteps">Next Steps</a>
                     <a class="header" href="download">Get MicroBlocks!</a>
                     <a href="download#download">Download</a>
-                    <a href="download#setup">Setup</a>
+                    <a href="download#setup">Getting Started</a>
                     <a class="header" href="learn">Learn</a>
-                    <a href="learn#getstarted">Getting Started</a>
+                    <a href="learn#getstarted">Quickstart Guide</a>
                     <a href="learn#activity_cards">Activity Cards</a>
                     <a href="learn#other_resources">Other Resources</a>
                     <a class="header" href="boardguide">Boards</a>

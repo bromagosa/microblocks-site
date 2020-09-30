@@ -1,19 +1,23 @@
-<h1 id="setup">Setup</h1>
-
-<p><span>If you have a BBC micro:bit, Calliope mini, Adafruit Circuit Playground Express,
-Citilab ED1, AdaFruit Clue, M5 Stack, M5 StickC, M5 Atom Matrix, ESP32, or NodeMCU setup is easy!
-You can follow the setup instructions below or watch this movie:</span></p>
-
-<p>
-<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://diode.zone/videos/embed/62706ca1-df7f-47d2-ad47-7989999266ee" frameborder="0" allowfullscreen>Movie showing the MicroBlocks setup procedure</iframe>
-</p>
-
-<h2>Windows</h2>
+<h1 id="setup">Getting Started</h1>
 
 <p><span>
-Windows 8 and 10 should find and install the correct drivers but Windows 7
-users may need to manually install drivers using one of the links below.
-Be sure to plug in your board board before installing the drivers.
+Getting started is as easy as:
+<br>
+1. Download and install Microblocks. See below for any additional setup steps for your system.
+<br>
+2. Plug in your board and install the MicroBlocks firmware.
+<br>
+3. Start coding!
+</span></p>
+
+<h2>Additional Setup Steps</h2>
+
+<h3>Windows</h3>
+
+<p><span>
+Windows 8 and 10 should find and install drivers automatically.
+Windows 7 users may need to manually install drivers using one of the links below.
+Be sure to plug in your board before installing the drivers.
 </span></p>
 
 <p><span>
@@ -22,10 +26,15 @@ Be sure to plug in your board board before installing the drivers.
 <a href="https://learn.adafruit.com/adafruit-circuit-playground-express/adafruit2-windows-driver-installation">Serial drivers for Circuit Playground Express (Adafruit boards)</a>
 </span></p>
 
-<h2>Mac OS</h2>
+<h3>Mac OS</h3>
 
 <p><span>
-On Mac OS, you'll need to use the open menu the first time you run MicroBlocks.
+On Mac OS, you need to confirm that MicroBlocks was downloaded from the internet
+the first time you run it. Follow these instructions or
+watch this <a href="https://youtu.be/FdOzKiSYyV8">one minute video</a> to see how.
+</span></p>
+
+<p><span>
 Right-click on MicroBlocks.app and select "Open" from the menu:
 </span></p>
 
@@ -41,9 +50,7 @@ Then click the "Open" button in the confirmation dialog:
 The dialog box will close. Now, double-click on MicrloBlocks.app to open it.
 </span></p>
 
-<p><span><strong>Note:</strong>You may need administrator access to do this.</span></p>
-
-<h2>Linux</h2>
+<h3>Linux</h3>
 
 <p><span>
 On Linux systems, users don’t have access to the USB serial port by default.
@@ -61,13 +68,17 @@ You should see "dialout" when you list your groups.
 <h2>Install MicroBlocks Firmware</h2>
 
 <p><span>
-<strong>Note:</strong>
-This process is slightly different on Chromebooks; follow the on-screen instructions.
+Installing the MicroBlocks firmware is easy!
+<br>
+<br>
+<a href="https://youtu.be/V4u2_GN8JnU">Install firmware on the micro:bit</a>
+<br>
+<a href="https://youtu.be/UN-pkP5oqLw">Install firmware on AdaFruit Circuit Playground Express</a>
 </span></p>
 
 <p><span>
 Start MicroBlocks, plug in your board, click the MicroBlocks menu (gear icon),
- and select "update firmware on board":
+and select "update firmware on board":
 </span></p>
 
 <p><span><img src="InstallMenu.png" width="300" alt="InstallMenu.png"></span></p>
@@ -95,6 +106,13 @@ That's normal; you can just close the notification window.
 </span></p>
 
 <p><span>
+<strong>Note:</strong>
+The process is slightly different on Chromebooks; follow the on-screen instructions.
+</span></p>
+
+<h2>Start Coding!</h2>
+
+<p><span>
 Once the firmware is installed, the connection indicator should turn green:
 </span></p>
 
@@ -112,14 +130,21 @@ The user LED on your board should light up, showing that the board is connected.
 You're ready to code!
 </span></p>
 
-<h2>Other Boards</h2>
+<p><span>
+These videos will help you get started.
+<br>
+<a href="https://youtu.be/cf2xsYSTqgY">Quick intro, micro:bit</a>
+<br>
+<a href="https://youtu.be/ayLqWwqItxg">Quick intro, AdaFruit Circuit Playground Express</a>
+</span></p>
+
+<h2>ESP Boards</h2>
 
 <p><span>
-MicroBlocks also runs on various other boards.
-Firmware for ESP8266 (NodeMCU) and ESP32 boards can be installed directly from MicroBlocks.
+MicroBlocks also runs on ESP8266 boards (e.g. NodeMCU) and ESP32 boards.
 </span></p>
 
 <ul class="list">
-    <li><a href="nodeMCUSetup">NodeMCU</a></li>
+    <li><a href="nodeMCUSetup">ESP8266</a></li>
     <li><a href="esp32Setup">ESP32</a></li>
 </ul>
