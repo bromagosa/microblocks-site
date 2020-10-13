@@ -144,6 +144,6 @@ MicroBlocks also runs on ESP8266 boards (e.g. NodeMCU) and ESP32 boards.
 </span></p>
 
 <ul class="list">
-    <li><a href="nodeMCUSetup">ESP8266</a></li>
-    <li><a href="esp32Setup">ESP32</a></li>
+    <li><a href="http://wiki.microblocks.fun/boards/ESP8266">ESP8266</a></li>
+    <li><a href="http://wiki.microblocks.fun/boards/ESP32">ESP32</a></li>
 </ul>

@@ -5,13 +5,16 @@ MicroBlocks runs on a wide variety of microcontroller boards.
 This page highlights some that are especially useful for learners and educators.
 </p></span>
 
-<h2><a href="http://microbit.org">BBC micro:bit</a> ($15-$18)</h2>
+<h2><a href="http://microbit.org">BBC micro:bit (including v2)</a> ($15-$18)</h2>
 
-<p><span><img src="boards/microbit.png" width="400"></span></p>
+<p><span>
+<img src="boards/microbit.png" width="400">
+<img src="boards/microbitV2.png" width="400">
+</span></p>
 
 <span><p>
 The micro:bit is one of the most popular microcontroller boards for education.
-Over four million micro:bits have been distributed in over sixty countries
+Over five million micro:bits have been distributed in over sixty countries
 <a href="https://cacm.acm.org/magazines/2020/3/243028-the-bbc-microbit-from-the-u-k-to-the-world/fulltext">ACM 2020</a>
 and the <a href="https://microbit.org/about/">micro:bit Educational Foundation</a>
 reports that over twenty million students have used micro:bits.
@@ -28,7 +31,13 @@ of the micro:bit allow beginners to do interesting things immediately
 without wiring. That simplicity allows the micro:bit to be used
 by elementary school children (grades 3-5) as well as teens and adults.
 The micro:bit has a
-<a href="http://www.wismath.org/Resources/Documents/Annual%20Conference/210JMetke-Low%20Floor%20High%20Ceiling%20Handouts.pdf">low floor and a high ceiling</a/.
+<a href="http://www.wismath.org/Resources/Documents/Annual%20Conference/210JMetke-Low%20Floor%20High%20Ceiling%20Handouts.pdf">low floor and a high ceiling</a>.
+</p></span>
+
+<span><p>
+MicroBlocks supports both the original micro:bit and the new micro:bit v2,
+which adds a speaker, microphone, touch sensor, and other improvements
+to the original design.
 </p></span>
 
 <h2><a href="https://calliope.cc/calliope-mini/uebersicht">Calliope mini</a> ($50)</h2>
