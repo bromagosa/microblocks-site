@@ -99,15 +99,8 @@ If you have a Chromebook, you can get the
 
 <p><span>
 You can also
-<a href="https://microblocks.fun/run/microblocks.html">run MicroBlocks in a Chrome or Edge browser</a>
+<a href="run">run MicroBlocks in a Chrome or Edge browser</a>
 without installing anything.
-</span></p>
-
-<p><span>
-<strong>NOTE:</strong> To allow MicroBlocks to connect to your board,
-you'll need visit the "chrome://flags" page and enable the "Experimental Web Platform features" flag.
-See
-<a href="http://microblocks.fun/blog-2020-05-24-Running-MicroBlocks-in-the-Browser">Running MicroBlocks in the Browser</a>.
 </span></p>
 
 <h2>Activity Cards</h2>
