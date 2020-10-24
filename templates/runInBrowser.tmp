@@ -1,0 +1,95 @@
+
+<a href="https://microblocks.fun/run/microblocks.html" target="_blank" class="banner beta">
+    <i class="dancing-rosza"></i>
+    <div class="right">
+        <h4>Run MicroBlocks!</h4>
+        <p><span>(Chrome or Edge required)</span></p>
+     </div>
+</a>
+
+<h1>Running MicroBlocks in the Browser</h1>
+
+<p><span>
+MicroBlocks runs in Chrome and recent Microsoft Edge browsers.
+That can be helpful in school, library, and other settings
+where it is difficult to install application programs.
+</span></p>
+
+<h2>Setup</h2>
+
+<p><span>
+To communicate with the microcontroller, MicroBlocks uses a brand new browser
+feature called "WebSerial." Eventually, that feature will be available
+by default but, for now, it must be enabled manually.
+</span></p>
+
+<p><span>
+Enter "chrome://flags" in the nav bar of the browser:
+</span></p>
+
+<p><span>
+<img src="chromeFlagsPage.png" width="200px"/>
+</span></p>
+
+<p><span>
+There are many flags. The quickest way to find the right one is to type "experimental web"
+into the flags search bar, then enable
+"Experimental Web Platform features":
+</span></p>
+
+<p><span>
+<img src="setExperimentWebPlatformFlag.png" width="500px"/>
+<p><span>
+
+<h2>Run MicroBlocks</h2>
+
+<p><span>
+Click the green button at the top of this page to run MicroBlocks.
+</span></p>
+
+<h2>Install Firmware</h2>
+
+<p><span>
+The first time you use MicroBlocks on a new board you must install the MicroBlocks firmware.
+Select "update firmware on board" from the MicroBlocks (gear) menu and follow the prompts.
+</span></p>
+
+<h2>Connect</h2>
+
+<p><span>
+Connect your microcontroller to the computer with a USB cable, then click on the USB icon.
+That will bring up a dialog box listing the available serial ports.
+On some platforms, you may see your microcontroller listed twice; either one will work.
+</span></p>
+
+<p><span>
+<img src="browserConnectDialog.png" width="400px"/>
+</span></p>
+
+<p><span>
+If the browser connects successfully, a green circle will appear behind the USB icon:
+</span></p>
+
+<p><span>
+<img src="browserConnected.png" width="80px"/>
+</span></p>
+
+<h2>Working with Projects</h2>
+
+<p><span>
+Use the file menu to save and open files:
+</span></p>
+
+<p><span>
+<img src="browserFileMenu.png" width="70px"/>
+</span></p>
+
+<p><span>
+In the File Open dialog, the computer button will allow you to navigate
+to the file you saved. You can also open a MicroBlocks file by dropping it
+onto the MicroBlocks browser window:
+</span></p>
+
+<p><span>
+<img src="browserFileDialog.png" width="450px"/>
+</span></p>
