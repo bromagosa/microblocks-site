@@ -39,7 +39,7 @@ setLEDOp			// pop a boolean value and and set the state of the user LED to it
 
 <h3>Protocol</h3>
 
-<p><span>The MicroBlocks VM communicates with IDEs and other types of software (such as the Mozilla Web of Things gateway) by means of a simple serial protocol.</span></p>
+<p><span>The MicroBlocks VM communicates with IDEs and other types of software (such as the WebThings gateway) by means of a simple serial protocol.</span></p>
 
 <p><span>You can find specifications for this protocol <a href="https://bitbucket.org/john_maloney/smallvm/src/master/SERIAL_PROTOCOL.md">here</a>.</span></p>
 

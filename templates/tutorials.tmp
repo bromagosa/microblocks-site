@@ -64,10 +64,10 @@ No additional components are needed except where noted.
     <li><a href="cards2/10_mb_FlashlightTag.pdf">Flashlight Remote | Tag</a> (requires a flashlight)</li>
  </ul>
 
-<h2>Mozilla IoT Activity Cards </h2>
+<h2>WebThings IoT Activity Cards </h2>
 <span><p>
-These <a href="iot.html">Mozilla IoT cards</a> show how to connect MicroBlocks
-projects to the internet using Mozilla's free, open-source WebThing Gateway software
+These <a href="iot.html">WebThings IoT cards</a> show how to connect MicroBlocks
+projects to the internet using the free, open-source WebThings Gateway software
 running on a Raspberry Pi.
 These cards are suitable for grades 6-12, college, and adults.
 </p></span>
