@@ -15,32 +15,6 @@ That can be helpful in school, library, and other settings
 where it is difficult to install application programs.
 </span></p>
 
-<h2>Setup</h2>
-
-<p><span>
-To communicate with the microcontroller, MicroBlocks uses a brand new browser
-feature called "WebSerial." Eventually, that feature will be available
-by default but, for now, it must be enabled manually.
-</span></p>
-
-<p><span>
-Enter "chrome://flags" in the nav bar of the browser:
-</span></p>
-
-<p><span>
-<img src="chromeFlagsPage.png" width="200px"/>
-</span></p>
-
-<p><span>
-There are many flags. The quickest way to find the right one is to type "experimental web"
-into the flags search bar, then enable
-"Experimental Web Platform features":
-</span></p>
-
-<p><span>
-<img src="setExperimentWebPlatformFlag.png" width="500px"/>
-<p><span>
-
 <h2>Run MicroBlocks</h2>
 
 <p><span>
