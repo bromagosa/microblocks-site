@@ -17,7 +17,7 @@ No additional components are needed except where noted.
 </p></span>
 
 <ul class="list">
-    <li><a href="cards/mb_Getting_Started.pdf">Getting Started</a></li>
+    <li><a href="cards/mb_Getting_Started.pdf">Getting Started</a> - <small><a href="cards/DE/mb_Getting_Started_DE.pdf">German version</a></small></li>
     <li><a href="cards/mb_Sensors.pdf">Sensors</a></li>
     <li><a href="cards/mb_Sounds.pdf">Sounds</a></li>
     <li><a href="cards/mb_Step_Counter.pdf">Step Counter</a></li>
@@ -99,7 +99,7 @@ so we can share it with others.
 <span><p>
 Have ideas for your own activity cards or activity guides?
 We encourage you to use the MicroBlocks formats!
-However, note that the bunny image, the name "MicroBlocks,
+However, note that the bunny image, the name "MicroBlocks",
 and the phrase "Small, Fast, Human Friendly" are registered US trademarks
 and can't be used without written permission from our fiscal sponsor,
 the Software Freedom Conservancy.
