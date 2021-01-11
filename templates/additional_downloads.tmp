@@ -24,6 +24,7 @@
 <h3>Precompiled Virtual Machines</h3>
 <ul class="list">
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.microbit.hex">BBC micro:bit</a></li>
+    <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.microbitV2.hex">BBC micro:bit v2</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.calliope.hex">Calliope</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.circuitplay.uf2">Adafruit Circuit Playground Express</a></li>
     <li><a onclick="preventImpatience(this);" href="https://microblocks.fun/downloads/latest/vm/vm.cplay52.uf2">Adafruit Circuit Playground Bluefruit</a></li>
