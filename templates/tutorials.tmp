@@ -17,7 +17,7 @@ No additional components are needed except where noted.
 </p></span>
 
 <ul class="list">
-    <li><a href="cards/mb_Getting_Started.pdf">Getting Started</a> - <small><a href="cards/DE/mb_Getting_Started_DE.pdf">German version</a></small></li>
+    <li><a href="cards/mb_Getting_Started.pdf">Getting Started</a></li>
     <li><a href="cards/mb_Sensors.pdf">Sensors</a></li>
     <li><a href="cards/mb_Sounds.pdf">Sounds</a></li>
     <li><a href="cards/mb_Step_Counter.pdf">Step Counter</a></li>
@@ -26,6 +26,13 @@ No additional components are needed except where noted.
     <li><a href="cards/mb_NeoPixels.pdf">NeoPixels</a> (requires NeoPixels)</li>
     <li><a href="cards/mb_Servos.pdf">Servos</a> (requires a servo and a way to connect it)</li>
     <li><a href="cards/mb_IR_Remote_Control.pdf">IR Remote Control </a> (requires an IR receiver and an IR remote control)</li>
+</ul>
+
+<h3>Translations</h3>
+
+<ul class="list">
+    <li><a href="cards/DE/mb_Getting_Started_DE.pdf">Deutsch (Erste Schritte nur)</a>
+    <li><a href="https://drive.google.com/drive/folders/1f9wjStiqFUsz5fu5ZfRXUO1aggyJuX7U">Nederlands</a>
 </ul>
 
 <h2>Easy Activity Cards: Circuit Playground Express</h2>
