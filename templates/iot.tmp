@@ -1,7 +1,7 @@
 <h1 id="iot">IoT with WebThings Gateway</h1>
 
 <span><p>
-With the free, open-source <a href="https://iot.mozilla.org">WebThings Gateway</a>
+With the free, open-source <a href="https://webthings.io">WebThings Gateway</a>
 software running on a Raspberry Pi, you can connect MicroBlocks to the internet.
 Using a web browser on a computer or mobile device, you can
 control things (e.g. lights, fans, or plant watering systems)
