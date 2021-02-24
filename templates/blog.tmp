@@ -1,4 +1,0 @@
-<h1 id="blog">Blog</h1>
-<ul class="post-list">
-@include=blog-post-list
-</ul>

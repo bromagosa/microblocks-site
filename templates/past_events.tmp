@@ -1,6 +1,0 @@
-<script src="events.js"></script>
-<h1 id="past">Past Events</h1>
-<div class="events"></div>
-<script>
-    new EventFetcher(document.querySelector('.events'), true);
-</script>
